@@ -47,11 +47,11 @@ const routes = [
 ];
 
 const router = createRouter({
-	history: createWebHistory(),
-	routes,
-	scrollBehavior() {
-		document.getElementById('app').scrollIntoView({ behavior: 'smooth' });
-	}
-});
+    history: createWebHistory(process.env.NODE_ENV === '/uxui-portfolio/'),
+    routes,
+    scrollBehavior() {
+        document.getElementById('app').scrollIntoView({ behavior: 'smooth' });
+    }
+})
 
 export default router;
