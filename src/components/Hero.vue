@@ -6,6 +6,9 @@
 
 <script>
 export default {
+    setup: () => {
+        return { heroImage };
+    },
     data() {
         return {
             heroImage: 'ProfilePicture.jpeg'

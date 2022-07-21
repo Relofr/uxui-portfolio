@@ -1,7 +1,7 @@
 <template>
     <div data-aos="fade-up" data-aos-delay="80">
-        <div v-show="heroImage" class="hero-container">
-            <img class="hero-image" :src="`src/assets/images/` + heroImage">
+        <div v-show="src" class="hero-container">
+            <img class="hero-image" :src="src">
             <div v-show="sectionTitle" class="section-title primary-heading">{{ sectionTitle }}</div>
         </div>
         <div class="even-columns section-container" :class="{ 'reverseColumns': isReverse }">
@@ -15,7 +15,7 @@
             </div>
 
             <div v-show="showImage">
-                <img v-show="src" class="section-image" :src="`src/assets/images/` + src">
+                <img v-show="src2" class="section-image" :src="src2">
             </div>
 
         </div>
@@ -34,7 +34,10 @@ export default {
         }
     },
     props: {
-        heroImage: {
+        src: {
+            type: String,
+        },
+        src2: {
             type: String,
         },
         sectionTitle: {
@@ -65,9 +68,6 @@ export default {
         isReverse: {
             type: Boolean
         },
-        src: {
-            type: String
-        }
     },
     components: { Button }
 }

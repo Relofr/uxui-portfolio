@@ -1,6 +1,6 @@
 <template>
     <div>
-        <Section sectionTitle="USDA Redesign" heroImage="/usda/hero-usda.png" />
+        <Section sectionTitle="USDA Redesign" :src="heroUSDA" />
 
         <SectionBreak title="UI Analysis & User Research" />
 
@@ -24,9 +24,19 @@
     </div>
 </template>
 
-<script setup>
+<script>
 import Section from '../components/Section.vue';
 import SectionBreak from '../components/SectionBreak.vue';
+import heroUSDA from '../assets/images/usda/hero-usda.png';
+export default {
+    data() {
+        return {}
+    },
+    setup: () => {
+        return { heroUSDA };
+    },
+    components: { Section, SectionBreak }
+}
 </script>
 
 <style>

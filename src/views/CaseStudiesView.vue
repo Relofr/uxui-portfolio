@@ -4,11 +4,11 @@
 
         <div class="grid2x2">
             <div class="box">
-                <Card title="Tracy Aviary UX/UI" date="July 13th, 2022" src="/tracyaviary/hero-ta.png"
+                <Card title="Tracy Aviary UX/UI" date="July 13th, 2022" :src="heroTA"
                     route="tracy-aviary" />
             </div>
             <div class="box">
-                <Card title="USDA Redesign" date="April 16th, 2022" src="/usda/hero-usda.png" route="usda" />
+                <Card title="USDA Redesign" date="April 16th, 2022" :src="heroUSDA" route="usda" />
             </div>
             <!-- <div class="box">
                 <Card title="ReClaim App" src="/reclaim/hero-reclaim.png" route="reclaim" />
@@ -17,7 +17,7 @@
                 <Card title="UX/UI Portfolio" src="/portfolio/hero-portfolio.png" route="portfolio" />
             </div> -->
             <div class="box">
-                <Card title="DailyUI" src="/dailyui/hero-dailyui.png" route="daily-ui" />
+                <Card title="DailyUI" :src="heroDailyUI" route="daily-ui" />
             </div>
         </div>
     </div>
@@ -25,7 +25,13 @@
 
 <script>
 import Card from '../components/Card.vue'
+import heroDailyUI from '../assets/images/dailyui/hero-dailyui.png'
+import heroUSDA from '../assets/images/usda/hero-usda.png'
+import heroTA from '../assets/images/tracyaviary/hero-ta.png'
 export default {
+    setup: () => {
+        return { heroDailyUI, heroUSDA, heroTA };
+    },
     data() {
         return {
 

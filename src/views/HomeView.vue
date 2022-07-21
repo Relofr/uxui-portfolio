@@ -1,6 +1,6 @@
 <template>
     <div>
-        <Section class="about-me-container" isReverse showImage src="ProfilePicture.jpeg" sectionTitle="Kyle Hatch"
+        <Section class="about-me-container" isReverse showImage :src2="ProfilePicture" sectionTitle="Kyle Hatch"
             contentOne="Software Engineer + UX/UI designer at LogMeIn"
             contentTwo="Passionate about bringing my ideas to life and creating a great user experience." button />
         <div :class="{ 'visible': !visible }" class="down-arrow">
@@ -16,10 +16,14 @@
 import CaseStudiesView from './CaseStudiesView.vue';
 import Button from '../components/Button.vue';
 import Section from '../components/Section.vue';
+import ProfilePicture from '../assets/images/about/ProfilePicture.jpeg'
 </script>
 
 <script>
 export default {
+    setup: () => {
+        return { ProfilePicture };
+    },
     data() {
         return {
             visible: true,

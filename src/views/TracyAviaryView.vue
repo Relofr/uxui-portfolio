@@ -1,6 +1,6 @@
 <template>
     <div class="ta">
-        <Section sectionTitle="Tracy Aviary UX/UI Redesign" heroImage="/tracyaviary/hero-ta.png" />
+        <Section sectionTitle="Tracy Aviary UX/UI Redesign" :src="heroTA" />
 
         <Overview
             title="Project Overview"
@@ -13,19 +13,19 @@
 " />
         <SectionBreak title="UI Analysis & User Research" />
 
-        <Section src="/tracyaviary/ta-desktop.png" showImage sectionTitle="Where to begin"
+        <Section :src2="taDesktop" showImage sectionTitle="Where to begin"
             contentOne="At first glance, the site looks properly taken care of." contentTwo="There are some obvious UX/UI changes that need to be made, but without knowing exactly what we needed to fix, we decided to create a survey to find out more." />
 
-        <Section showImage src="/tracyaviary/survey-pie.png" sectionTitle="Survey Data"
+        <Section showImage :src2="surveyPie" sectionTitle="Survey Data"
             contentOne="We created a survey that went over how often they visit the aviary, why they visit, how their experience was, how they purchased tickets, and if they have ever donated." />
 
-        <Section showImage src="/tracyaviary/ta-whyvisit.png" sectionTitle=""
+        <Section showImage :src2="taWhyVisit" sectionTitle=""
         contentOne="Hello" contentTwo=""/>
 
-        <Section showImage src="/tracyaviary/ta-affinity.png" sectionTitle="Organizing our data"
+        <Section showImage :src2="taAffinity" sectionTitle="Organizing our data"
         contentOne="Hello" contentTwo=""/>
 
-        <Section showImage src="/tracyaviary/prioritization-matrix.png" sectionTitle=""
+        <Section showImage :src2="prioritizationMatrix" sectionTitle=""
         contentOne="Based on the survey results, I decided to focus on the ticket purchases and donation flow of the website, which ended up needing an update." />
 
         
@@ -39,10 +39,23 @@
     </div>
 </template>
 
-<script setup>
+<script>
 import Section from '../components/Section.vue';
 import SectionBreak from '../components/SectionBreak.vue';
 import Overview from '../components/Overview.vue';
+import heroTA from '../assets/images/tracyaviary/hero-ta.png';
+import taDesktop from '../assets/images/tracyaviary/ta-desktop.png';
+import surveyPie from '../assets/images/tracyaviary/survey-pie.png';
+import taWhyVisit from '../assets/images/tracyaviary/ta-whyvisit.png';
+import taAffinity from '../assets/images/tracyaviary/ta-affinity.png';
+import prioritizationMatrix from '../assets/images/tracyaviary/prioritization-matrix.png';
+
+export default {
+    setup: () => {
+        return { heroTA, taDesktop, surveyPie, taWhyVisit, taAffinity, prioritizationMatrix };
+    },
+    components: { Section, SectionBreak, Overview }
+}
 </script>
 
 <style>

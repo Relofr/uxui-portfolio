@@ -1,7 +1,7 @@
 <template>
     <router-link :to="`/` + route">
         <div data-aos="fade-up" data-aos-delay="80" class="card">
-            <img :src="`src/assets/images/` + src" alt="">
+            <img :src="src" :alt="alt">
             <div class="title-container flex">
                 <p id="card-text" class="fw-bold fs-16 primary-text">{{ title }}</p>
                 <p v-show="date" id="card-text" class="fw-semi-bold secondary-text">{{ date }}</p>
@@ -21,13 +21,13 @@ export default {
         route: { type: String },
         title: { type: String },
         date: { type: String },
-        src: { type: String }
+        src: { type: String },
+        alt: { type: String }
     }
 }
 </script>
 
 <style lang="less" scoped>
-
 .card {
     cursor: pointer;
     margin-bottom: 40px;

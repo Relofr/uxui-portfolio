@@ -56,13 +56,6 @@ const routes = [
         component: ContactView,
     }
 ];
-// const router = createRouter({
-//     history: createWebHistory(),
-//     routes,
-//     scrollBehavior() {
-//         document.getElementById('app').scrollIntoView({ behavior: 'smooth' });
-//     }
-// })
 const router = createRouter({
     history: createWebHistory(process.env.NODE_ENV === '/uxui-portfolio/'),
     routes,
