@@ -27,7 +27,7 @@ export default {
 .tooltip-container {
     position: relative;
     display: inline-block;
-    width: 100%;
+    /* width: 100%; */
 }
 
 .tooltip-container:hover .tooltip {
