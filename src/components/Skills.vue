@@ -39,7 +39,7 @@ import Invision from '../assets/icons/invision.png'
 import Miro from '../assets/icons/miro.png'
 import Photoshop from '../assets/icons/photoshop.png'
 import Vue from '../assets/icons/vue.png'
-import Wireframing from '../assets/icons/Wireframe.png'
+import Wireframing from '../assets/icons/wireframe.png'
 
 export default {
     setup: () => {
