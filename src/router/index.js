@@ -58,6 +58,7 @@ const routes = [
 ];
 const router = createRouter({
     history: createWebHistory(process.env.NODE_ENV === '/uxui-portfolio/'),
+    base: '/uxui-portfolio/',
     routes,
     scrollBehavior() {
         document.getElementById('app').scrollIntoView({ behavior: 'smooth' });
