@@ -8,7 +8,7 @@
         <Section :src2="spotifyMobile" showImage sectionTitle="Spotify Mobile Design"
             contentOne="Made in Figma" contentTwo="" />
 
-        <Section :src2="calculator" showImage sectionTitle="Calculator"
+        <Section :src2="calculatorAndroid" showImage sectionTitle="Calculator"
             contentOne="Made in Figma" contentTwo="" />
 
         <Section :src2="dgdLandingPage" showImage sectionTitle="DGD Landing Page"
@@ -42,7 +42,7 @@ import Section from '../components/Section.vue';
 import SectionBreak from '../components/SectionBreak.vue';
 import heroDailyUI from '../assets/images/dailyui/hero-dailyui.png';
 import appleWatch from '../assets/images/dailyui/apple-watch.png';
-import calculator from '../assets/images/dailyui/calculator.png';
+import calculatorAndroid from '../assets/images/dailyui/calculator.png';
 import dgdLandingPage from '../assets/images/dailyui/dgd-landing-page.png';
 import dotaLeaderboard from '../assets/images/dailyui/dota-leaderboard.png';
 import grids from '../assets/images/dailyui/grids.png';
