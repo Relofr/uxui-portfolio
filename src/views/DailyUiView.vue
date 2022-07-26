@@ -57,7 +57,7 @@ export default {
         return {}
     },
     setup: () => {
-        return { heroDailyUI, appleWatch, calculator, dgdLandingPage, dotaLeaderboard, grids, inputForm, pudgePoster, registrationForm, rwd, rwd2, spotifyMobile };
+        return { heroDailyUI, appleWatch, calculatorAndroid, dgdLandingPage, dotaLeaderboard, grids, inputForm, pudgePoster, registrationForm, rwd, rwd2, spotifyMobile };
     },
     components: { Section, SectionBreak }
 }
