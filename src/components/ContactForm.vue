@@ -1,12 +1,12 @@
 <template>
     <div class="contact-form">
-        <h1 class="primary-heading">Contact Me</h1>
+        <h1 class="primary-heading">Get in contact</h1>
         <form>
             <label for="name">Name</label>
             <input type="text" autofocus v-model="user_name" required>
 
             <label for="email">Email</label>
-            <input type="text" @input="debonceError" v-model="email" required>
+            <input type="text" @input="debounceError" v-model="email" required>
             <span class="error-text" v-show="this.email.length > 0 && !typing" v-if="msg.email">{{ msg.email }}</span>
 
             <label for="subject">Subject</label>
@@ -16,7 +16,7 @@
             <textarea type="text" rows="8" v-model="message" required></textarea>
             <span class="error-text" v-if="msg.message">{{ msg.message }}</span>
 
-            <Button @click="sendEmail" type="submit" text="Send" icon="envelope" size='lg' isPrimary
+            <Button @click="sendEmail" type="submit" text="Send" icon="paper-plane" size='lg' isPrimary
                 :disabled="!isComplete" />
         </form>
     </div>
@@ -40,7 +40,7 @@ export default {
         }
     },
     methods: {
-        debonceError(event) {
+        debounceError(event) {
             this.note = null
             this.typing = 'You are typing'
             clearTimeout(this.debounce)
@@ -101,17 +101,12 @@ export default {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-}
-
-.contact-form form {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    ;
+    max-width: 800px;
 }
 
 label {
-    margin-bottom: 5px;
+    display: inline-block;
+    margin-bottom: 10px;
 }
 
 input,
@@ -126,6 +121,7 @@ textarea {
     background-color: #ecebec;
     border-radius: 5px 5px 0px 0px;
     font-family: var(--primary-font);
+    min-width: 100%;
 }
 
 input:focus,
