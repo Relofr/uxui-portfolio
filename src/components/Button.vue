@@ -85,9 +85,4 @@ export default {
     background-color: var(--primary-background-color);
     color: var(--primary-color);
 }
-
-.disabled {
-    cursor: not-allowed;
-    opacity: 0.8;
-}
 </style>

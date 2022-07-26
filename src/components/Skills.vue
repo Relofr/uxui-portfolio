@@ -2,29 +2,29 @@
     <div data-aos="fade-up" data-aos-delay="80" class="skills-container flex">
         <div class="primary-heading">{{ title }}</div>
         <div class="icons-container">
-            <Tooltip :text="`Adobe Illustrator`">
-                <img id="icon-image" :src="AdobeIllustrator" alt="adobe illustrator">
-            </Tooltip>
             <Tooltip :text="`Figma`">
                 <img id="icon-image" :src="Figma" alt="figma">
-            </Tooltip>
-            <Tooltip :text="`Github`">
-                <img id="icon-image" :src="Github" alt="github">
-            </Tooltip>
-            <Tooltip :text="`Invision`">
-                <img id="icon-image" :src="Invision" alt="">
             </Tooltip>
             <Tooltip :text="`Miro`">
                 <img id="icon-image" :src="Miro" alt="">
             </Tooltip>
+            <Tooltip :text="`Invision`">
+                <img id="icon-image" :src="Invision" alt="">
+            </Tooltip>
+            <Tooltip :text="`Wireframing`">
+                <img id="icon-image" :src="Wireframing" alt="">
+            </Tooltip>
             <Tooltip :text="`Photoshop`">
                 <img id="icon-image" :src="Photoshop" alt="">
+            </Tooltip>
+            <Tooltip :text="`Adobe Illustrator`">
+                <img id="icon-image" :src="AdobeIllustrator" alt="adobe illustrator">
             </Tooltip>
             <Tooltip :text="`Vue`">
                 <img id="icon-image" :src="Vue" alt="">
             </Tooltip>
-            <Tooltip :text="`Wireframing`">
-                <img id="icon-image" :src="Wireframing" alt="">
+            <Tooltip :text="`Github`">
+                <img id="icon-image" :src="Github" alt="github">
             </Tooltip>
         </div>
     </div>

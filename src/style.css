@@ -141,6 +141,12 @@ button:disabled {
   opacity: 0.8;
 }
 
+.disabled {
+  cursor: not-allowed;
+  opacity: 0.5;
+  pointer-events: none;
+}
+
 .error-text {
   font-size: var(--fs-13);
   color: red;

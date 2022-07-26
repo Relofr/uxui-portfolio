@@ -4,11 +4,13 @@
 
         <div class="grid2x2">
             <div class="box">
-                <Card title="Tracy Aviary UX/UI" date="July 13th, 2022" :src="heroTA"
-                    route="tracy-aviary" />
+                <Card title="Tracy Aviary UX/UI" date="July 13th, 2022" :src="heroTA" route="tracy-aviary" />
             </div>
             <div class="box">
-                <Card title="USDA Redesign" date="April 16th, 2022" :src="heroUSDA" route="usda" />
+                <Card title="DailyUI" :src="heroDailyUI" route="daily-ui" />
+            </div>
+            <div class="box disabled">
+                <Card title="USDA - Work in progress" date="April 16th, 2022" :src="heroUSDA" route="usda" />
             </div>
             <!-- <div class="box">
                 <Card title="ReClaim App" src="/reclaim/hero-reclaim.png" route="reclaim" />
@@ -16,9 +18,6 @@
             <div class="box">
                 <Card title="UX/UI Portfolio" src="/portfolio/hero-portfolio.png" route="portfolio" />
             </div> -->
-            <div class="box">
-                <Card title="DailyUI" :src="heroDailyUI" route="daily-ui" />
-            </div>
         </div>
     </div>
 </template>
