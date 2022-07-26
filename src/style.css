@@ -14,6 +14,8 @@
   --fw-semi-bold: 500;
   --fw-bold: 700;
 
+  --fs-12: 12px;
+  --fs-13: 13px;
   --fs-16: 16px;
   --fs-18: 18px;
   --fs-22: 22px;
@@ -23,6 +25,8 @@
 
   --primary-heading: var(--fs-36);
   --secondary-heading: var(--fs-22);
+
+  --primary-font: "Be Vietnam Pro", sans-serif;
 }
 
 * {
@@ -108,7 +112,12 @@ img {
   font-weight: var(--fw-regular);
 }
 
-
+.fs-12 {
+  font-size: var(--fs-12);
+}
+.fs-13 {
+  font-size: var(--fs-13);
+}
 
 .fs-18 {
   font-size: var(--fs-18);
@@ -124,4 +133,15 @@ img {
 
 .fs-144 {
   font-size: var(--fs-144);
+}
+
+button:disabled {
+  cursor: not-allowed;
+  background-color: grey;
+  opacity: 0.8;
+}
+
+.error-text {
+  font-size: var(--fs-13);
+  color: red;
 }

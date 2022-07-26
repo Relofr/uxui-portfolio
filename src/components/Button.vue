@@ -1,14 +1,15 @@
 <template>
-    <div>
-        <button :class="{
-            'button button-primary': isPrimary,
-            'button button-secondary': isSecondary
-        }">
-            {{ text }}
-            <fa v-show="icon" :icon="icon" :size="size"></fa>
-            <fa v-show="iconFab" :icon="['fab', iconFab]" :size="size"></fa>
-        </button>
-    </div>
+
+    <button :class="{
+        'button button-primary': isPrimary,
+        'button button-secondary': isSecondary,
+    
+    }">
+        <span class="button-text">{{ text }}</span>
+        <fa v-if="icon" :icon="icon" :size="size" :class="animate"></fa>
+        <fa v-if="iconFab" :icon="['fab', iconFab]" :size="sizeFab"></fa>
+    </button>
+
 </template>
 
 <script>
@@ -31,6 +32,10 @@ export default {
             type: String,
             required: false
         },
+        sizeFab: {
+            type: String,
+            required: false
+        },
         text: {
             type: String,
             required: true
@@ -40,6 +45,12 @@ export default {
         },
         isSecondary: {
             type: Boolean
+        },
+        isDisabled: {
+            type: Boolean
+        },
+        animate: {
+            type: String
         }
     }
 }
@@ -61,8 +72,8 @@ export default {
     width: fit-content;
 }
 
-.button svg {
-    padding-left: 10px;
+.button-text {
+    padding-right: 15px;
 }
 
 .button-primary {
@@ -71,7 +82,12 @@ export default {
 }
 
 .button-secondary {
-    background-color: var(--secondary-background-color);
+    background-color: var(--primary-background-color);
     color: var(--primary-color);
+}
+
+.disabled {
+    cursor: not-allowed;
+    opacity: 0.8;
 }
 </style>

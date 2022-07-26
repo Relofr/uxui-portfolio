@@ -41,7 +41,7 @@ export default {
 }
 </script>
 
-<style lang="less">
+<style lang="less" scoped>
 #case-studies-title {
     display: flex;
     justify-content: center;
