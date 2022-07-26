@@ -16,15 +16,30 @@
             <textarea type="text" rows="8" v-model="message" required></textarea>
             <span class="error-text" v-if="msg.message">{{ msg.message }}</span>
 
-            <Button @click="sendEmail" type="submit" text="Send" icon="paper-plane" size='lg' isPrimary
-                :disabled="!isComplete" />
+            <Button v-show="!isSending && !confirm" @click="sendEmail" type="submit" text="Send" icon="envelope-open"
+                size='lg' isPrimary :disabled="!isComplete" />
+
+            <!-- <Button v-show="isSending && !confirm" @click="sendEmail" type="submit" text="Send" icon="envelope"
+                size='lg' animate="fa-shake" isPrimary /> -->
+
+            <Button v-show="!isSending && confirm" @click="sendEmail" type="submit" text="Thank you" icon="check"
+                size='lg' :disabled="!isComplete" isPrimary />
         </form>
+
+        <!-- <button id="show-modal" @click="emailConfirmation">Show Modal</button> -->
+
+
+        <Modal v-show="showModal" @close="showModal = false">
+            <template v-slot:header>Thank you</template>
+            <!-- <template v-slot:body><fa icon="fa-solid fa-check"/></template> -->
+        </Modal>
     </div>
 </template>
 
 <script>
 import emailjs from 'emailjs-com';
 import Button from '../components/Button.vue'
+import Modal from '../components/Modal.vue'
 export default {
     data() {
         return {
@@ -36,10 +51,58 @@ export default {
             note: null,
             debounce: null,
             typing: null,
-            isSending: false
+            isSending: false,
+            confirm: false,
+            showModal: false
         }
     },
     methods: {
+        emailConfirmation() {
+            setTimeout(() => {
+                this.isSending = false;
+                this.confirm = false;
+            }, 1500),
+                setTimeout(() => {
+                    this.isSending = false;
+                    this.confirm = true;
+                    this.user_name = '',
+                        this.email = '',
+                        this.subject = '',
+                        this.message = ''
+                }, 1500)
+
+            // function one(callback) {
+            //     setTimeout(function () {
+            //         this.isSending = false;
+            //         this.confirm = false;
+            //         console.log('one')
+            //         callback();
+            //     }, 1000);
+            // }
+
+            // function two(callback) {
+            //     setTimeout(function () {
+            //         this.isSending = true;
+            //         this.confirm = false;
+            //         console.log('two')
+            //         callback();
+            //     }, 1000);
+            // }
+            // function three(callback) {
+            //     setTimeout(function () {
+            //         this.isSending = false;
+            //         this.confirm = true;
+            //         console.log(this.isSending)
+            //         console.log(this.confirm)
+            //         callback();
+            //     }, 1000);
+            // }
+
+            // one(() => two(() => three(() => console.log('Done!'))))
+        },
+        modalToggle() {
+            this.showModal = !this.showModal;
+        },
         debounceError(event) {
             this.note = null
             this.typing = 'You are typing'
@@ -59,19 +122,19 @@ export default {
             var serviceID = 'service_uxui_portfolio';
             var templateID = 'template_uxui_portfolio';
             var publicKey = 'V6HB6k12BwfZeoHYw'
-
             emailjs.send(serviceID, templateID, templateParams, publicKey)
                 .then(function (response) {
                     console.log('SUCCESS!', response.status, response.text);
                 }, function (error) {
                     console.log('FAILED...', error);
                 },
-                    this.isSending = false,
                     this.user_name = '',
                     this.email = '',
                     this.subject = '',
                     this.message = ''
                 );
+            this.emailConfirmation();
+
         }
     },
     computed: {
@@ -92,7 +155,7 @@ export default {
             )
         },
     },
-    components: { Button }
+    components: { Button, Modal }
 }
 </script>
 
@@ -101,7 +164,12 @@ export default {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    width: 100%;
     max-width: 800px;
+}
+
+.contact-form form {
+    width: 100%;
 }
 
 label {
@@ -121,7 +189,14 @@ textarea {
     background-color: #ecebec;
     border-radius: 5px 5px 0px 0px;
     font-family: var(--primary-font);
-    min-width: 100%;
+    width: 100%;
+}
+
+input,
+textarea,
+label {
+    display: flex;
+    flex-direction: column;
 }
 
 input:focus,
