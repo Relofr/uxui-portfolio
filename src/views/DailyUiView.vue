@@ -3,7 +3,7 @@
         <Section sectionTitle="DailyUI" :src="heroDailyUI" />
         <div class="grid4x4">
             <div v-for="(key, value) in imageData" :key="key">
-                <Card :title="value" :src="'/src/assets/images/dailyui/' + key" />
+                <Card :title="value" :src="'/assets/images/dailyui/' + key" />
             </div>
         </div>
     </div>
