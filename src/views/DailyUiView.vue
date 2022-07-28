@@ -1,50 +1,9 @@
 <template>
     <div>
         <Section sectionTitle="DailyUI" :src="heroDailyUI" />
-        <div  class="grid4x4">
-
-            <div>
-                <Card title="Spotify - Apple Watch" :src="appleWatch" />
-            </div>
-
-            <div>
-                <Card title="Spotify Mobile Design" :src="spotifyMobile" />
-            </div>
-
-            <div>
-                <Card title="Calculator" :src="calc" />
-            </div>
-
-            <div>
-                <Card title="DGD Landing Page" :src="dgdLandingPage" />
-            </div>
-
-            <div>
-                <Card title="Dota 2 Leaderboard" :src="dotaLeaderboard" />
-            </div>
-
-            <div>
-                <Card title="Grid System" :src="grids" />
-            </div>
-
-            <div>
-                <Card title="Input Form with " :src="inputForm" />
-            </div>
-
-            <div>
-                <Card title="Dota 2 Wanted Poster" :src="pudgePoster" />
-            </div>
-
-            <div>
-                <Card title="Registration Form" :src="registrationForm" />
-            </div>
-
-            <div>
-                <Card title="Responsive Web Design" :src="rwd" />
-            </div>
-
-            <div>
-                <Card title="Responsive Web Design 2" :src="rwd2" />
+        <div class="grid4x4">
+            <div v-for="(key, value) in imageData" :key="key">
+                <Card :title="value" :src="key" />
             </div>
         </div>
     </div>
@@ -68,23 +27,37 @@ import rwd2 from '../assets/images/dailyui/rwd2.png';
 import spotifyMobile from '../assets/images/dailyui/spotify-mobile.png';
 export default {
     data() {
-        return {}
+        return {
+            imageData: {
+                "Spotify - Apple Watch": appleWatch,
+                "Spotify Mobile Design": spotifyMobile,
+                "Calculator": calc,
+                "DGD Landing Page": dgdLandingPage,
+                "Dota 2 Leaderboards": dotaLeaderboard,
+                "Grid System": grids,
+                "Input Form": inputForm,
+                "Dota 2 Wanted Poster": pudgePoster,
+                "Registration Form": registrationForm,
+                "Responsive Web Design": rwd,
+                "Responsive Web Design 2": rwd2
+            }
+        }
     },
     setup: () => {
-        return { heroDailyUI, appleWatch, calc, dgdLandingPage, dotaLeaderboard, grids, inputForm, pudgePoster, registrationForm, rwd, rwd2, spotifyMobile };
+        return { heroDailyUI };
     },
     components: { Section, SectionBreak, Card }
 }
 </script>
 
 <style lang="less">
-
 .grid4x4 img {
     height: 100% !important;
     max-height: 800px !important;
     object-fit: scale-down !important;
     box-shadow: none !important;
 }
+
 .grid4x4 {
     min-height: 100%;
     display: flex;
