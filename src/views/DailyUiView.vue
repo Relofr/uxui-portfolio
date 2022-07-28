@@ -1,9 +1,50 @@
 <template>
     <div>
         <Section sectionTitle="DailyUI" :src="heroDailyUI" />
-        <div class="grid4x4">
-            <div v-for="(key, value) in imageData" :key="key">
-                <Card :title="value" :src="'/assets/images/dailyui/' + key" />
+        <div  class="grid4x4">
+
+            <div>
+                <Card title="Spotify - Apple Watch" :src="appleWatch" />
+            </div>
+
+            <div>
+                <Card title="Spotify Mobile Design" :src="spotifyMobile" />
+            </div>
+
+            <div>
+                <Card title="Calculator" :src="calc" />
+            </div>
+
+            <div>
+                <Card title="DGD Landing Page" :src="dgdLandingPage" />
+            </div>
+
+            <div>
+                <Card title="Dota 2 Leaderboard" :src="dotaLeaderboard" />
+            </div>
+
+            <div>
+                <Card title="Grid System" :src="grids" />
+            </div>
+
+            <div>
+                <Card title="Input Form with " :src="inputForm" />
+            </div>
+
+            <div>
+                <Card title="Dota 2 Wanted Poster" :src="pudgePoster" />
+            </div>
+
+            <div>
+                <Card title="Registration Form" :src="registrationForm" />
+            </div>
+
+            <div>
+                <Card title="Responsive Web Design" :src="rwd" />
+            </div>
+
+            <div>
+                <Card title="Responsive Web Design 2" :src="rwd2" />
             </div>
         </div>
     </div>
@@ -14,27 +55,36 @@ import Section from '../components/Section.vue';
 import Card from '../components/Card.vue';
 import SectionBreak from '../components/SectionBreak.vue';
 import heroDailyUI from '../assets/images/dailyui/hero-dailyui.png';
+import appleWatch from '../assets/images/dailyui/apple-watch.png';
+import calc from '../assets/images/dailyui/calc.png';
+import dgdLandingPage from '../assets/images/dailyui/dgd-landing-page.png';
+import dotaLeaderboard from '../assets/images/dailyui/dota-leaderboard.png';
+import grids from '../assets/images/dailyui/grids.png';
+import inputForm from '../assets/images/dailyui/input-form.png';
+import pudgePoster from '../assets/images/dailyui/pudge-poster.png';
+import registrationForm from '../assets/images/dailyui/registration-page.png';
+import rwd from '../assets/images/dailyui/rwd.png';
+import rwd2 from '../assets/images/dailyui/rwd2.png';
+import spotifyMobile from '../assets/images/dailyui/spotify-mobile.png';
 export default {
     data() {
-        return {
-            imageData: { "Spotify - Apple Watch": 'apple-watch.png', "Spotify Mobile Design": "spotify-mobile.png", "Calculator": "calc.png", "DGD Landing Page": "dgd-landing-page.png", "Dota 2 Leaderboards": "dota-leaderboard.png", "Grid System": "grids.png", "Input Form": "input-form.png", "Dota 2 Wanted Poster": "pudge-poster.png", "Registration Form": "registration-page.png", "Responsive Web Design": "rwd.png", "Responsive Web Design 2": "rwd2.png" }
-        }
+        return {}
     },
     setup: () => {
-        return { heroDailyUI };
+        return { heroDailyUI, appleWatch, calc, dgdLandingPage, dotaLeaderboard, grids, inputForm, pudgePoster, registrationForm, rwd, rwd2, spotifyMobile };
     },
     components: { Section, SectionBreak, Card }
 }
 </script>
 
 <style lang="less">
+
 .grid4x4 img {
     height: 100% !important;
     max-height: 800px !important;
     object-fit: scale-down !important;
     box-shadow: none !important;
 }
-
 .grid4x4 {
     min-height: 100%;
     display: flex;
