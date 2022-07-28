@@ -1,5 +1,5 @@
 <template>
-    <div data-aos="fade-up" data-aos-delay="80">
+    <div >
         <div v-show="src" class="hero-container">
             <img class="hero-image" :src="src">
             <div v-show="sectionTitle" class="section-title primary-heading">{{ sectionTitle }}</div>

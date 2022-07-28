@@ -1,5 +1,5 @@
 <template>
-    <div data-aos="fade-up" data-aos-delay="80" class="skills-container flex">
+    <div  class="skills-container flex">
         <div class="primary-heading">{{ title }}</div>
         <div class="icons-container">
             <Tooltip :text="`Figma`">

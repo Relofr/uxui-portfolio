@@ -1,7 +1,7 @@
 <template>
     <div>
         <Section sectionTitle="DailyUI" :src="heroDailyUI" />
-        <div class="grid4x4">
+        <div  class="grid4x4">
 
             <div>
                 <Card title="Spotify - Apple Watch" :src="appleWatch" />

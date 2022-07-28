@@ -1,5 +1,5 @@
 <template>
-    <div data-aos="fade-up" data-aos-delay="80" class="overview">
+    <div  class="overview">
         <div>
             <span v-show="title" class="primary-heading">{{ title }}</span>
             <p v-show="about">{{ about }}</p>

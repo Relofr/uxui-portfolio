@@ -1,19 +1,29 @@
 <template>
     <div class="main-nav bg-secondary">
-        <p class="logo fw-bold">KH</p>
+        <router-link to="/">
+            <img class="logo" src="../assets/images/about/logo.png" />
+        </router-link>
         <nav>
             <ul role="nav-list">
                 <li>
-                    <RouterLink to="/"><fa icon="home" size="lg"></fa>Home</RouterLink>
+                    <RouterLink to="/">
+                        <fa icon="home" size="lg"></fa>Home
+                    </RouterLink>
                 </li>
                 <li>
-                    <RouterLink to="/projects"><fa icon="folder" size="lg"></fa>Projects</RouterLink>
+                    <RouterLink to="/projects">
+                        <fa icon="folder" size="lg"></fa>Projects
+                    </RouterLink>
                 </li>
                 <li>
-                    <RouterLink to="/about"><fa icon="gamepad" size="lg"></fa>About</RouterLink>
+                    <RouterLink to="/about">
+                        <fa icon="gamepad" size="lg"></fa>About
+                    </RouterLink>
                 </li>
                 <li>
-                    <RouterLink to="/contact"><fa icon="comments" size="lg"></fa>Contact</RouterLink>
+                    <RouterLink to="/contact">
+                        <fa icon="comments" size="lg"></fa>Contact
+                    </RouterLink>
                 </li>
             </ul>
         </nav>
@@ -71,6 +81,7 @@ export default {
     .logo {
         display: none;
     }
+
     .main-nav {
         justify-content: center;
     }

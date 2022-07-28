@@ -1,6 +1,6 @@
 <template>
     <div>
-        <p data-aos="fade-up" data-aos-delay="80" id="case-studies-title" class="flex primary-heading">Case Studies</p>
+        <p  id="case-studies-title" class="flex primary-heading">Case Studies</p>
 
         <div class="grid2x2">
             <div class="box">
