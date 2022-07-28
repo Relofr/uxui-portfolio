@@ -10,7 +10,7 @@
                 <Card title="DailyUI" :src="heroDailyUI" route="daily-ui" />
             </div>
             <div class="box disabled">
-                <Card title="USDA - Work in progress" date="April 16th, 2022" :src="heroUSDA" route="usda" />
+                <Card title="USDA (Work in progress)" date="April 16th, 2022" :src="heroUSDA" route="usda" />
             </div>
             <!-- <div class="box">
                 <Card title="ReClaim App" src="/reclaim/hero-reclaim.png" route="reclaim" />
