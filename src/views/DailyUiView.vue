@@ -15,6 +15,7 @@ import Card from '../components/Card.vue';
 import SectionBreak from '../components/SectionBreak.vue';
 import heroDailyUI from '../assets/images/dailyui/hero-dailyui.png';
 import appleWatch from '../assets/images/dailyui/apple-watch.png';
+import lockscreenPixel6 from '../assets/images/dailyui/lockscreen-pixel6.png';
 import calc from '../assets/images/dailyui/calc.png';
 import dgdLandingPage from '../assets/images/dailyui/dgd-landing-page.png';
 import dotaLeaderboard from '../assets/images/dailyui/dota-leaderboard.png';
@@ -29,8 +30,9 @@ export default {
     data() {
         return {
             imageData: {
-                "Spotify - Apple Watch": appleWatch,
+                "Lockscreen - Pixel 6": lockscreenPixel6,
                 "Spotify Mobile Design": spotifyMobile,
+                "Spotify - Apple Watch": appleWatch,
                 "Calculator": calc,
                 "DGD Landing Page": dgdLandingPage,
                 "Dota 2 Leaderboards": dotaLeaderboard,
