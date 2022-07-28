@@ -16,7 +16,7 @@
 import CaseStudiesView from './CaseStudiesView.vue';
 import Button from '../components/Button.vue';
 import Section from '../components/Section.vue';
-import ProfilePicture from '../assets/images/about/ProfilePicture.jpeg'
+import ProfilePicture from '../assets/images/about/ProfilePicture.jpg'
 </script>
 
 <script>
@@ -75,7 +75,10 @@ export default {
 
 .about-me-container img {
     width: 350px;
+    height: 350px;
+    object-fit: cover;
     border-radius: 50%;
+    
 }
 
 .down-arrow {
