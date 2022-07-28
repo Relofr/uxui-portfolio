@@ -1,6 +1,6 @@
 <template>
     <div class="ta">
-        <Section sectionTitle="Tracy Aviary (Work in progress)" :src="heroTA" />
+        <Section sectionTitle="Tracy Aviary UX/UI Redesign" :src="heroTA" />
 
         <Overview
             title="Project Overview"

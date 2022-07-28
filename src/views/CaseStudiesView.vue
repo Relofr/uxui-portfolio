@@ -4,7 +4,7 @@
 
         <div class="grid2x2">
             <div class="box">
-                <Card title="Tracy Aviary UX/UI" date="July 13th, 2022" :src="heroTA" route="tracy-aviary" />
+                <Card title="Tracy Aviary (Work in progress)" date="July 13th, 2022" :src="heroTA" route="tracy-aviary" />
             </div>
             <div class="box">
                 <Card title="DailyUI" :src="heroDailyUI" route="daily-ui" />
