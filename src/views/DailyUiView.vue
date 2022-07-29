@@ -18,6 +18,7 @@ import appleWatch from '../assets/images/dailyui/apple-watch.png';
 import lockscreenPixel6 from '../assets/images/dailyui/lockscreen-pixel6.png';
 import calc from '../assets/images/dailyui/calc.png';
 import dgdLandingPage from '../assets/images/dailyui/dgd-landing-page.png';
+import dgdVinyl from '../assets/images/dailyui/dgd-vinyl.png';
 import dotaLeaderboard from '../assets/images/dailyui/dota-leaderboard.png';
 import grids from '../assets/images/dailyui/grids.png';
 import inputForm from '../assets/images/dailyui/input-form.png';
@@ -33,8 +34,9 @@ export default {
                 "Lockscreen - Pixel 6": lockscreenPixel6,
                 "Spotify Mobile Design": spotifyMobile,
                 "Spotify - Apple Watch": appleWatch,
-                "Calculator": calc,
                 "DGD Landing Page": dgdLandingPage,
+                "DGD Vinyl - Add To Cart": dgdVinyl,
+                "Calculator": calc,
                 "Dota 2 Leaderboards": dotaLeaderboard,
                 "Grid System": grids,
                 "Input Form": inputForm,
