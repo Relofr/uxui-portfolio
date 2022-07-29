@@ -33,11 +33,11 @@ export default {
             imageData: {
                 "Lockscreen - Pixel 6": lockscreenPixel6,
                 "Spotify Mobile Design": spotifyMobile,
-                "Spotify - Apple Watch": appleWatch,
                 "DGD Landing Page": dgdLandingPage,
                 "DGD Vinyl - Add To Cart": dgdVinyl,
-                "Calculator": calc,
+                "Spotify - Apple Watch": appleWatch,
                 "Dota 2 Leaderboards": dotaLeaderboard,
+                "Calculator": calc,
                 "Grid System": grids,
                 "Input Form": inputForm,
                 "Dota 2 Wanted Poster": pudgePoster,
