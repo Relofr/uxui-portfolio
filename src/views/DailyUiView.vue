@@ -17,6 +17,8 @@ import heroDailyUI from '../assets/images/dailyui/hero-dailyui.png';
 import appleWatch from '../assets/images/dailyui/apple-watch.png';
 import lockscreenPixel6 from '../assets/images/dailyui/lockscreen-pixel6.png';
 import calc from '../assets/images/dailyui/calc.png';
+import photoShare2 from '../assets/images/dailyui/photographySPA.png';
+import photoShare from '../assets/images/dailyui/onlinephotoshare.png';
 import dgdLandingPage from '../assets/images/dailyui/dgd-landing-page.png';
 import dgdVinyl from '../assets/images/dailyui/dgd-vinyl.png';
 import dotaLeaderboard from '../assets/images/dailyui/dota-leaderboard.png';
@@ -35,6 +37,8 @@ export default {
                 "Spotify Mobile Design": spotifyMobile,
                 "DGD Landing Page": dgdLandingPage,
                 "DGD Vinyl - Add To Cart": dgdVinyl,
+                "PhotoShare Concept - Wireframe": photoShare2,
+                "PhotoShare Concept - High Fidelity": photoShare,
                 "Spotify - Apple Watch": appleWatch,
                 "Dota 2 Leaderboards": dotaLeaderboard,
                 "Calculator": calc,
