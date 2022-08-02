@@ -2,7 +2,7 @@
   --primary-color: #ffffff;
   --secondary-color: #910011;
 
-  --primary-text-color: rgba(0, 0, 0, 80%);
+  --primary-text-color: rgba(0, 0, 0, 87%);
   --secondary-text-color: #4b5156;
 
   --primary-background-color: #fff;
@@ -11,7 +11,7 @@
   --border-color: #2a3a4a;
 
   --fw-regular: 400;
-  --fw-semi-bold: 500;
+  --fw-semi-bold: 600;
   --fw-bold: 700;
 
   --fs-12: 12px;
@@ -21,12 +21,14 @@
   --fs-22: 22px;
   --fs-26: 26px;
   --fs-36: 36px;
+  --fs-48: 48px;
   --fs-144: 144px;
 
-  --primary-heading: var(--fs-36);
+  --primary-heading: var(--fs-48);
   --secondary-heading: var(--fs-22);
 
   --primary-font: "Be Vietnam Pro", sans-serif;
+  --secondary-font: 'Inter', sans-serif;
 }
 
 * {
@@ -73,13 +75,15 @@ img {
 
 .primary-heading {
   font-size: var(--primary-heading);
+  color: var(--primary-text-color);
   font-weight: var(--fw-bold);
-  color: var(--secondary-color);
+  font-family: var(--secondary-font);
   margin-bottom: 15px;
 }
 
 .secondary-heading {
   font-size: var(--secondary-heading);
+  font-family: var(--secondary-font);
   font-weight: var(--fw-bold);
   margin-bottom: 10px;
 }
