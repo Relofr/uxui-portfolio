@@ -155,3 +155,11 @@ button:disabled {
   font-size: var(--fs-13);
   color: red;
 }
+
+/* MEDIA QUERIES */
+
+@media (max-width: 800px) {
+  .primary-heading {
+    font-size: var(--fs-36);
+  }
+}

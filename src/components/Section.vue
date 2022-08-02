@@ -133,12 +133,10 @@ picture {
     flex-direction: row-reverse;
 
     .col {
-        align-items: flex-start;
-        text-align: left;
+        // align-items: flex-start;
+        // text-align: left;
     }
 }
-
-.reverseColumns .col {}
 
 @media (max-width: 800px) {
     .even-columns {
@@ -151,6 +149,7 @@ picture {
         display: flex;
         justify-content: center;
         align-items: center;
+        text-align: center;
     }
 }
 </style>
