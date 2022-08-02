@@ -1,14 +1,18 @@
 <template>
     <div>
-        <Section class="about-me-container" isReverse showImage :src2="ProfilePicture" sectionTitle="Kyle Hatch"
-            contentOne="Software Engineer + UX/UI designer at LogMeIn"
-            contentTwo="Passionate about bringing my ideas to life and creating a great user experience." button />
+        <Transition appear>
+            <Section class="about-me-container" isReverse showImage :src2="ProfilePicture" sectionTitle="Kyle Hatch"
+                contentOne="Software Engineer + UX/UI designer at LogMeIn"
+                contentTwo="Passionate about bringing my ideas to life and creating a great user experience." button />
+        </Transition>
         <div :class="{ 'visible': !visible }" class="down-arrow">
             <fa @click="scrollToElement('caseStudies')" icon="fa-angle-down" size="xl" bounce></fa>
         </div>
-        <div ref="caseStudies">
-            <CaseStudiesView class="case-studies-container"/>
-        </div>
+        <Transition appear>
+            <div ref="caseStudies">
+                <CaseStudiesView class="case-studies-container" />
+            </div>
+        </Transition>
     </div>
 </template>
 
@@ -51,7 +55,7 @@ export default {
             } else {
                 this.visible = false;
             }
-            console.log(window.scrollY);
+            // console.log(window.scrollY);
         }
     },
     components: { Section, Button }
@@ -78,7 +82,7 @@ export default {
     height: 350px;
     object-fit: cover;
     border-radius: 50%;
-    
+
 }
 
 .down-arrow {
