@@ -20,6 +20,7 @@
   --fs-18: 18px;
   --fs-22: 22px;
   --fs-26: 26px;
+  --fs-32: 32px;
   --fs-36: 36px;
   --fs-48: 48px;
   --fs-144: 144px;
@@ -129,6 +130,14 @@ img {
 
 .fs-22 {
   font-size: var(--fs-22);
+}
+
+.fs-32 {
+  font-size: var(--fs-32);
+}
+
+.fs-36 {
+  font-size: var(--fs-36);
 }
 
 .fs-36 {

@@ -1,17 +1,17 @@
 <template>
     <div>
         <p  id="case-studies-title" class="flex primary-heading">Case Studies</p>
-
         <div class="grid2x2">
             <div class="box">
-                <Card title="Tracy Aviary (Work in progress)" :src="heroTA" route="tracy-aviary" />
+                <Card title="Tracy Aviary" text="UX/UI Case Study, Team Project (Work in progress)" :src="heroTA" route="tracy-aviary" button buttonText="read case study" icon="crow"/>
                 <!-- date="July 13th, 2022" -->
             </div>
             <div class="box">
-                <Card title="DailyUI" :src="heroDailyUI" route="daily-ui" />
+                <Card title="Daily UI" :src="heroDailyUI" route="daily-ui" text="Designs aimed to help sharpen my skills using daily prompts." button buttonText="View designs" iconFab="figma"/>
+                <!-- Designs aimed to help sharpen my skills using daily prompts -->
             </div>
             <div class="box disabled">
-                <Card title="USDA (Work in progress)" date="April 16th, 2022" :src="heroUSDA" route="usda" />
+                <Card title="US Agricultural Department" text="UX/UI Case Study, Solo Project (Work in progress)" :src="heroUSDA" route="usda" button buttonText="read case study" icon="carrot" />
             </div>
             <!-- <div class="box">
                 <Card title="ReClaim App" src="/reclaim/hero-reclaim.png" route="reclaim" />
@@ -48,36 +48,34 @@ export default {
 }
 
 .grid2x2 {
-    min-height: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: space-between;
+    // min-height: 100%;
+    // display: flex;
+    // flex-wrap: wrap;
+    // justify-content: space-between;
 }
 
 .grid2x2>div {
-    display: flex;
-    flex-basis: calc(50% - 40px);
-    justify-content: center;
-    flex-direction: column;
+    // display: flex;
+    // flex-basis: calc(50% - 40px);
+    // flex-direction: column;
 }
 
 .grid2x2>div>div {
-    display: flex;
-    justify-content: center;
-    flex-direction: row;
+    // display: flex;
+    // justify-content: center;
+    // flex-direction: row;
 }
 
 @media (max-width: 800px) {
     .grid2x2 {
-        display: flex;
-        flex-direction: column;
+        // display: flex;
+        // flex-direction: column;
 
         .col {
-            width: 100%;
-            margin: 0 0 25px 0;
-            justify-content: center;
-            display: flex;
+            // width: 100%;
+            // margin: 0 0 25px 0;
+            // justify-content: center;
+            // display: flex;
         }
     }
 }

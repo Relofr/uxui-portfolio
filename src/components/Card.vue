@@ -1,16 +1,21 @@
 <template>
     <router-link :to="`/` + route">
-        <div class="card">
-            <img :src="src" :alt="alt">
-            <div class="title-container flex">
-                <p id="card-text" class="fw-bold fs-16 primary-text">{{ title }}</p>
-                <p v-show="date" id="card-text" class="fw-semi-bold secondary-text">{{ date }}</p>
-            </div>
-        </div>
+        <ul class="list">
+            <li class="list-item">
+                <div class="list-content">
+                    <img :src="src" :alt="alt">
+                    <p class="fw-bold fs-32 primary-text">{{ title }}</p>
+                    <p v-show="text" class="primary-text fs-18">{{ text }}</p>
+                    <Button v-show="button" :text="buttonText" @click="" type="submit" :icon="icon" :iconFab="iconFab"
+                        size='lg' isPrimary />
+                </div>
+            </li>
+        </ul>
     </router-link>
 </template>
 
 <script>
+import Button from '../components/Button.vue'
 export default {
     data() {
         return {
@@ -20,23 +25,47 @@ export default {
     props: {
         route: { type: String },
         title: { type: String },
+        text: { type: String },
+        button: { type: Boolean },
+        buttonText: { type: String },
+        icon: { type: String },
+        iconFab: { type: String },
         date: { type: String },
         src: { type: String },
         alt: { type: String }
-    }
+    },
+    components: { Button }
 }
 </script>
 
 <style lang="less" scoped>
-.card {
-    cursor: pointer;
-    margin-bottom: 40px;
+.list {
+    display: flex;
+    flex-wrap: wrap;
 }
 
-.card img {
+.list-item {
+    display: flex;
+    padding: 0.5em;
+    width: 100%;
+}
+
+.list-content {
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    padding: 1em;
+    width: 100%;
+}
+
+.list-content p {
+    flex: 1 0 auto;
+}
+
+.list-content img {
     border-radius: 4px;
     width: 100%;
-    height: 275px;
+    height: 350px;
     object-fit: cover;
     margin-bottom: 5px;
     transition: transform .2s ease;
@@ -49,13 +78,5 @@ export default {
         -webkit-box-shadow: 0 16px 24px 2px rgb(0 0 0 / 16%), 0 6px 30px 5px rgb(0 0 0 / 12%), 0 8px 10px -7px rgb(0 0 0 / 20%);
         box-shadow: 0 16px 24px 2px rgb(0 0 0 / 16%), 0 6px 30px 5px rgb(0 0 0 / 12%), 0 8px 10px -7px rgb(0 0 0 / 20%);
     }
-}
-
-.title-container {
-    justify-content: space-around;
-}
-
-.title-container p {
-    display: flex;
 }
 </style>
