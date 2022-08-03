@@ -81,6 +81,7 @@ export default {
 @media (max-width: 800px) {
     .list-content {
         align-items: center;
+        text-align: center;
     }
 }
 </style>

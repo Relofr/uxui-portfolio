@@ -67,6 +67,6 @@ export default {
 }
 
 @media (max-width: 800px) {
-    
+    text-align: center;
 }
 </style>
