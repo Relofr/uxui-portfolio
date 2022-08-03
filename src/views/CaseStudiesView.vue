@@ -67,16 +67,6 @@ export default {
 }
 
 @media (max-width: 800px) {
-    .grid2x2 {
-        // display: flex;
-        // flex-direction: column;
-
-        .col {
-            // width: 100%;
-            // margin: 0 0 25px 0;
-            // justify-content: center;
-            // display: flex;
-        }
-    }
+    
 }
 </style>
