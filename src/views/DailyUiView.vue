@@ -59,6 +59,7 @@ export default {
 </script>
 
 <style lang="less">
+
 .grid4x4 img {
     height: 100% !important;
     max-height: 800px !important;
@@ -73,6 +74,10 @@ export default {
     flex-direction: row;
     justify-content: space-between;
     pointer-events: none !important;
+    .list-content {
+        align-items: center;
+        text-align: center;
+    }
 }
 
 .grid4x4>div {

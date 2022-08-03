@@ -6,24 +6,24 @@
         <nav>
             <ul role="nav-list">
                 <li>
-                    <RouterLink to="/">
+                    <router-link to="/">
                         <fa icon="home" size="lg"></fa>Home
-                    </RouterLink>
+                    </router-link>
                 </li>
                 <li>
-                    <RouterLink to="/projects">
+                    <router-link to="/projects">
                         <fa icon="folder" size="lg"></fa>Projects
-                    </RouterLink>
+                    </router-link>
                 </li>
                 <li>
-                    <RouterLink to="/about">
+                    <router-link to="/about">
                         <fa icon="gamepad" size="lg"></fa>About
-                    </RouterLink>
+                    </router-link>
                 </li>
                 <li>
-                    <RouterLink to="/contact">
+                    <router-link to="/contact">
                         <fa icon="comments" size="lg"></fa>Contact
-                    </RouterLink>
+                    </router-link>
                 </li>
             </ul>
         </nav>
@@ -38,7 +38,7 @@ export default {
 }
 </script>
 
-<style scoped>
+<style lang="less" scoped>
 .main-nav {
     display: flex;
     align-items: center;
@@ -85,5 +85,15 @@ export default {
     .main-nav {
         justify-content: center;
     }
+}
+
+.router-link-exact-active,
+.router-link-active {
+    font-weight: 700;
+    color: #7DB2E3 !important;
+}
+
+.main-nav a:hover {
+    color: #7DB2E3;
 }
 </style>
