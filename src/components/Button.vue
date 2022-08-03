@@ -56,7 +56,7 @@ export default {
 }
 </script>
 
-<style>
+<style lang="less">
 .button {
     cursor: pointer;
     display: flex;
@@ -70,6 +70,9 @@ export default {
     flex-direction: row;
     align-items: center;
     width: fit-content;
+    &:hover {
+        background-color: #4F7393;
+    }
 }
 
 .button-text {

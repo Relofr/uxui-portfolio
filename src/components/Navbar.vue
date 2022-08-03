@@ -90,10 +90,10 @@ export default {
 .router-link-exact-active,
 .router-link-active {
     font-weight: 700;
-    color: #7DB2E3 !important;
+    color: #7AAFDE !important;
 }
 
 .main-nav a:hover {
-    color: #7DB2E3;
+    color: #7AAFDE;
 }
 </style>
