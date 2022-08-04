@@ -2,8 +2,8 @@
   --primary-color: #ffffff;
   --secondary-color: #910011;
 
-  --primary-text-color: rgba(0, 0, 0, 87%);
-  --secondary-text-color: #4b5156;
+  --primary-text-color: #1c1d25;
+  --secondary-text-color: #636363;
 
   --primary-background-color: #fff;
   --secondary-background-color: #2a3a4a;
@@ -23,12 +23,14 @@
   --fs-32: 32px;
   --fs-36: 36px;
   --fs-48: 48px;
+  --fs-60: 60px;
   --fs-144: 144px;
 
   --primary-heading: var(--fs-48);
   --secondary-heading: var(--fs-22);
 
-  --primary-font: "Be Vietnam Pro", sans-serif;
+  /* --primary-font: "Be Vietnam Pro", sans-serif; */
+  --primary-font: 'Inter', sans-serif;
   --secondary-font: 'Inter', sans-serif;
 }
 
@@ -40,7 +42,7 @@
 
 body,
 html {
-  font-family: "Be Vietnam Pro", sans-serif;
+  font-family: 'Inter', sans-serif;
   background: #fff;
   color: var(--primary-text-color);
   font-size: var(--fs-22);
@@ -103,6 +105,8 @@ img {
 
 .secondary-text {
   color: var(--secondary-text-color);
+  text-transform: uppercase;
+  font-size: var(--fs-16);
 }
 
 .fw-bold {
@@ -146,6 +150,10 @@ img {
 
 .fs-144 {
   font-size: var(--fs-144);
+}
+
+.fs-60 {
+  font-size: var(--fs-60);
 }
 
 button:disabled {

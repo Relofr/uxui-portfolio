@@ -1,6 +1,6 @@
 <template>
     <div>
-        <p  id="case-studies-title" class="flex primary-heading">Case Studies</p>
+        <p  id="case-studies-title" class="flex primary-heading">Projects</p>
         <div class="grid2x2">
             <div class="box">
                 <Card title="Tracy Aviary" text="UX/UI Case Study, Team Project (Work in progress)" :src="heroTA" route="tracy-aviary" button buttonText="read case study" icon="crow"/>

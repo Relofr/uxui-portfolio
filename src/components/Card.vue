@@ -4,8 +4,8 @@
             <li class="list-item">
                 <div class="list-content">
                     <img :src="src" :alt="alt">
-                    <p class="fw-bold fs-32 primary-text">{{ title }}</p>
-                    <p v-show="text" class="primary-text fs-18">{{ text }}</p>
+                    <p class="fw-bold fs-60 primary-text">{{ title }}</p>
+                    <p v-show="text" class="secondary-text">{{ text }}</p>
                     <Button v-show="button" :text="buttonText" @click="" type="submit" :icon="icon" :iconFab="iconFab"
                         size='lg' isPrimary />
                 </div>
