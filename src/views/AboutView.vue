@@ -7,10 +7,10 @@
             description="I am a strong believer in dynamic and scalable design. Anytime you can reuse components in different ways, it not only speeds up workflow but also keeps consistency throughout the project, which is great for user experience. As an engineer, I have experience collaborating closely with design teams to make sure we keep that in mind."
             descriptionTwo="In my free time, I enjoy photography, bird watching, video games, and taking long walks." />
         <div>
-            <p class="primary-heading">My Design Process</p>
+            <p class="primary-heading">Design Process</p>
             <img src="../assets/images/about/design-process.png" alt="">
         </div>
-        <Skills title="My Skillset" showIcons />
+        <Skills title="Skillset" showIcons />
         <Testimonials />
         <p class="flex code-font">{{ close }}</p>
     </div>
