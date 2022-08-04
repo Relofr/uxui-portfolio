@@ -20,7 +20,7 @@
                 <Card title="UX/UI Portfolio" src="/portfolio/hero-portfolio.png" route="portfolio" />
             </div> -->
         </div>
-        <p class="flex code-font">{{ close }}</p>
+        <p id="case-studies-title" class="flex code-font">{{ close }}</p>
     </div>
 </template>
 

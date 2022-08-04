@@ -1,12 +1,12 @@
 <template>
-    <div  class="overview">
+    <div class="overview">
         <div>
             <span v-show="title" class="primary-heading">{{ title }}</span>
             <p v-show="about">{{ about }}</p>
             <p v-show="description">{{ description }}</p>
             <p v-show="descriptionTwo">{{ descriptionTwo }}</p>
         </div>
-        <div class="even-columns">
+        <div class="even-columns project-info">
             <div class="col">
                 <span v-show="role" class="secondary-heading">
                     Role<p class="fw-regular">{{ role }}</p>
@@ -14,18 +14,18 @@
 
                 <span v-show="date" class="secondary-heading">
                     Date
-                <p class="fw-regular">{{ date }}</p>
+                    <p class="fw-regular">{{ date }}</p>
                 </span>
             </div>
             <div class="col">
                 <span v-show="team" class="secondary-heading">
-                Team
-                <p class="fw-regular">{{ team }}</p>
+                    Team
+                    <p class="fw-regular">{{ team }}</p>
                 </span>
 
                 <span v-show="tools" class="secondary-heading">
                     Tools
-                <p class="fw-regular">{{ tools }}</p>
+                    <p class="fw-regular">{{ tools }}</p>
                 </span>
             </div>
         </div>
@@ -36,7 +36,7 @@
             <span v-show="solution" class="secondary-heading">The Solution
                 <p class="fw-regular">{{ solution }}</p>
             </span>
-            
+
         </div>
     </div>
 </template> 
@@ -95,16 +95,25 @@ export default {
     flex-direction: column;
 }
 
+.overview, .problem-text {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+
+
 @media (max-width: 800px) {
     .even-columns {
         display: flex;
         flex-direction: column;
     }
+
     .even-columns>* {
-            flex: 1;
-            display: flex;
-            justify-content: center;
-            align-items: flex-start;
-        }
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+    }
 }
 </style>
