@@ -1,5 +1,5 @@
 <template>
-    <div >
+    <div>
         <div v-show="src" class="hero-container">
             <img class="hero-image" :src="src">
             <div v-show="sectionTitle" class="section-title primary-heading">{{ sectionTitle }}</div>
@@ -10,7 +10,7 @@
                 <p class="fs-22">{{ contentOne }}</p>
                 <p class="fs-22">{{ contentTwo }}</p>
                 <p class="fs-22">{{ contentThree }}</p>
-                <Button v-show="button" @click="downloadResume()" isPrimary text="resume" iconFab="google-drive"
+                <Button v-show="button" @click="downloadResume" isPrimary text="Resume" iconFab="google-drive"
                     size="lg" />
             </div>
 
@@ -31,7 +31,7 @@ export default {
     methods: {
         downloadResume() {
             window.open("https://drive.google.com/file/d/1r8OXqJwIf0fBbCHYqIz0P9WEDIuXsjRt/view?usp=sharing")
-        }
+        },
     },
     props: {
         src: {
@@ -90,7 +90,6 @@ picture {
 
 .section-container {
     position: relative;
-    margin-bottom: 80px;
 }
 
 

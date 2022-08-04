@@ -78,6 +78,12 @@ img {
 
 /* Utility */
 
+.page-spacer {
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+}
+
 .primary-heading {
   font-size: var(--primary-heading);
   color: var(--primary-text-color);

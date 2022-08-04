@@ -1,18 +1,16 @@
 <template>
     <div>
-        <Transition appear>
+        <div>
             <Section class="about-me-container" isReverse showImage :src2="ProfilePicture" sectionTitle="Kyle Hatch"
                 contentOne="Software Engineer + UX/UI designer at LogMeIn"
                 contentTwo="Passionate about bringing my ideas to life and creating a great user experience." button />
-        </Transition>
+        </div>
         <div :class="{ 'visible': !visible }" class="down-arrow">
             <fa @click="scrollToElement('caseStudies')" icon="fa-angle-down" size="xl" bounce></fa>
         </div>
-        <Transition appear>
-            <div ref="caseStudies">
-                <CaseStudiesView class="case-studies-container" />
-            </div>
-        </Transition>
+        <div ref="caseStudies">
+            <CaseStudiesView class="case-studies-container" />
+        </div>
     </div>
 </template>
 

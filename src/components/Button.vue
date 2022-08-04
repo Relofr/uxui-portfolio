@@ -1,6 +1,6 @@
 <template>
 
-    <button :class="{
+    <button @click="$emit('click')" :class="{
         'button button-primary': isPrimary,
         'button button-secondary': isSecondary,
     
@@ -20,6 +20,9 @@ export default {
         }
     },
     props: {
+        click: {
+            type: String
+        },
         icon: {
             type: String,
             required: false
@@ -66,7 +69,7 @@ export default {
     font-size: var(--fs-18);
     text-transform: uppercase;
     border-radius: 4px;
-    margin-top: 15px;
+    // margin-top: 15px;
     flex-direction: row;
     align-items: center;
     width: fit-content;

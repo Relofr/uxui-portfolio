@@ -1,5 +1,5 @@
 <template>
-    <div class="ta">
+    <div class="page-spacer">
         <Section sectionTitle="Tracy Aviary UX/UI Redesign" :src="heroTA" />
 
         <Overview
