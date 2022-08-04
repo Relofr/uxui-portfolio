@@ -4,6 +4,7 @@
 
   --primary-text-color: #1c1d25;
   --secondary-text-color: #636363;
+  --accent-color: #4F7393;
 
   --primary-background-color: #fff;
   --secondary-background-color: #2a3a4a;
@@ -108,6 +109,10 @@ img {
   color: var(--secondary-text-color);
   text-transform: uppercase;
   font-size: var(--fs-16);
+}
+
+.accent-text {
+  color: var(--accent-color);
 }
 
 .fw-bold {

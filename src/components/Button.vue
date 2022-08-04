@@ -71,7 +71,7 @@ export default {
     align-items: center;
     width: fit-content;
     &:hover {
-        background-color: #4F7393;
+        background-color: var(--accent-color);
     }
 }
 

@@ -202,6 +202,6 @@ label {
 input:focus,
 textarea:focus {
     padding: 12px;
-    border-bottom: 3px solid var(--secondary-color)
+    border-bottom: 3px solid var(--accent-color)
 }
 </style>
