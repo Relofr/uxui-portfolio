@@ -4,10 +4,10 @@
 
   --primary-text-color: #1c1d25;
   --secondary-text-color: #636363;
-  --accent-color: #4F7393;
+  --accent-color: #507494;
 
   --primary-background-color: #fff;
-  --secondary-background-color: #2a3a4a;
+  --secondary-background-color: #1F3547;
 
   --border-color: #2a3a4a;
 
@@ -33,6 +33,7 @@
   /* --primary-font: "Be Vietnam Pro", sans-serif; */
   --primary-font: 'Inter', sans-serif;
   --secondary-font: 'Inter', sans-serif;
+  --code-font: 'Source Code Pro', monospace;
 }
 
 * {
@@ -113,6 +114,11 @@ img {
 
 .accent-text {
   color: var(--accent-color);
+}
+
+.code-font {
+  font-family: var(--code-font);
+  font-size: var(--fs-32);
 }
 
 .fw-bold {

@@ -46,7 +46,6 @@ export default {
 
 .list-item {
     display: flex;
-    padding-bottom: 3.5em;
     width: 100%;
 }
 
@@ -65,6 +64,7 @@ export default {
     width: 100%;
     height: 350px;
     margin-bottom: .5em;
+    margin-top: 1em;
     object-fit: cover;
     transition: transform .2s ease;
 

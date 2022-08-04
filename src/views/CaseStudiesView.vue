@@ -1,6 +1,6 @@
 <template>
     <div>
-        <p  id="case-studies-title" class="flex primary-heading">Projects</p>
+        <p  id="case-studies-title" class="flex code-font">{{ open }}</p>
         <div class="grid2x2">
             <div class="box">
                 <Card title="Tracy Aviary" text="UX/UI Case Study, Team Project (Work in progress)" :src="heroTA" route="tracy-aviary" button buttonText="read case study" icon="crow"/>
@@ -20,6 +20,7 @@
                 <Card title="UX/UI Portfolio" src="/portfolio/hero-portfolio.png" route="portfolio" />
             </div> -->
         </div>
+        <p class="flex code-font">{{ close }}</p>
     </div>
 </template>
 
@@ -34,7 +35,8 @@ export default {
     },
     data() {
         return {
-
+            open: "<projects>",
+            close: "</projects>"
         }
     },
     components: { Card }
@@ -44,26 +46,11 @@ export default {
 <style lang="less" scoped>
 #case-studies-title {
     display: flex;
-    justify-content: center;
+    justify-content: left;
 }
 
-.grid2x2 {
-    // min-height: 100%;
-    // display: flex;
-    // flex-wrap: wrap;
-    // justify-content: space-between;
-}
-
-.grid2x2>div {
-    // display: flex;
-    // flex-basis: calc(50% - 40px);
-    // flex-direction: column;
-}
-
-.grid2x2>div>div {
-    // display: flex;
-    // justify-content: center;
-    // flex-direction: row;
+.box:not(:first-child) {
+    margin-top: 3.5em;
 }
 
 @media (max-width: 800px) {

@@ -1,5 +1,6 @@
 <template>
     <div class="contact-form">
+        <p class="flex code-font">{{ open }}</p>
         <h1 class="primary-heading">Get in contact</h1>
         <form>
             <label for="name">Name</label>
@@ -28,7 +29,7 @@
 
         <!-- <button id="show-modal" @click="emailConfirmation">Show Modal</button> -->
 
-
+        <p class="flex code-font">{{ close }}</p>
         <Modal v-show="showModal" @close="showModal = false">
             <template v-slot:header>Thank you</template>
             <!-- <template v-slot:body><fa icon="fa-solid fa-check"/></template> -->
@@ -53,7 +54,9 @@ export default {
             typing: null,
             isSending: false,
             confirm: false,
-            showModal: false
+            showModal: false,
+            open: "<contact-form>",
+            close: "</contact-form>",
         }
     },
     methods: {
@@ -70,35 +73,6 @@ export default {
                         this.subject = '',
                         this.message = ''
                 }, 1500)
-
-            // function one(callback) {
-            //     setTimeout(function () {
-            //         this.isSending = false;
-            //         this.confirm = false;
-            //         console.log('one')
-            //         callback();
-            //     }, 1000);
-            // }
-
-            // function two(callback) {
-            //     setTimeout(function () {
-            //         this.isSending = true;
-            //         this.confirm = false;
-            //         console.log('two')
-            //         callback();
-            //     }, 1000);
-            // }
-            // function three(callback) {
-            //     setTimeout(function () {
-            //         this.isSending = false;
-            //         this.confirm = true;
-            //         console.log(this.isSending)
-            //         console.log(this.confirm)
-            //         callback();
-            //     }, 1000);
-            // }
-
-            // one(() => two(() => three(() => console.log('Done!'))))
         },
         modalToggle() {
             this.showModal = !this.showModal;
