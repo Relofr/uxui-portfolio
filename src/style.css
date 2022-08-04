@@ -101,6 +101,7 @@ img {
 
 .primary-text {
   color: var(--primary-text-color);
+  font-size: var(--fs-60);
 }
 
 .secondary-text {
@@ -178,5 +179,8 @@ button:disabled {
 @media (max-width: 800px) {
   .primary-heading {
     font-size: var(--fs-36);
+  }
+  .primary-text {
+    font-size: var(--fs-32);
   }
 }

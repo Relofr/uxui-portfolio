@@ -4,7 +4,7 @@
             <li class="list-item">
                 <div class="list-content">
                     <img :src="src" :alt="alt">
-                    <p class="fw-bold fs-60 primary-text">{{ title }}</p>
+                    <p class="fw-bold primary-text">{{ title }}</p>
                     <p v-show="text" class="secondary-text">{{ text }}</p>
                     <Button v-show="button" :text="buttonText" @click="" type="submit" :icon="icon" :iconFab="iconFab"
                         size='lg' isPrimary />
