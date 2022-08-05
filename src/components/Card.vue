@@ -53,6 +53,7 @@ export default {
     display: flex;
     flex-direction: column;
     // gap: 15px;
+    margin: 10px 0;
     width: 100%;
 }
 
@@ -69,7 +70,6 @@ export default {
     width: 100%;
     height: 350px;
     margin-bottom: .5em;
-    margin-top: 1em;
     object-fit: cover;
     transition: transform .2s ease;
 

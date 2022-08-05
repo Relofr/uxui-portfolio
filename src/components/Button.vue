@@ -5,7 +5,7 @@
         'button button-secondary': isSecondary,
     
     }">
-        <span class="button-text">{{ text }}</span>
+        <span class="button-text button-text">{{ text }}</span>
         <fa v-if="icon" :icon="icon" :size="size" :class="animate"></fa>
         <fa v-if="iconFab" :icon="['fab', iconFab]" :size="sizeFab"></fa>
     </button>
@@ -90,5 +90,11 @@ export default {
 .button-secondary {
     background-color: var(--primary-background-color);
     color: var(--primary-color);
+}
+
+@media (max-width: 800px) {
+    .button-text {
+        font-size: var(--fs-16);
+    }
 }
 </style>

@@ -63,7 +63,7 @@ export default {
 <style lang="less">
 .about-me-container {
     display: flex;
-    min-height: calc(100vh - 120px);
+    min-height: calc(100vh - 175px);
     align-content: center;
 }
 
@@ -84,12 +84,21 @@ export default {
 }
 
 .down-arrow {
-    transform: translateY(-50px);
+    transform: translateY(-15px);
     display: flex;
     justify-content: center;
 
     & svg {
         cursor: pointer;
     }
+}
+
+@media (max-width: 385px) {
+  .about-me-container img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 50%;
+  }
 }
 </style>

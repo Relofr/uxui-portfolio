@@ -3,6 +3,9 @@
         <p class="primary-heading testimonials-button">Testimonials <Button @click="openLinkedIn" isPrimary text="View"
                 iconFab="linkedin" size="xl" />
         </p>
+
+        <!-- <div class="badge-base LI-profile-badge" data-locale="en_US" data-size="medium" data-theme="light" data-type="VERTICAL" data-vanity="kyle-hatch" data-version="v1"><a class="badge-base__link LI-simple-link" href="https://www.linkedin.com/in/kyle-hatch?trk=profile-badge"></a></div> -->
+        
         <div v-for="(p, index) in paragraphs" :key="index">
             <p>{{ p.text }}</p>
             <p class="secondary-heading">{{ p.signature }}</p>
@@ -34,7 +37,8 @@ export default {
     },
     methods: {
         openLinkedIn() {
-            window.open("https://www.linkedin.com/in/kyle-hatch/details/recommendations/")
+            // window.open("https://www.linkedin.com/in/kyle-hatch/details/recommendations/")
+            window.open("https://www.linkedin.com/in/kyle-hatch/")
         }
     },
     components: { Button }

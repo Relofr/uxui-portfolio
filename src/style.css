@@ -142,6 +142,7 @@ img {
 .fs-12 {
   font-size: var(--fs-12);
 }
+
 .fs-13 {
   font-size: var(--fs-13);
 }
@@ -197,6 +198,7 @@ button:disabled {
   .primary-heading {
     font-size: var(--fs-32);
   }
+
   .primary-text {
     font-size: var(--fs-32);
   }
