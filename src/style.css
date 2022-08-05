@@ -195,7 +195,7 @@ button:disabled {
 
 @media (max-width: 800px) {
   .primary-heading {
-    font-size: var(--fs-36);
+    font-size: var(--fs-32);
   }
   .primary-text {
     font-size: var(--fs-32);

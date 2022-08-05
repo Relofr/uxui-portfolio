@@ -86,7 +86,7 @@ export default {
 
 .icons-container {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: flex-start;
     flex-wrap: wrap;
     gap: 25px;
     width: 100%;

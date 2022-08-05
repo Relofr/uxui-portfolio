@@ -34,7 +34,7 @@ export default {
     },
     methods: {
         openLinkedIn() {
-            window.open("https://www.linkedin.com/in/kyle-hatch/details/recommendations")
+            window.open("https://www.linkedin.com/in/kyle-hatch/details/recommendations/")
         }
     },
     components: { Button }
