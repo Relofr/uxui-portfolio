@@ -125,6 +125,7 @@ img {
 .code-font {
   font-family: var(--code-font);
   font-size: var(--fs-32);
+  margin: 20px 0;
 }
 
 .fw-bold {

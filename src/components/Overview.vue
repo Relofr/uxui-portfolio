@@ -87,7 +87,7 @@ export default {
 .even-columns {
     display: flex;
     justify-content: space-evenly;
-    gap: 1em;
+    /* gap: 1em; */
 }
 
 .col {
