@@ -84,7 +84,7 @@ export default {
 }
 
 .down-arrow {
-    transform: translateY(-15px);
+    transform: translateY(0);
     display: flex;
     justify-content: center;
 
@@ -93,7 +93,7 @@ export default {
     }
 }
 
-@media (max-width: 385px) {
+@media (max-width: 800px) {
   .about-me-container img {
     width: 300px;
     height: 300px;
