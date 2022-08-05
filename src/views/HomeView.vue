@@ -1,6 +1,6 @@
 <template>
     <div>
-        <div>
+        <div class="page-spacer">
             <Section class="about-me-container" isReverse showImage :src2="ProfilePicture" sectionTitle="Kyle Hatch"
                 contentOne="Software Engineer + UX/UI designer at LogMeIn"
                 contentTwo="Passionate about bringing my ideas to life and creating a great user experience." button />
@@ -94,11 +94,23 @@ export default {
 }
 
 @media (max-width: 800px) {
-  .about-me-container img {
-    width: 300px;
-    height: 300px;
-    object-fit: cover;
-    border-radius: 50%;
-  }
+    .about-me-container img {
+        width: 300px;
+        height: 300px;
+        object-fit: cover;
+        border-radius: 50%;
+    }
+
+    .about-me-container {
+        min-height: calc(100vh - 203px);
+    }
+
+    .down-arrow {
+        transform: translateY(30px);
+        display: flex;
+        justify-content: center;
+        font-size: 18px;
+        margin-bottom: 35px;
+    }
 }
 </style>
