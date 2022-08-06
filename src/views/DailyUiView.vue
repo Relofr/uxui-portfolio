@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div class="page-spacer">
         <Section sectionTitle="DailyUI" :src="heroDailyUI" />
         <div class="grid4x4">
             <div v-for="(key, value) in imageData" :key="key">
