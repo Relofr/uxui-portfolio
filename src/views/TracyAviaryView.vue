@@ -13,19 +13,19 @@
 " />
         <SectionBreak title="UI Analysis & User Research" />
 
-        <Section :src2="taDesktop" showImage sectionTitle="Where to begin"
+        <Section dot :src2="taDesktop" showImage sectionTitle="Where to begin"
             contentOne="At first glance, the site looks properly taken care of." contentTwo="There are some obvious UX/UI changes that need to be made, but without knowing exactly what we needed to fix, we decided to create a survey to find out more." />
 
-        <Section showImage :src2="surveyPie" sectionTitle="Survey Data"
+        <Section dot showImage :src2="surveyPie" sectionTitle="Survey Data"
             contentOne="We created a survey that went over how often they visit the aviary, why they visit, how their experience was, how they purchased tickets, and if they have ever donated." />
 
-        <Section showImage :src2="taWhyVisit" sectionTitle=""
+        <Section dot showImage :src2="taWhyVisit" sectionTitle=""
         contentOne="" contentTwo=""/>
 
-        <Section showImage :src2="taAffinity" sectionTitle="Organizing our data"
+        <Section dot showImage :src2="taAffinity" sectionTitle="Organizing our data"
         contentOne="" contentTwo=""/>
 
-        <Section showImage :src2="prioritizationMatrix" sectionTitle=""
+        <Section dot showImage :src2="prioritizationMatrix" sectionTitle=""
         contentOne="Based on the survey results, I decided to focus on the ticket purchases and donation flow of the website, which ended up needing an update." />
 
         

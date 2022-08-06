@@ -3,15 +3,15 @@
         <p  id="case-studies-title" class="flex code-font">{{ open }}</p>
         <div class="grid2x2">
             <div class="box">
-                <Card title="Tracy Aviary" text="UX/UI Case Study, Team Project (Work in progress)" :src="heroTA" route="tracy-aviary" button buttonText="read case study" icon="crow"/>
+                <Card title="Tracy Aviary" text="UX/UI Case Study, Team Project (Work in progress)" :src="heroTA" route="tracy-aviary" button buttonText="read more" icon="crow"/>
                 <!-- date="July 13th, 2022" -->
             </div>
             <div class="box">
-                <Card title="Daily UI" :src="heroDailyUI" route="daily-ui" text="Designs aimed to help sharpen my skills using daily prompts." button buttonText="View designs" iconFab="figma"/>
+                <Card title="Daily UI" :src="heroDailyUI" route="daily-ui" text="Designs aimed to help sharpen my skills using daily prompts." button buttonText="Read More" iconFab="figma"/>
                 <!-- Designs aimed to help sharpen my skills using daily prompts -->
             </div>
             <div class="box disabled">
-                <Card title="US Agricultural Department" text="UX/UI Case Study, Solo Project (Work in progress)" :src="heroUSDA" route="usda" button buttonText="read case study" icon="carrot" />
+                <Card title="US Agricultural Department" text="UX/UI Case Study, Solo Project (Work in progress)" :src="heroUSDA" route="usda" button buttonText="read more" icon="carrot" />
             </div>
             <!-- <div class="box">
                 <Card title="ReClaim App" src="/reclaim/hero-reclaim.png" route="reclaim" />

@@ -7,9 +7,20 @@
         <div class="even-columns section-container" :class="{ 'reverseColumns': isReverse }">
             <div v-show="contentOne" class="col">
                 <span class="primary-heading">{{ sectionTitle }}</span>
-                <p class="fs-22">{{ contentOne }}</p>
-                <p class="fs-22">{{ contentTwo }}</p>
-                <p class="fs-22">{{ contentThree }}</p>
+                <div>
+                    <div v-show="contentOne" class="text-container">
+                        <div v-show="dot" class="circle"><span></span></div>
+                        <p class="fs-22">{{ contentOne }}</p>
+                    </div>
+                    <div v-show="contentTwo" class="text-container">
+                        <div v-show="dot" class="circle"><span></span></div>
+                        <p class="fs-22">{{ contentTwo }}</p>
+                    </div>
+                    <div v-show="contentThree" class="text-container">
+                        <div v-show="dot" class="circle"><span></span></div>
+                        <p class="fs-22">{{ contentThree }}</p>
+                    </div>
+                </div>
                 <Button v-show="button" @click="downloadResume" isPrimary text="Resume" iconFab="google-drive"
                     size="lg" />
             </div>
@@ -57,6 +68,9 @@ export default {
         },
         contentThree: {
             type: String,
+        },
+        dot: {
+            type: Boolean
         },
         button: {
             type: Boolean,
@@ -135,6 +149,42 @@ picture {
         // align-items: flex-start;
         // text-align: left;
     }
+}
+
+.text-container {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    justify-content: flex-start;
+}
+
+.circle {
+    display: inline-block;
+    border-radius: 50%;
+    min-width: 10px;
+    min-height: 10px;
+    max-width: 10px;
+    max-height: 10px;
+    padding: 5px;
+    background: var(--secondary-background-color);
+    color: white;
+    text-align: center;
+    line-height: 1;
+    box-sizing: content-box;
+    white-space: nowrap;
+}
+
+.circle:before {
+    content: "";
+    display: inline-block;
+    vertical-align: middle;
+    padding-top: 100%;
+    height: 0;
+}
+
+.circle span {
+    display: inline-block;
+    vertical-align: middle;
 }
 
 @media (max-width: 800px) {
