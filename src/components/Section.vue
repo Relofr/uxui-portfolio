@@ -92,6 +92,7 @@ img,
 picture {
     max-width: 100%;
     display: block;
+    border-radius: 5px;
 }
 
 .col {

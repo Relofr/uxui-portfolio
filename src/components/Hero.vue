@@ -1,6 +1,6 @@
 <template>
     <div>
-        <img class="hero-image" :src="`/src/assets/images/` + heroImage">
+        <img class="hero-image" :src="`/src/assets/images/` + heroImage" alt="tracy aviary case study">
     </div>
 </template>
 

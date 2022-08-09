@@ -16,6 +16,7 @@ import Footer from './components/Footer.vue'
 </template>
 
 <style>
+
 .container {
   width: 90%;
   max-width: 1100px;

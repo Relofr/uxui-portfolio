@@ -160,7 +160,7 @@ textarea {
     font-size: var(--fs-18);
     margin-bottom: 15px;
     resize: vertical;
-    background-color: #ecebec;
+    background-color: #fff;
     border-radius: 5px 5px 0px 0px;
     font-family: var(--primary-font);
     width: 100%;
