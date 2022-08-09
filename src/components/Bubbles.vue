@@ -165,4 +165,27 @@ div .dot {
         transform: scale(1.3) translateY(-100px) rotate(360deg);
     }
 }
+
+@media (max-width: 800px) {
+    .bubble-wrapper div {
+        height: 20px;
+        width: 20px;
+        border: 2px solid rgba(255, 255, 255, 0.8);
+        border-radius: 50px;
+        position: absolute;
+        top: 10%;
+        left: 10%;
+        animation: 4s linear infinite;
+    }
+
+    div .dot {
+        height: 4px;
+        width: 4px;
+        border-radius: 50px;
+        background: rgba(255, 255, 255, 0.5);
+        position: absolute;
+        top: 20%;
+        right: 20%;
+    }
+}
 </style>
