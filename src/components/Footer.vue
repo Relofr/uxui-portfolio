@@ -1,6 +1,7 @@
 <template>
     <footer>
         <div class="footer-container">
+            <Bubbles />
             <img class="footer-image" src="../assets/ocean-floor.svg">
             <div class="footer-title">
                 <div class="footer">
@@ -75,6 +76,10 @@
 </template>
 
 <script>
+import Bubbles from '../components/Bubbles.vue';
+export default {
+    components: { Bubbles }
+}
 </script>
 
 <style scoped>

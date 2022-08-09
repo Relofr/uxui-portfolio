@@ -53,6 +53,10 @@ html {
   min-height: 100vh;
 }
 
+body {
+  /* cursor: url(../src/assets/icons/github.png), auto !important; */
+}
+
 #app {
   background-image: url(../src/assets/wave.svg);
   background-size: 100% 100%;

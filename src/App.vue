@@ -6,6 +6,7 @@ import Footer from './components/Footer.vue'
 <template>
   <Navbar />
   <div class="container">
+    <!-- <img class="ocean-top" src="../src/assets/ocean-top.svg" alt=""> -->
     <router-view v-slot="{ Component }">
       <transition name="fade" mode="out-in">
         <component :is="Component"></component>
@@ -16,7 +17,6 @@ import Footer from './components/Footer.vue'
 </template>
 
 <style>
-
 .container {
   width: 90%;
   max-width: 1100px;
@@ -25,6 +25,13 @@ import Footer from './components/Footer.vue'
   flex-direction: column;
   min-height: 100vh;
 }
+
+/* .ocean-top {
+  background-image: url(/src/assets/ocean-top-2.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position-y: -65%;
+} */
 
 main .container {
   flex-grow: 1;
