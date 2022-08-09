@@ -1,6 +1,5 @@
 <template>
     <footer>
-
         <div class="footer-container">
             <img class="footer-image" src="../assets/ocean-floor.svg">
             <div class="footer-title">
@@ -81,6 +80,7 @@
 <style scoped>
 .footer-container {
     position: relative;
+    margin-top: 100px;
 }
 
 .footer-title {
@@ -155,6 +155,7 @@
     .footer-title {
         top: 10%;
     }
+
     .social-icons svg {
         width: 32px;
         height: 32px;
