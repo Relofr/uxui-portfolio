@@ -54,7 +54,7 @@ html {
 }
 
 #app {
-  background-image: url(src/assets/wave.svg);
+  background-image: url(../src/assets/wave.svg);
   background-size: 100% 100%;
   background-repeat: no-repeat;
 }
