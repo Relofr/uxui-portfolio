@@ -6,7 +6,7 @@ import Clouds from './components/Clouds.vue'
 
 <template>
   <Navbar />
-  <Clouds />
+  <!-- <Clouds /> -->
   <div class="container">
     <!-- <img class="ocean-top" src="../src/assets/ocean-top.svg" alt=""> -->
     <router-view v-slot="{ Component }">
