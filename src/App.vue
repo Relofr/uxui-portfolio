@@ -1,10 +1,12 @@
 <script setup>
 import Navbar from './components/Navbar.vue'
 import Footer from './components/Footer.vue'
+import Clouds from './components/Clouds.vue'
 </script>
 
 <template>
   <Navbar />
+  <Clouds />
   <div class="container">
     <!-- <img class="ocean-top" src="../src/assets/ocean-top.svg" alt=""> -->
     <router-view v-slot="{ Component }">
