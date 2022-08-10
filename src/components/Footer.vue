@@ -2,8 +2,8 @@
     <footer>
         <div class="footer-container">
             <Bubbles />
-            <img v-if="!mobileScreen" class="footer-image" src="../assets/ocean-floor-2.svg">
-            <img v-if="mobileScreen" class="footer-image" src="../assets/ocean-floor-mobile.svg">
+            <img v-show="!isMobile" class="footer-image" src="../assets/ocean-floor-2.svg">
+            <img v-show="isMobile" class="footer-image" src="../assets/ocean-floor-mobile.svg">
             <div class="footer-title">
                 <div class="footer">
                     <div class="flex">
@@ -81,16 +81,28 @@ import Bubbles from '../components/Bubbles.vue';
 export default {
     data() {
         return {
-            mobileScreen: false
+            isMobile: false,
+            window: {
+                width: 0
+            }
         }
     },
-    computed: {
-        isMobile() {
-            var mobile = window.innerWidth <= 800;
-            if(mobile) {
-                this.mobileScreen = true
+    created() {
+        window.addEventListener('resize', this.handleResize);
+        this.handleResize();
+    },
+    destroyed() {
+        window.removeEventListener('resize', this.handleResize);
+    },
+    methods: {
+        handleResize() {
+            var windowWidth = this.window.width = window.innerWidth;
+            console.log(windowWidth)
+
+            if (windowWidth >= 800) {
+                this.isMobile = false
             } else {
-                this.mobileScreen = false
+                this.isMobile = true
             }
         }
     },
