@@ -159,6 +159,10 @@ picture {
     justify-content: flex-start;
 }
 
+.text-container:nth-child(2) {
+    margin-bottom: 15px;
+}
+
 .circle {
     display: inline-block;
     border-radius: 50%;
@@ -200,6 +204,10 @@ picture {
         justify-content: center;
         align-items: center;
         text-align: center;
+    }
+
+    .text-container {
+        justify-content: center;
     }
 }
 </style>
