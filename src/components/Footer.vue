@@ -2,7 +2,7 @@
     <footer>
         <div class="footer-container">
             <Bubbles />
-            <img class="footer-image" src="../assets/ocean-floor.svg">
+            <img class="footer-image" src="../assets/ocean-floor-2.svg">
             <div class="footer-title">
                 <div class="footer">
                     <div class="flex">

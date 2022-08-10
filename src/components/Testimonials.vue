@@ -7,7 +7,7 @@
         <!-- <div class="badge-base LI-profile-badge" data-locale="en_US" data-size="medium" data-theme="light" data-type="VERTICAL" data-vanity="kyle-hatch" data-version="v1"><a class="badge-base__link LI-simple-link" href="https://www.linkedin.com/in/kyle-hatch?trk=profile-badge"></a></div> -->
         
         <div v-for="(p, index) in paragraphs" :key="index">
-            <p>{{ p.text }}</p>
+            <p class="fs-18">{{ p.text }}</p>
             <p class="secondary-heading">{{ p.signature }}</p>
             <hr v-if="index != paragraphs.length - 1" class="solid">
         </div>

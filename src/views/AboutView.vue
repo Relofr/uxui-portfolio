@@ -1,6 +1,6 @@
 <template>
     <div>
-        <Section sectionTitle="" :src="aboutMe" />
+        <Section sectionTitle="" />
         <p class="flex code-font">{{ open }}</p>
         <div class="page-spacer">
 

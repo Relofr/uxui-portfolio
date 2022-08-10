@@ -2,7 +2,7 @@
     <div>
         <div class="page-spacer">
             <Section class="about-me-container" isReverse showImage :src2="ProfilePicture" sectionTitle="Kyle Hatch"
-                contentOne="Software Engineer + UX/UI designer at LogMeIn"
+                contentOne="Software Engineer + UX/UI designer"
                 contentTwo="Passionate about bringing my ideas to life and creating a great user experience." button />
         </div>
         <div :class="{ 'visible': !visible }" class="down-arrow">

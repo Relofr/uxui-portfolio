@@ -1,5 +1,5 @@
 <template>
-    <div class="main-nav bg-secondary">
+    <div class="main-nav">
         <router-link to="/">
             <img class="logo" src="../assets/images/about/logo.png" />
         </router-link>
@@ -89,10 +89,10 @@ export default {
 
 .router-link-exact-active,
 .router-link-active {
-    color: #8AC5FA !important;
+    color: var(--secondary-color) !important;
 }
 
 .main-nav a:hover {
-    color: #8AC5FA;
+    color: var(--secondary-color) !important;
 }
 </style>

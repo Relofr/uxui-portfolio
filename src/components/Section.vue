@@ -162,12 +162,12 @@ picture {
 .circle {
     display: inline-block;
     border-radius: 50%;
-    min-width: 10px;
-    min-height: 10px;
-    max-width: 10px;
-    max-height: 10px;
+    min-width: 8px;
+    min-height: 8px;
+    max-width: 8px;
+    max-height: 8px;
     padding: 5px;
-    background: var(--secondary-background-color);
+    background: var(--accent-color);
     color: white;
     text-align: center;
     line-height: 1;

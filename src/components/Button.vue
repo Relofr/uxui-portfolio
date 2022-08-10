@@ -73,8 +73,10 @@ export default {
     flex-direction: row;
     align-items: center;
     width: fit-content;
+    transition-duration: 0.4s;
+
     &:hover {
-        background-color: var(--accent-color);
+        background-color: #6E9CC8;
     }
 }
 
@@ -83,8 +85,8 @@ export default {
 }
 
 .button-primary {
-    background-color: var(--secondary-background-color);
-    color: var(--primary-color);
+    background-color: var(--accent-color);
+    color: var(--secondary-color);
 }
 
 .button-secondary {

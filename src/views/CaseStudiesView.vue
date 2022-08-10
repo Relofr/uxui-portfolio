@@ -10,9 +10,9 @@
                 <Card title="Daily UI" :src="heroDailyUI" route="daily-ui" text="Designs aimed to help sharpen my skills using daily prompts." button buttonText="Read More" iconFab="figma"/>
                 <!-- Designs aimed to help sharpen my skills using daily prompts -->
             </div>
-            <div class="box disabled">
+            <!-- <div class="box disabled">
                 <Card title="US Agricultural Department" text="UX/UI Case Study, Solo Project (Work in progress)" :src="heroUSDA" route="usda" button buttonText="read more" icon="carrot" />
-            </div>
+            </div> -->
             <!-- <div class="box">
                 <Card title="ReClaim App" src="/reclaim/hero-reclaim.png" route="reclaim" />
             </div>
