@@ -1,7 +1,7 @@
 <template>
     <div class="main-nav">
         <router-link to="/">
-            <img class="logo" src="../assets/images/about/logo.png" />
+            <img class="logo" src="../assets/images/about/logo2.svg" />
         </router-link>
         <nav>
             <ul role="nav-list">
@@ -89,10 +89,10 @@ export default {
 
 .router-link-exact-active,
 .router-link-active {
-    color: var(--secondary-color) !important;
+    color: var(--border-color) !important;
 }
 
 .main-nav a:hover {
-    color: var(--secondary-color) !important;
+    color: var(--border-color) !important;
 }
 </style>
