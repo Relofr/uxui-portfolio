@@ -3,7 +3,8 @@
         <router-link to="/">
             <ul>
                 <li>
-                    <img class="logo" src="../assets/images/about/logo2.svg" />
+                    <img class="logo" src="../assets/images/about/logo2.svg" alt="return to home page"
+                        aria-label="return to home page" />
                 </li>
             </ul>
         </router-link>
