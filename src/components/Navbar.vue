@@ -89,6 +89,7 @@ export default {
 
     .main-nav {
         justify-content: center;
+        flex-direction: column;
     }
 }
 
