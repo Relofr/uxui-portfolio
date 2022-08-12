@@ -19,17 +19,17 @@
                             </a>
                         </div>
                         <nav>
-                            <ul role="nav-list">
-                                <li>
+                            <ul role="list">
+                                <li role="listitem">
                                     <RouterLink to="/">Home</RouterLink>
                                 </li>
-                                <li>
+                                <li role="listitem">
                                     <RouterLink to="/projects">Projects</RouterLink>
                                 </li>
-                                <li>
+                                <li role="listitem">
                                     <RouterLink to="/about">About</RouterLink>
                                 </li>
-                                <li>
+                                <li role="listitem">
                                     <RouterLink to="/contact">Contact</RouterLink>
                                 </li>
                             </ul>

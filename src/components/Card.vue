@@ -1,7 +1,7 @@
 <template>
     <router-link :to="`/` + route">
-        <ul class="list">
-            <li class="list-item">
+        <ul role="list" class="list">
+            <li role="listitem" class="list-item">
                 <div class="list-content">
                     <img :src="src" :alt="alt">
                     <p class="fw-bold primary-text">{{ title }}</p>

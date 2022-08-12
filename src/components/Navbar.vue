@@ -1,8 +1,8 @@
 <template>
     <div class="main-nav">
         <router-link to="/">
-            <ul>
-                <li>
+            <ul role="list">
+                <li role="listitem">
                     <img class="logo" src="../assets/images/about/logo2.svg" alt="return to home page"
                         aria-label="return to home page" />
                 </li>
