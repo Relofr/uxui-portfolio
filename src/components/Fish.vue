@@ -142,13 +142,13 @@ export default {
 
 @media (max-width: 800px) {
     .fish {
-        animation: animate-fish-4 8s linear infinite;
+        animation: animate-fish 8s linear infinite;
     }
     .fish-2 {
-        animation: animate-fish-4 10s linear infinite;
+        animation: animate-fish-2 10s linear infinite;
     }
     .fish-3 {
-        animation: animate-fish-4 12s linear infinite;
+        animation: animate-fish-3 12s linear infinite;
     }
     .fish-4 {
         animation: animate-fish-4 14s linear infinite;
