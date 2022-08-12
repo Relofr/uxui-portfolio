@@ -4,7 +4,7 @@
         <div class="page-spacer">
             <Section class="about-me-container" isReverse showImage :src2="ProfilePicture" sectionTitle="Kyle Hatch"
                 contentOne="Software Engineer + UX/UI designer"
-                contentTwo="Passionate about bringing my ideas to life and creating a great user experience." button />
+                contentTwo="Passionate about bringing my ideas to life and creating a great user experience." :alt="`profile picture`" button />
         </div>
         <div :class="{ 'visible': !visible }" class="down-arrow">
             <fa @click="scrollToElement('caseStudies')" icon="fa-angle-down" size="xl" bounce></fa>

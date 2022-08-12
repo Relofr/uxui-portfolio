@@ -26,7 +26,7 @@
             </div>
 
             <div v-show="showImage">
-                <img v-show="src2" class="section-image" :src="src2">
+                <img v-show="src2" class="section-image" :src="src2" :alt="alt">
             </div>
 
         </div>
@@ -49,6 +49,9 @@ export default {
             type: String,
         },
         src2: {
+            type: String,
+        },
+        alt: {
             type: String,
         },
         sectionTitle: {
