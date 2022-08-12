@@ -9,23 +9,23 @@
             </ul>
         </router-link>
         <nav>
-            <ul role="nav-list">
-                <li>
+            <ul role="list">
+                <li role="listitem">
                     <router-link to="/">
                         <fa icon="home" size="lg"></fa>Home
                     </router-link>
                 </li>
-                <li>
+                <li role="listitem">
                     <router-link to="/projects">
                         <fa icon="folder" size="lg"></fa>Projects
                     </router-link>
                 </li>
-                <li>
+                <li role="listitem">
                     <router-link to="/about">
                         <fa icon="gamepad" size="lg"></fa>About
                     </router-link>
                 </li>
-                <li>
+                <li role="listitem">
                     <router-link to="/contact">
                         <fa icon="comments" size="lg"></fa>Contact
                     </router-link>
