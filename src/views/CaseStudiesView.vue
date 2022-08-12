@@ -6,10 +6,16 @@
                 <Card title="Tracy Aviary" text="UX/UI Case Study, Team Project (Work in progress)" :src="heroTA" route="tracy-aviary" button buttonText="read more" icon="crow"/>
                 <!-- date="July 13th, 2022" -->
             </div>
+
+            <!-- <div class="box">
+                <Card title="eSports Tournament Website" text="UX/UI Case Study, Team Project (Work in progress)" :src="heroEsports" route="esports" button buttonText="read more" icon="gamepad"/>
+            </div> -->
+
             <div class="box">
                 <Card title="Daily UI" :src="heroDailyUI" route="daily-ui" text="Designs aimed to help sharpen my skills using daily prompts." button buttonText="Read More" iconFab="figma"/>
                 <!-- Designs aimed to help sharpen my skills using daily prompts -->
             </div>
+
             <!-- <div class="box disabled">
                 <Card title="US Agricultural Department" text="UX/UI Case Study, Solo Project (Work in progress)" :src="heroUSDA" route="usda" button buttonText="read more" icon="carrot" />
             </div> -->
@@ -25,13 +31,15 @@
 </template>
 
 <script>
-import Card from '../components/Card.vue'
-import heroDailyUI from '../assets/images/dailyui/hero-dailyui.png'
-import heroUSDA from '../assets/images/usda/hero-usda.png'
-import heroTA from '../assets/images/tracyaviary/hero-ta.png'
+import Card from '../components/Card.vue';
+import heroDailyUI from '../assets/images/dailyui/hero-dailyui.png';
+import heroUSDA from '../assets/images/usda/hero-usda.png';
+import heroTA from '../assets/images/tracyaviary/hero-ta.png';
+import heroEsports from '../assets/images/esports/esports-hero.png';
+
 export default {
     setup: () => {
-        return { heroDailyUI, heroUSDA, heroTA };
+        return { heroDailyUI, heroUSDA, heroTA, heroEsports };
     },
     data() {
         return {

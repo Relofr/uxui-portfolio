@@ -69,14 +69,13 @@ export default {
     font-size: var(--fs-18);
     text-transform: uppercase;
     border-radius: 4px;
-    // margin-top: 15px;
     flex-direction: row;
     align-items: center;
     width: fit-content;
     transition-duration: 0.4s;
 
     &:hover {
-        background-color: #e7a768;
+        background-color: #e6a768;
     }
 }
 

@@ -6,6 +6,7 @@ import ContactView from './views/ContactView.vue';
 import TracyAviaryView from './views/TracyAviaryView.vue';
 import UsdaView from './views/UsdaView.vue';
 import DailyUiView from './views/DailyUiView.vue';
+import EsportsView from './views/EsportsView.vue';
 
 const routes = [
 	{
@@ -28,6 +29,11 @@ const routes = [
 		path: '/usda',
 		name: 'USDA',
 		component: UsdaView
+	},
+	{
+		path: '/esports',
+		name: 'Esports',
+		component: EsportsView
 	},
 	{
 		path: '/daily-ui',

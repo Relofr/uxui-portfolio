@@ -5,7 +5,7 @@
   /* --primary-text-color: #1c1d25; */
   --primary-text-color: #F0F0F0;
   --secondary-text-color: #c1c1c1;
-  --accent-color: #d88946;
+  --accent-color: #d88846;
 
   --primary-background-color: #F0F0F0;
   --secondary-background-color: #1F3547;
@@ -62,6 +62,7 @@ body {
   background-image: url(../src/assets/wave.svg);
   background-size: 100% 100%;
   background-repeat: no-repeat;
+  z-index: -1;
 }
 
 a {

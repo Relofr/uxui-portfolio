@@ -1,5 +1,6 @@
 <template>
     <div>
+        <Fish />
         <div class="page-spacer">
             <Section class="about-me-container" isReverse showImage :src2="ProfilePicture" sectionTitle="Kyle Hatch"
                 contentOne="Software Engineer + UX/UI designer"
@@ -19,6 +20,7 @@ import CaseStudiesView from './CaseStudiesView.vue';
 import Button from '../components/Button.vue';
 import Section from '../components/Section.vue';
 import ProfilePicture from '../assets/images/about/ProfilePicture.jpg'
+import Fish from '../components/Fish.vue'
 </script>
 
 <script>
@@ -56,7 +58,7 @@ export default {
             // console.log(window.scrollY);
         }
     },
-    components: { Section, Button }
+    components: { Section, Button, Fish }
 }
 </script>
 

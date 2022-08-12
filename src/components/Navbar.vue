@@ -1,7 +1,11 @@
 <template>
     <div class="main-nav">
         <router-link to="/">
-            <img class="logo" src="../assets/images/about/logo2.svg" />
+            <ul>
+                <li>
+                    <img class="logo" src="../assets/images/about/logo2.svg" />
+                </li>
+            </ul>
         </router-link>
         <nav>
             <ul role="nav-list">
@@ -55,6 +59,7 @@ export default {
 .main-nav ul li {
     padding: 0 20px;
     text-align: center;
+    z-index: 999999;
 }
 
 .main-nav svg {

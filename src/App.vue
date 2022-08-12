@@ -1,14 +1,13 @@
 <script setup>
 import Navbar from './components/Navbar.vue'
 import Footer from './components/Footer.vue'
-import Clouds from './components/Clouds.vue'
+// import Fish from './components/Fish.vue'
 </script>
 
 <template>
   <Navbar />
-  <!-- <Clouds /> -->
+  <!-- <Fish /> -->
   <div class="container">
-    <!-- <img class="ocean-top" src="../src/assets/ocean-top.svg" alt=""> -->
     <router-view v-slot="{ Component }">
       <transition name="fade" mode="out-in">
         <component :is="Component"></component>
@@ -26,14 +25,8 @@ import Clouds from './components/Clouds.vue'
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+  z-index: 999;
 }
-
-/* .ocean-top {
-  background-image: url(/src/assets/ocean-top-2.svg);
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position-y: -65%;
-} */
 
 main .container {
   flex-grow: 1;
