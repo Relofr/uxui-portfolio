@@ -6,8 +6,8 @@
                     <img :src="src" :alt="alt">
                     <p class="fw-bold primary-text">{{ title }}</p>
                     <p v-show="text" class="secondary-text">{{ text }}</p>
-                    <Button id="card-button" v-show="button" :text="buttonText" @click="" type="submit" :icon="icon" :iconFab="iconFab"
-                        size='lg' isPrimary />
+                    <Button id="card-button" v-show="button" :text="buttonText" @click="" type="submit" :icon="icon"
+                        :iconFab="iconFab" size='lg' isPrimary />
                 </div>
             </li>
         </ul>

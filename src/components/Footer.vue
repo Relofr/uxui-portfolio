@@ -2,8 +2,8 @@
     <footer>
         <div class="footer-container">
             <Bubbles />
-            <img v-show="!isMobile" class="footer-image" src="../assets/ocean-floor-2.svg">
-            <img v-show="isMobile" class="footer-image" src="../assets/ocean-floor-mobile.svg">
+            <img v-show="!isMobile" class="footer-image" src="../assets/ocean-floor-2.svg" alt="ocean floor footer image" aria-label="ocean floor footer image">
+            <img v-show="isMobile" class="footer-image" src="../assets/ocean-floor-mobile.svg" alt="ocean floor footer image" aria-label="ocean floor footer image">
             <div class="footer-title">
                 <div class="footer">
                     <div class="flex">
