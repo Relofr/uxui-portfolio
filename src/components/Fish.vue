@@ -139,4 +139,19 @@ export default {
     // animation-delay: 1000ms;
     animation-fill-mode: both;
 }
+
+@media (max-width: 800px) {
+    .fish {
+        animation: animate-fish-4 8s linear infinite;
+    }
+    .fish-2 {
+        animation: animate-fish-4 10s linear infinite;
+    }
+    .fish-3 {
+        animation: animate-fish-4 12s linear infinite;
+    }
+    .fish-4 {
+        animation: animate-fish-4 14s linear infinite;
+    }
+}
 </style>
