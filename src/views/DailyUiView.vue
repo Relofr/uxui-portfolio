@@ -16,6 +16,8 @@ import SectionBreak from '../components/SectionBreak.vue';
 import heroDailyUI from '../assets/images/dailyui/hero-dailyui.png';
 import appleWatch from '../assets/images/dailyui/apple-watch.png';
 import lockscreenPixel6 from '../assets/images/dailyui/lockscreen-pixel6.png';
+import esportsDark from '../assets/images/dailyui/esports-dark.png';
+import esportsLight from '../assets/images/dailyui/esports-light.png';
 import calc from '../assets/images/dailyui/calc.png';
 import photoShare2 from '../assets/images/dailyui/photographySPA.png';
 import photoShare from '../assets/images/dailyui/onlinephotoshare.png';
@@ -37,6 +39,8 @@ export default {
                 "Spotify Mobile Design": spotifyMobile,
                 "DGD Landing Page": dgdLandingPage,
                 "DGD Vinyl - Add To Cart": dgdVinyl,
+                "Super Smash Brothers - Light Theme": esportsLight,
+                "Super Smash Brothers - Dark Theme": esportsDark,
                 "PhotoShare Concept - Wireframe": photoShare2,
                 "PhotoShare Concept - High Fidelity": photoShare,
                 "Spotify - Apple Watch": appleWatch,
