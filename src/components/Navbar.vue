@@ -68,7 +68,7 @@ export default {
 }
 
 .main-nav a {
-    color: var(--primary-color);
+    color: var(--secondary-color);
     font-size: var(--fs-16);
 }
 
@@ -76,8 +76,8 @@ export default {
     width: 40px;
     height: 40px;
     border-radius: 50%;
-    background-color: var(--primary-color);
-    color: var(--primary-text-color);
+    background-color: var(--secondary-color);
+    color: var(--secondary-text-color);
     display: flex;
     justify-content: center;
     align-items: center;
