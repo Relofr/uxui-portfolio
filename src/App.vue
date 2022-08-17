@@ -1,12 +1,12 @@
 <script setup>
 import Navbar from './components/Navbar.vue'
 import Footer from './components/Footer.vue'
-// import Fish from './components/Fish.vue'
+import OceanWave from './components/OceanWave.vue'
 </script>
 
 <template>
   <Navbar />
-  <!-- <Fish /> -->
+  <OceanWave />
   <div class="container">
     <router-view v-slot="{ Component }">
       <transition name="fade" mode="out-in">
