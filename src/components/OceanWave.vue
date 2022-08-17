@@ -7,13 +7,14 @@
 
 <style>
 .ocean {
-    height: 100%;
+    height: 100vh;
     width: 100%;
     position: absolute;
     top: 30%;
     left: 0;
     background-color: rgba(44, 92, 103, 1);
     z-index: -1;
+    overflow: revert;
 }
 
 .wave {

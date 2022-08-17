@@ -6,7 +6,7 @@ import OceanWave from './components/OceanWave.vue'
 
 <template>
   <Navbar />
-  <OceanWave />
+  <!-- <OceanWave /> -->
   <div class="container">
     <router-view v-slot="{ Component }">
       <transition name="fade" mode="out-in">
