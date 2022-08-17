@@ -4,20 +4,20 @@
             <img class="hero-image" :src="src">
             <div v-show="sectionTitle" class="section-title primary-heading">{{ sectionTitle }}</div>
         </div>
-        <div class="even-columns section-container" :class="{ 'reverseColumns': isReverse }">
-            <div v-show="contentOne" class="col">
-                <span class="primary-heading">{{ sectionTitle }}</span>
+        <div class="even-columns section-container" :class="{ 'reverseColumns': isReverse, 'isColumn': isColumn }">
+            <div class="col">
+                <span v-show="sectionTitle" class="primary-heading">{{ sectionTitle }}</span>
                 <div>
                     <div v-show="contentOne" class="text-container">
-                        <div v-show="dot" class="circle"><span></span></div>
+                        <div v-show="showDot" class="circle"><span></span></div>
                         <p class="fs-22">{{ contentOne }}</p>
                     </div>
                     <div v-show="contentTwo" class="text-container">
-                        <div v-show="dot" class="circle"><span></span></div>
+                        <div v-show="showDot" class="circle"><span></span></div>
                         <p class="fs-22">{{ contentTwo }}</p>
                     </div>
                     <div v-show="contentThree" class="text-container">
-                        <div v-show="dot" class="circle"><span></span></div>
+                        <div v-show="showDot" class="circle"><span></span></div>
                         <p class="fs-22">{{ contentThree }}</p>
                     </div>
                 </div>
@@ -72,7 +72,7 @@ export default {
         contentThree: {
             type: String,
         },
-        dot: {
+        showDot: {
             type: Boolean
         },
         button: {
@@ -85,6 +85,9 @@ export default {
         isReverse: {
             type: Boolean
         },
+        isColumn: {
+            type: Boolean
+        }
     },
     components: { Button }
 }
@@ -153,6 +156,11 @@ picture {
         // align-items: flex-start;
         // text-align: left;
     }
+}
+
+.isColumn {
+    flex-direction: column;
+    align-items: flex-start;
 }
 
 .text-container {
