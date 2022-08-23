@@ -48,9 +48,18 @@ to use tournament website for all types of gamers" />
             contentOne="We focused our user testing on refining the tournament cards. This included the design of the cards, placement of buttons, and the information included on the cards" />
         <Section isColumn showImage :src2="esportsAB2" sectionTitle="" contentOne="We also focued on refining our nav and drop-down menus. We wanted to further simplfy the process of finding games and tournaments. 
 The Leaderboards section was added to give gamers more reasons to use our services and compete" />
-        <Section showDot links showImage isColumn :src2="esportsHifi" sectionTitle="High-Fidelity" contentOne="high-fidelity designs showing our homepage, current tournaments page, and the light/dark mode along with the mobile version of the app" contentTwo="I also built out this design in code, and hosted it online. While programming this website I kept Responsive Web design in mind, so it's accessible on mobile, tablet, and desktop" linkOne="https://github.com/Relofr/esports-vite" linkOneText="Github" iconFab="github"  linkTwo="https://zesty-sunburst-7adc10.netlify.app/" linkTwoText="MegaBattles" icon2="up-right-from-square" sizeFab="lg" size2="lg"/>
-        <Section showImage isColumn :src2="esportsAllDevices" sectionTitle="" contentOne="" />
-        <!-- <Section showImage isColumn :src2="esportsGif" sectionTitle="" contentOne="" /> -->
+        <Section showDot links showImage isColumn :src2="esportsHifi" sectionTitle="High-Fidelity"
+            contentOne="high-fidelity designs showing our homepage, current tournaments page, and the light/dark mode along with the mobile version of the app"
+            contentTwo="I also built out this design in code, and hosted it online. While programming this website I kept Responsive Web design in mind, so it's accessible on mobile, tablet, and desktop"
+            linkOne="https://github.com/Relofr/esports-vite" linkOneText="Github" iconFab="github"
+            linkTwo="https://zesty-sunburst-7adc10.netlify.app/" linkTwoText="MegaBattles" icon2="up-right-from-square"
+            sizeFab="lg" size2="lg" />
+        <!-- <Section showImage isColumn :src2="esportsAllDevices" sectionTitle="" contentOne="" /> -->
+
+        <div class="even-columns centered">
+            <div><img id="esports-gif" :src="esportsGif" alt="megabattles gif"></div>
+            <div><img :src="esportsAllDevices" alt="megabattles all devices"></div>
+        </div>
 
         <SectionBreak title="Final Thoughts" />
         <Section isColumn showDot showImage sectionTitle="Future Iterations"
@@ -60,8 +69,7 @@ The Leaderboards section was added to give gamers more reasons to use our servic
 
         <Section isColumn showDot showImage sectionTitle="What I learned"
             contentOne="There is a large market for this type of website"
-            contentTwo="Most gamers look for certain items to build trust with a website"
-            contentThree="" />
+            contentTwo="Most gamers look for certain items to build trust with a website" contentThree="" />
 
     </div>
 </template>
@@ -78,7 +86,7 @@ import Group from '../assets/images/esports/group.jpg';
 import esportsPersona from '../assets/images/esports/esports-persona.png';
 import esportsHifi from '../assets/images/esports/esports-hifi.png';
 import esportsLowfi from '../assets/images/esports/esports-lowfi.png';
-import esportsGif from '../assets/images/esports/esports-gif.png';
+import esportsGif from '../assets/images/esports/esports-gif.gif';
 import esportsMacbook from '../assets/images/esports/esports-macbook.png';
 import esportsAllDevices from '../assets/images/esports/esports-alldevices.png';
 import esportsAB from '../assets/images/esports/esports-ab.png';
@@ -105,4 +113,14 @@ export default {
 </script>
 
 <style>
+#esports-gif {
+    border-radius: 12%;
+    max-width: 50%;
+    height: auto;
+    background-color: transparent;
+}
+
+.centered {
+    align-items: center;
+}
 </style>
