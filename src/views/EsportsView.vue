@@ -13,7 +13,7 @@ to use tournament website for all types of gamers" />
 
         <Section sectionTitle="Indusrty Analysis"
             contentOne="The gaming industry is ever-booming, and more people than ever are intrested in exploring Esports"
-            contentTwo="...it’s estimated that the number of those who play games via PC, consoles, tablets, and smartphones will surpass 3 billion this year and amount to 3.32 billion by 2024 - Marketer, Newzoo" />
+            contentTwo="...it's estimated that the number of those who play games via PC, consoles, tablets, and smartphones will surpass 3 billion this year and amount to 3.32 billion by 2024 - Marketer, Newzoo" />
 
         <Section showDot showImage sectionTitle="Research Data"
             contentOne="I started out exploring other websites that offer similar services to find out what users liked and disliked about the platform, and what they wished was available. I conducted a survey, grouped & sorted the data, and prioritized tasks that would be the most impactful"
@@ -23,9 +23,9 @@ to use tournament website for all types of gamers" />
         <Section showImage :src2="survey3" />
         <Section showImage :src2="survey4" />
 
-        <Section showDot showImage :src2="Gather" sectionTitle="Sorting our data" contentOne="content" />
-        <Section showDot showImage :src2="Group" sectionTitle="Group" contentOne="content" />
-        <Section showDot showImage :src2="Evaluate" sectionTitle="Evaluate" contentOne="content" />
+        <Section showDot showImage :src2="Gather" sectionTitle="Sorting our data" contentOne="" />
+        <Section showDot showImage :src2="Group" sectionTitle="Group" contentOne="" />
+        <Section showDot showImage :src2="Evaluate" sectionTitle="Evaluate" contentOne="" />
 
         <Section showImage isColumn :src2="userInsight" sectionTitle="User Insight"
             contentOne="After gathering quantitative results from our survey, we interviewed a mixed bag of gamers, some former and current Esports players. They provided further insights about their opinions on Esports and on competetive gaming" />
@@ -38,17 +38,17 @@ to use tournament website for all types of gamers" />
             contentOne="Tyler wants to register for a local Super Smash Brothers tournament. He would prefer a tournament with a prize pool and wonders if there are any available this month"
             contentTwo="After gathering our research and learning more about our users, we then put together and journey map of a typical user’s experience from the moment they come on our website to when they register for a tournament. This was a great way to walk in the users’ shoes and empathize with thier emotional states during their journey" />
 
-        <Section showImage isColumn :src2="userFlow" sectionTitle="User Flow" contentOne="content" />
+        <Section showImage isColumn :src2="userFlow" sectionTitle="User Flow" contentOne="" />
 
         <SectionBreak title="Prototyping" />
-        <Section showImage :src2="esportsLowfi" sectionTitle="Low-Fidelity" contentOne="content" />
+        <Section showImage :src2="esportsLowfi" sectionTitle="Low-Fidelity" contentOne="" />
 
         <SectionBreak title="Testing" />
         <Section isColumn showImage :src2="esportsAB" sectionTitle="A/B Tests"
             contentOne="We focused our user testing on refining the tournament cards. This included the design of the cards, placement of buttons, and the information included on the cards" />
         <Section isColumn showImage :src2="esportsAB2" sectionTitle="" contentOne="We also focued on refining our nav and drop-down menus. We wanted to further simplfy the process of finding games and tournaments. 
 The Leaderboards section was added to give gamers more reasons to use our services and compete" />
-        <Section showDot links showImage isColumn :src2="esportsHifi" sectionTitle="High-Fidelity" contentOne="high-fidelity designs showing our homepage, current tournaments page, and the light/dark mode along with the mobile version of the app" contentTwo="I also built out this design in code, and hosted it online. While programming this website I kept Responsive Web design in mind, so it's accessible on mobile, tablet, and desktop" linkOne="https://github.com/Relofr/esports-vite" linkOneText="Github" iconFab="github"  linkTwo="https://zesty-sunburst-7adc10.netlify.app/" linkTwoText="Megabattles website" icon2="up-right-from-square" sizeFab="lg" size2="lg"/>
+        <Section showDot links showImage isColumn :src2="esportsHifi" sectionTitle="High-Fidelity" contentOne="high-fidelity designs showing our homepage, current tournaments page, and the light/dark mode along with the mobile version of the app" contentTwo="I also built out this design in code, and hosted it online. While programming this website I kept Responsive Web design in mind, so it's accessible on mobile, tablet, and desktop" linkOne="https://github.com/Relofr/esports-vite" linkOneText="Github" iconFab="github"  linkTwo="https://zesty-sunburst-7adc10.netlify.app/" linkTwoText="MegaBattles" icon2="up-right-from-square" sizeFab="lg" size2="lg"/>
         <Section showImage isColumn :src2="esportsAllDevices" sectionTitle="" contentOne="" />
         <!-- <Section showImage isColumn :src2="esportsGif" sectionTitle="" contentOne="" /> -->
 
@@ -61,7 +61,7 @@ The Leaderboards section was added to give gamers more reasons to use our servic
         <Section isColumn showDot showImage sectionTitle="What I learned"
             contentOne="There is a large market for this type of website"
             contentTwo="Most gamers look for certain items to build trust with a website"
-            contentThree="Make mistakes often and early and learn from those" />
+            contentThree="" />
 
     </div>
 </template>
