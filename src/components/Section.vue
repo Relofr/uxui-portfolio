@@ -2,11 +2,11 @@
     <div>
         <div v-show="src" class="hero-container">
             <img class="hero-image" :src="src">
-            <div v-show="sectionTitle" class="section-title primary-heading">{{ sectionTitle }}</div>
+            <div v-show="heroTitle" class="hero-title primary-heading">{{ heroTitle }}</div>
         </div>
         <div class="even-columns section-container" :class="{ 'reverseColumns': isReverse, 'isColumn': isColumn }">
             <div class="col">
-                <span v-show="sectionTitle" class="primary-heading">{{ sectionTitle }}</span>
+                <span v-show="sectionTitle" class="primary-heading section-title">{{ sectionTitle }}</span>
                 <div>
                     <div v-show="contentOne" class="text-container">
                         <div v-show="showDot" class="circle"><span></span></div>
@@ -19,6 +19,21 @@
                     <div v-show="contentThree" class="text-container">
                         <div v-show="showDot" class="circle"><span></span></div>
                         <p class="fs-22">{{ contentThree }}</p>
+                    </div>
+                    <div v-show="contentFour" class="text-container">
+                        <div v-show="showDot" class="circle"><span></span></div>
+                        <p class="fs-22">{{ contentFour }}</p>
+                    </div>
+                    <div v-show="links" class="text-container links">
+                        <div v-show="showDot" class="circle"><span></span></div>
+                        <a id="links" :href="linkOne" target="_blank">
+                            <fa v-if="icon" :icon="icon" :size="size"></fa>
+                            <fa v-if="iconFab" :icon="['fab', iconFab]" :size="sizeFab"></fa>{{ linkOneText }}
+                        </a>
+                        <a id="links" :href="linkTwo" target="_blank">
+                            <fa v-if="icon2" :icon="icon2" :size="size2"></fa>
+                            <fa v-if="iconFab2" :icon="['fab', iconFab2]" :size="sizeFab2"></fa>{{ linkTwoText }}
+                        </a>
                     </div>
                 </div>
                 <Button v-show="button" @click="downloadResume" isPrimary text="Resume" iconFab="google-drive"
@@ -46,41 +61,85 @@ export default {
     },
     props: {
         src: {
-            type: String,
+            type: String
         },
         src2: {
-            type: String,
+            type: String
         },
         alt: {
-            type: String,
+            type: String
         },
         sectionTitle: {
-            type: String,
+            type: String
+        },
+        heroTitle: {
+            type: String
         },
         skillsTitle: {
-            type: String,
+            type: String
         },
         sectionTitle: {
             type: String
         },
         contentOne: {
-            type: String,
+            type: String
         },
         contentTwo: {
-            type: String,
+            type: String
         },
         contentThree: {
-            type: String,
+            type: String
+        },
+        contentFour: {
+            type: String
+        },
+        links: {
+            type: Boolean
+        },
+        linkOne: {
+            type: String
+        },
+        linkTwo: {
+            type: String
+        },
+        linkOneText: {
+            type: String
+        },
+        linkTwoText: {
+            type: String
+        },
+        icon: {
+            type: String
+        },
+        iconFab: {
+            type: String
+        },
+        size: {
+            type: String
+        },
+        sizeFab: {
+            type: String
+        },
+        icon2: {
+            type: String
+        },
+        iconFab2: {
+            type: String
+        },
+        size2: {
+            type: String
+        },
+        sizeFab2: {
+            type: String
         },
         showDot: {
             type: Boolean
         },
         button: {
-            type: Boolean,
-            required: false
+            type: Boolean
         },
         showImage: {
-            type: Boolean,
+            type: Boolean
         },
         isReverse: {
             type: Boolean
@@ -114,7 +173,7 @@ picture {
 }
 
 
-.section-title {
+.hero-title {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -124,6 +183,10 @@ picture {
     background-color: rgba(0, 0, 0, .60);
     border-radius: 2px;
     color: var(--primary-color);
+}
+
+.section-title {
+    padding-top: 25px;
 }
 
 .hero-image {
@@ -201,6 +264,18 @@ picture {
 .circle span {
     display: inline-block;
     vertical-align: middle;
+}
+
+.links svg,
+a {
+    padding-right: 10px;
+    color: white;
+    display: flex;
+    align-items: center;
+}
+
+.links a:hover {
+    // color: var(--accent-color);
 }
 
 @media (max-width: 800px) {

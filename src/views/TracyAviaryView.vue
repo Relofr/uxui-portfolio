@@ -1,6 +1,6 @@
 <template>
     <div class="page-spacer white-bg">
-        <Section sectionTitle="Tracy Aviary UX/UI Redesign" :src="heroTA" />
+        <Section heroTitle="Tracy Aviary" sectionTitle="UX/UI Redesign" :src="heroTA" />
 
         <Overview 
             title="Project Overview"
@@ -106,7 +106,7 @@
             isColumn 
             :src2="prioritizationMatrix" 
             sectionTitle="Feature Prioritization Matrix"
-            contentOne="My team and I sorted through our data from a Like/Wish/What If scenario and put it into a Feature Prioritization Matrix. Based on the data, we saw that purchasing tickets online, and donating was where our users had the most struggle, and since it's a big part of the non-profit, we decided to tackle those things first." 
+            contentOne="My team and I sorted through our data from our 'Like/Wish/What-If' scenario and put it into a Feature Prioritization Matrix. Based on the data, we saw that purchasing tickets online, and donating was where our users had the most struggle, and since it's a big part of the non-profit, we decided to tackle those things first."
         />
 
         <SectionBreak title="Wireframes" />

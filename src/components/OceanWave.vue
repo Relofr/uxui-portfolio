@@ -1,7 +1,12 @@
 <template>
     <div class="ocean">
-        <div class="wave"></div>
-        <div class="wave"></div>
+        <svg class="wave" viewBox="0" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g clip-path="url(#clip0_468_56)">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M1600 121C1289 121 1190.1 -0.250102 789 -0.000102214C389 -0.000102214 289 121 0 121V198H1600C1600 198 1600 150 1600 121Z"
+                    fill="#2C5C67" />
+            </g>
+        </svg>
     </div>
 </template>
 
@@ -10,40 +15,36 @@
     height: 100vh;
     width: 100%;
     position: absolute;
-    top: 30%;
+    top: 0;
     left: 0;
-    background-color: rgba(44, 92, 103, 1);
     z-index: -1;
-    overflow: revert;
 }
 
 .wave {
-    background: url(../assets/wave2.svg) repeat-x;
+    /* background: url(/src/assets/wave2.svg) repeat-x; */
     position: absolute;
-    top: -197px;
-    width: 6400px;
-    height: 198px;
-    animation: wave 12s cubic-bezier(0.36, 0.45, 0.63, 0.53) infinite;
-    transform: translate3d(0, 0, 0);
-}
-
-.wave:nth-of-type(2) {
-    top: -175px;
-    animation: wave 12s cubic-bezier(0.36, 0.45, 0.63, 0.53) -.125s infinite, swell 10s ease -1.25s infinite;
-    opacity: 1;
+    width: 100%;
+    height: 100%;
+    border: 2px solid red;
+    animation: wave 12s linear infinite;
+    z-index: 999999;
 }
 
 @keyframes wave {
     0% {
-        margin-left: 0;
+        transform: translateX(0);
+    }
+
+    50% {
+        transform: translateX(-25%);
     }
 
     100% {
-        margin-left: -1600px;
+        transform: translateX(-50%);
     }
 }
 
-@keyframes swell {
+/* @keyframes swell {
 
     0%,
     100% {
@@ -53,5 +54,5 @@
     50% {
         transform: translate3d(0, 5px, 0);
     }
-}
+} */
 </style>

@@ -1,6 +1,6 @@
 <template>
     <div class="page-spacer">
-        <Section sectionTitle="DailyUI" :src="heroDailyUI" />
+        <Section heroTitle="DailyUI" :src="heroDailyUI" />
         <div class="grid4x4">
             <div v-for="(key, value) in imageData" :key="key">
                 <Card :text="value" :src="key" :alt="`dailyui`" />

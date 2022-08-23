@@ -7,9 +7,9 @@
                 <!-- date="July 13th, 2022" -->
             </div>
 
-            <!-- <div class="box">
-                <Card title="eSports Tournament Website" text="UX/UI Case Study, Team Project (Work in progress)" :src="heroEsports" route="esports" button buttonText="read more" icon="gamepad" :alt="`esports tournament website`"/>
-            </div> -->
+            <div class="box">
+                <Card title="MegaBattles - Tournament Website" text="UX/UI Case Study, Team Project (Work in progress)" :src="heroEsports" route="esports" button buttonText="read more" icon="gamepad" :alt="`esports tournament website`"/>
+            </div>
 
             <div class="box">
                 <Card title="Daily UI" :src="heroDailyUI" route="daily-ui" text="Designs aimed to help sharpen my skills using daily prompts." button buttonText="Read More" iconFab="figma" :alt="`dailyui`"/>
