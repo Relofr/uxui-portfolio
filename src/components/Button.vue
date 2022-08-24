@@ -75,7 +75,7 @@ export default {
     transition-duration: 0.4s;
 
     &:hover {
-        background-color: #c63535;
+        background-color: #ff9fa6;
     }
 }
 
