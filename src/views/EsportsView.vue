@@ -63,7 +63,7 @@ The Leaderboards section was added to give gamers more reasons to use our servic
 
         <SectionBreak title="Final Thoughts" />
         <Section isColumn showDot showImage sectionTitle="Future Iterations"
-            contentOne="Add a larger selection of games" contentTwo="Include a ranking system with the leaderboard"
+            contentOne="Add a larger selection of games, " contentTwo="Include a ranking system with the leaderboard"
             contentThree="Create 3 of your OWN tournaments and invite friends for free"
             contentFour="Premium features for paying members, such as unlimted tournament creation" />
 
