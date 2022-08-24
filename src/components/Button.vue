@@ -85,7 +85,7 @@ export default {
 
 .button-primary {
     background-color: var(--accent-color);
-    color: var(--primary-color);
+    color: var(--secondary-color);
 }
 
 .button-secondary {
