@@ -5,7 +5,7 @@
   /* --primary-text-color: #1c1d25; */
   --primary-text-color: #F0F0F0;
   --secondary-text-color: #c1c1c1;
-  --accent-color: #d88846;
+  --accent-color: #A12727;
 
   --primary-background-color: #F0F0F0;
   --secondary-background-color: #1F3547;
@@ -47,7 +47,7 @@ body,
 html {
   font-family: 'Inter', sans-serif;
   /* background: #fff; */
-  color: var(--primary-text-color);
+  color: var(--secondary-color);
   font-size: var(--fs-22);
   line-height: 1.5;
   font-weight: var(--fw-regular);
@@ -99,7 +99,7 @@ img {
 
 .primary-heading {
   font-size: var(--primary-heading);
-  color: var(--primary-text-color);
+  color: var(--secondary-color);
   font-weight: var(--fw-bold);
   font-family: var(--secondary-font);
   margin-bottom: 15px;
@@ -121,12 +121,12 @@ img {
 }
 
 .primary-text {
-  color: var(--primary-text-color);
+  color: var(--secondary-color);
   font-size: var(--fs-60);
 }
 
 .secondary-text {
-  color: var(--secondary-text-color);
+  color: var(--secondary-color);
   text-transform: uppercase;
   font-size: var(--fs-16);
 }

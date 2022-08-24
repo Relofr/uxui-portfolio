@@ -75,7 +75,7 @@ export default {
     transition-duration: 0.4s;
 
     &:hover {
-        background-color: #e6a768;
+        background-color: #c63535;
     }
 }
 
@@ -85,7 +85,7 @@ export default {
 
 .button-primary {
     background-color: var(--accent-color);
-    color: var(--secondary-color);
+    color: var(--primary-color);
 }
 
 .button-secondary {
