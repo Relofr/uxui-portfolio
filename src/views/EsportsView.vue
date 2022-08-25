@@ -1,6 +1,6 @@
 <template>
     <div class="page-spacer">
-        <Section heroTitle="MEGABATTLES" sectionTitle="Making gaming easier" :src="heroEsports" />
+        <Section heroTitle="" sectionTitle="Making gaming easier" :src="heroEsports" />
         <Overview title="Project Overview" about="Gamers are frustrated by attempting to navigate & find tournaments"
             description="Our goal was to focus on the user path for both donations and daily admissions. In addition, we wanted to emphasize across the site that yearly memberships come with great benefits and should be considered."
             role="UX/UI Designer" date="August 24th, 2022" team="Kyle Hatch, Stetson Strokes, Christian Weidle"
@@ -81,7 +81,7 @@ import Overview from '../components/Overview.vue';
 
 import userInsight from '../assets/images/esports/esports-userinsight.png'
 import userFlow from '../assets/images/esports/esports-userflow.png'
-import heroEsports from '../assets/images/esports/esports-hero.png';
+import heroEsports from '../assets/images/esports/esports-hero.jpeg';
 import Group from '../assets/images/esports/group.jpg';
 import esportsPersona from '../assets/images/esports/esports-persona.png';
 import esportsHifi from '../assets/images/esports/esports-hifi.png';

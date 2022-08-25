@@ -35,7 +35,7 @@ import Card from '../components/Card.vue';
 import heroDailyUI from '../assets/images/dailyui/hero-dailyui.png';
 import heroUSDA from '../assets/images/usda/hero-usda.png';
 import heroTA from '../assets/images/tracyaviary/hero-ta.png';
-import heroEsports from '../assets/images/esports/esports-hero.png';
+import heroEsports from '../assets/images/esports/esports-hero.jpeg';
 
 export default {
     setup: () => {
