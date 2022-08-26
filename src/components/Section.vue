@@ -7,7 +7,7 @@
         <div class="even-columns section-container" :class="{ 'reverseColumns': isReverse, 'isColumn': isColumn }">
             <div class="col">
                 <span v-show="sectionTitle" class="primary-heading section-title">{{ sectionTitle }}</span>
-                <div>
+                <div class="test">
                     <div v-show="contentOne" class="text-container">
                         <div v-show="showDot" class="circle"><span></span></div>
                         <p class="fs-22">{{ contentOne }}</p>
@@ -233,8 +233,8 @@ picture {
     justify-content: flex-start;
 }
 
-.text-container:nth-child(2) {
-    margin-bottom: 15px;
+.test {
+    margin-bottom: 25px;
 }
 
 .circle {

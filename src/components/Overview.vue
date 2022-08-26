@@ -9,7 +9,7 @@
         <div class="even-columns project-info">
             <div class="col">
                 <span v-show="role" class="secondary-heading">
-                    Role<p class="fw-regular">{{ role }}</p>
+                    Role<p class="fw-regular primary-font">{{ role }}</p>
                 </span>
 
                 <span v-show="date" class="secondary-heading">
