@@ -102,7 +102,7 @@ export default {
 }
 
 .fish {
-    fill: #3e887a;
+    fill: #2e6a8c;
     height: auto;
     position: absolute;
     top: 35%;
