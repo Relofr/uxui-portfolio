@@ -105,7 +105,7 @@ export default {
     fill: #3e887a;
     height: auto;
     position: absolute;
-    top: 50%;
+    top: 35%;
     animation: animate-fish 16s linear infinite;
     animation-fill-mode: both;
 }
@@ -114,7 +114,7 @@ export default {
     fill: #17343b;
     height: auto;
     position: absolute;
-    top: 30%;
+    top: 15%;
     animation: animate-fish-2 20s linear infinite;
     // animation-delay: 1000ms;
     animation-fill-mode: both;

@@ -1,6 +1,6 @@
 <template>
     <div class="page-spacer">
-        <Section heroTitle="" sectionTitle="Making gaming easier" :src="heroEsports" />
+        <Section heroTitle="" sectionTitle="MegaBattles - Making gaming easier" :src="heroEsports" />
         <Overview title="Project Overview" about="Gamers are frustrated by attempting to navigate & find tournaments"
             description="Our goal was to focus on the user path for both donations and daily admissions. In addition, we wanted to emphasize across the site that yearly memberships come with great benefits and should be considered."
             role="UX/UI Designer" date="August 24th, 2022" team="Kyle Hatch, Stetson Strokes, Christian Weidle"
