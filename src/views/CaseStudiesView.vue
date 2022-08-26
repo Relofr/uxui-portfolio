@@ -2,18 +2,19 @@
     <div>
         <p  id="case-studies-title" class="flex code-font">{{ open }}</p>
         <div class="grid2x2">
-            <div class="box">
-                <Card title="Tracy Aviary" text="UX/UI Case Study, Team Project (Work in progress)" :src="heroTA" route="tracy-aviary" button buttonText="read more" icon="crow" :alt="`tracy aviary`"/>
-                <!-- date="July 13th, 2022" -->
-            </div>
 
             <div class="box">
-                <Card title="MegaBattles - Tournament Website" text="UX/UI Case Study, Team Project (Work in progress)" :src="heroEsports" route="esports" button buttonText="read more" icon="gamepad" :alt="`esports tournament website`"/>
+                <Card title="MegaBattles - Tournament Website" text="UX/UI Case Study, Team Project (Work in progress)" :src="heroEsports" route="megabattles" button buttonText="read more" icon="gamepad" :alt="`esports tournament website`"/>
             </div>
 
             <div class="box">
                 <Card title="Daily UI" :src="heroDailyUI" route="daily-ui" text="Designs aimed to help sharpen my skills using daily prompts." button buttonText="Read More" iconFab="figma" :alt="`dailyui`"/>
                 <!-- Designs aimed to help sharpen my skills using daily prompts -->
+            </div>
+
+            <div class="box">
+                <Card title="Tracy Aviary" text="UX/UI Case Study, Team Project (Work in progress)" :src="heroTA" route="tracy-aviary" button buttonText="read more" icon="crow" :alt="`tracy aviary`"/>
+                <!-- date="July 13th, 2022" -->
             </div>
 
             <!-- <div class="box disabled">

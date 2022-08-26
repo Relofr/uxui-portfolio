@@ -31,7 +31,7 @@ const routes = [
 		component: UsdaView
 	},
 	{
-		path: '/esports',
+		path: '/megabattles',
 		name: 'Esports',
 		component: EsportsView
 	},
