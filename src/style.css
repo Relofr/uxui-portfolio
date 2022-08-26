@@ -47,7 +47,7 @@ body,
 html {
   font-family: 'Inter', sans-serif;
   /* background: #fff; */
-  color: var(--secondary-color);
+  color: var(--primary-color);
   font-size: var(--fs-22);
   line-height: 1.5;
   font-weight: var(--fw-regular);
@@ -99,7 +99,7 @@ img {
 
 .primary-heading {
   font-size: var(--primary-heading);
-  color: var(--secondary-color);
+  color: var(--primary-color);
   font-weight: var(--fw-bold);
   font-family: var(--secondary-font);
   margin-bottom: 15px;
@@ -121,12 +121,12 @@ img {
 }
 
 .primary-text {
-  color: var(--secondary-color);
+  color: var(--primary-color);
   font-size: var(--fs-60);
 }
 
 .secondary-text {
-  color: var(--secondary-color);
+  color: var(--primary-color);
   text-transform: uppercase;
   font-size: var(--fs-16);
 }

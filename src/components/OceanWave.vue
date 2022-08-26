@@ -17,7 +17,7 @@
     position: absolute;
     top: 0;
     left: 0;
-    z-index: -1;
+    /* z-index: -1; */
 }
 
 .wave {
@@ -27,7 +27,7 @@
     height: 100%;
     border: 2px solid red;
     animation: wave 12s linear infinite;
-    z-index: 999999;
+    /* z-index: 999999; */
 }
 
 @keyframes wave {
