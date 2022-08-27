@@ -68,8 +68,8 @@ export default {
 }
 
 .main-nav a {
-    color: var(--secondary-color);
-    font-size: var(--fs-16);
+    color: var(--primary-color);
+    font-size: var(--fs-18);
 }
 
 .logo {
