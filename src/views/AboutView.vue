@@ -9,7 +9,7 @@
                 description="I am a strong believer in dynamic and scalable design. Anytime you can reuse components in different ways, it not only speeds up workflow, but also keeps consistency throughout the project, making a great user experience. As an engineer, I have experience collaborating closely with design teams to make sure we keep that in mind."
                 descriptionTwo="In my free time, I enjoy photography, bird watching, video games, and taking long walks." />
             <div>
-                <p class="primary-heading">Design Process</p>
+                <p id="design-process" class="primary-heading">Design Process</p>
                 <!-- <img src="../assets/images/about/design-process.png" alt=""> -->
                 <div class="design-process">
                     <div class="process-container">
@@ -112,8 +112,12 @@ export default {
 }
 
 @media (max-width: 800px) {
+    #design-process {
+        display: flex;
+        justify-content: center;
+    }
     .design-process {
-        justify-content: flex-start;
+        justify-content: center;
     }
 }
 </style>

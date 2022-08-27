@@ -1,7 +1,7 @@
 <template>
     <div class="skills-container flex">
         <div class="primary-heading">{{ title }}</div>
-        <div>
+        <div class="inner-container">
             <p class="secondary-heading">UX/UI</p>
             <div class="icons-container">
                 <!-- <Tooltip :text="`Figma`"> -->
@@ -43,7 +43,7 @@
                 <!-- </Tooltip> -->
             </div>
         </div>
-        <div>
+        <div class="inner-container">
             <p class="secondary-heading">Front-End Development</p>
             <div class="icons-container">
                 <!-- <Tooltip :text="`Vue.js`"> -->
@@ -175,5 +175,16 @@ svg:hover {
     border: 2px solid #000;
     color: white;
     // transform: scale(1.2);
+}
+
+@media (max-width: 800px) {
+    .icons-container {
+        justify-content: center;
+    }
+    .secondary-heading, .primary-heading {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
 }
 </style>
