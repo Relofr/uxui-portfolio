@@ -14,9 +14,7 @@
             solution="Our goal was to focus on the user path for both donations and daily admissions. In addition, we wanted to emphasize across the site that yearly memberships come with great benefits and should be considered"
         />
 
-        <SectionBreak 
-            title="UI Analysis & User Research" 
-        />
+        <SectionBreak title="User Research" icon="book" />
 
         <Section 
             showDot 
@@ -74,7 +72,7 @@
         />
 
         <SectionBreak 
-            title="Definition"
+            title="Definition & Ideation" icon="file-pen"
         />
 
         <Section 
@@ -97,10 +95,6 @@
             contentThree="Bronson is happy to have found the Membership option, so he has access all year and won't have to purchase tickets online anymore" 
         />
 
-        <SectionBreak 
-            title="Ideation" 
-        />
-
         <Section 
             showImage 
             isColumn 
@@ -109,10 +103,9 @@
             contentOne="My team and I sorted through our data from our 'Like/Wish/What-If' scenario and put it into a Feature Prioritization Matrix. Based on the data, we saw that purchasing tickets online, and donating was where our users had the most struggle, and since it's a big part of the non-profit, we decided to tackle those things first."
         />
 
-        <SectionBreak title="Wireframes" />
-        <SectionBreak title="Prototyping" />
-        <SectionBreak title="Testing" />
-        <SectionBreak title="Conclusion" />
+        <SectionBreak title="Develop Phase" icon="wrench" />
+        <SectionBreak title="Testing" icon="flask-vial" />
+        <SectionBreak title="Final Thoughts" icon="thumbs-up" />
     </div>
 </template>
 
