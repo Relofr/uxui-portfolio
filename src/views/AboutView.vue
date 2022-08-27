@@ -12,11 +12,36 @@
                 <p class="primary-heading">Design Process</p>
                 <!-- <img src="../assets/images/about/design-process.png" alt=""> -->
                 <div class="design-process">
-                    <span id="design-process-dot">Define</span>
-                    <span id="design-process-dot">Empathize</span>
-                    <span id="design-process-dot">Ideate</span>
-                    <span id="design-process-dot">Design</span>
-                    <span id="design-process-dot">Prototype</span>
+                    <div class="process-container">
+                        <span id="design-process-dot">
+                            <fa icon="heart" size="4x" color='#ED3646' />
+                        </span>
+                        <p>Empathize</p>
+                    </div>
+                    <div class="process-container">
+                        <span id="design-process-dot">
+                            <fa icon="file-pen" size="4x" color='#0E67A7' />
+                        </span>
+                        <p>Define</p>
+                    </div>
+                    <div class="process-container">
+                        <span id="design-process-dot">
+                            <fa icon="brain" size="4x" color='#FFCA46' />
+                        </span>
+                        <p>Ideate</p>
+                    </div>
+                    <div class="process-container">
+                        <span id="design-process-dot">
+                            <fa icon="diagram-project" size="4x" color='#F6AA4D' />
+                        </span>
+                        <p>Prototype</p>
+                    </div>
+                    <div class="process-container">
+                        <span id="design-process-dot">
+                            <fa icon="flask-vial" size="4x" color='#0EAA75' />
+                        </span>
+                        <p>Test</p>
+                    </div>
                 </div>
             </div>
             <Skills title="Skillset" showIcons />
@@ -60,6 +85,13 @@ export default {
     flex-wrap: wrap;
 }
 
+.process-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
 #design-process-dot {
     min-width: 160px;
     min-height: 160px;
@@ -69,22 +101,14 @@ export default {
     justify-content: center;
     font-size: var(--fs-18);
     color: var(--primary-color);
+    background-color: white;
+    border: 2px solid black;
+    color: var(--secondary-color);
+    transition: all .15s ease;
 }
 
-#design-process-dot:nth-child(1) {
-    background-color: #f14725;
-}
-#design-process-dot:nth-child(2) {
-    background-color: #da0062;
-}
-#design-process-dot:nth-child(3) {
-    background-color: #9411ac;
-}
-#design-process-dot:nth-child(4) {
-    background-color: #652cb2;
-}
-#design-process-dot:nth-child(5) {
-    background-color: #414bb2;
+#design-process-dot:hover {
+    background-color: black;
 }
 
 @media (max-width: 800px) {

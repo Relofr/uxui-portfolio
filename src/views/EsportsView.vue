@@ -47,7 +47,7 @@ to use tournament website for all types of gamers" />
             contentOne="We sketched out some designs in Figma and played around with the layout of the cards, navigation, footer, etc" />
         <Section isColumn showImage :src2="esportsAB" sectionTitle="User Testing"
             contentOne="Before we went into high-fidelity, we wanted to test our app with our users to make sure the flow and design made sense. Our tests found that navigating throughout the app was pretty straightforward, so we focused our user testing on refining the tournament cards, this included the design of the cards, placement of buttons, and what information was most important to keep included on the cards." />
-        <Section isColumn showImage :src2="esportsAB2" sectionTitle="" contentOne="We also focued on refining our nav and drop-down menus. We wanted to further simplfy the process of finding games and tournaments. 
+        <Section isColumn showImage :src2="esportsAB2" sectionTitle="" contentOne="We also focued on refining our nav and drop-down menus. We wanted to further simplfy the process of finding games and tournaments.
 The Leaderboards section was added to give gamers more reasons to use our services and compete" />
         <Section showDot links showImage isColumn :src2="esportsHifi" sectionTitle="High-Fidelity"
             contentOne="high-fidelity designs showing our homepage, current tournaments page, and the light/dark mode along with the mobile version of the app"
