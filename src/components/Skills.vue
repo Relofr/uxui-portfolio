@@ -37,7 +37,7 @@
                 <!-- <Tooltip :text="`Wireframing`"> -->
                 <div class="container-box">
                     <!-- <img id="icon-image" :src="Wireframing" alt=""> -->
-                    <fa icon="vector-square" />
+                    <fa icon="object-ungroup" />
                     <p>Wireframing</p>
                 </div>
                 <!-- </Tooltip> -->

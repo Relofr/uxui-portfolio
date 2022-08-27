@@ -110,6 +110,9 @@ export default {
 #design-process-dot:hover {
     background-color: black;
 }
+#design-process-dot:hover > svg {
+    /* transform: scale(1.1); */
+}
 
 @media (max-width: 800px) {
     #design-process {

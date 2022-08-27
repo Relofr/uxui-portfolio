@@ -4,7 +4,7 @@
         <div class="grid2x2">
 
             <div class="box">
-                <Card title="MegaBattles - Tournament Website" text="UX/UI Case Study, Team Project (Work in progress)" :src="heroEsports" route="megabattles" button buttonText="read more" icon="gamepad" :alt="`esports tournament website`"/>
+                <Card title="MegaBattles - Tournament Website" text="UX/UI Case Study, Team Project (Work in progress)" :src="heroEsports" route="megabattles" button buttonText="read more" icon="ghost" :alt="`esports tournament website`"/>
             </div>
 
             <div class="box">
