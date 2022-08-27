@@ -1,6 +1,6 @@
 <template>
     <div class="page-spacer">
-        <Section heroTitle="" sectionTitle="MegaBattles - Making gaming easier" :src="heroEsports" />
+        <Section heroTitle="" sectionTitle="MegaBattles - Making Gaming Easier" :src="heroEsports" />
         <Overview title="Project Overview" about="Gamers are frustrated by attempting to navigate & find tournaments"
             description="Our goal was to focus on the user path for both donations and daily admissions. In addition, we wanted to emphasize across the site that yearly memberships come with great benefits and should be considered."
             role="UX Research, UI Design, Interaction Design, Prototyping" date="August 24th, 2022" team="Kyle Hatch, Stetson Strokes, Christian Weidle"
@@ -9,7 +9,7 @@
             solution="Create an easy
 to use tournament website for all types of gamers" />
 
-        <SectionBreak title="User Research" />
+        <SectionBreak title="User Research" icon="book" />
 
         <Section sectionTitle="Indusrty Analysis"
             contentOne="The gaming industry is ever-booming, and more people than ever are intrested in exploring Esports"
@@ -20,7 +20,7 @@ to use tournament website for all types of gamers" />
         <Section showDot isColumn showImage sectionTitle="Sorting our data"
             contentOne="We started out exploring competitors that offer similar services to find out what users liked/disliked, and what they wished was available. I conducted a survey, grouped & sorted the data, and prioritized tasks that would be the most impactful" contentTwo="I took all of our responses to our survey, and created sticky notes in Miro so we could get a better visual and start learning from our data"
             :src2="esportsData" />
-            <Section isColumn showImage :src2="featureBrainstorm" contetOne="" />
+            <Section isColumn showImage :src2="featureBrainstorm" sectionTitle="I Wish, I Like, What If" contetOne="" />
 
             <Section isColumn showImage :src2="featurePrio" sectionTitle="Feature Prioritization" contentOne="We put our data into a feature prioritization matrix, and started working out what was most important. This helped us see what was missing, and what would help users the most" />
 
@@ -32,7 +32,7 @@ to use tournament website for all types of gamers" />
 
         <Section showImage isColumn :src2="esportsPersona" sectionTitle="User Persona" contentOne="Our user persona focuses on a young gamer that is looking to get his name out there in the gaming community. He is an 18 year old with a lot of excitment about joining local tournaments. He doesn't have very much experience with the local gaming community, and is unsure of where to start" />
 
-        <SectionBreak title="Definition & Ideation" />
+        <SectionBreak title="Definition & Ideation" icon="file-pen"/>
 
         <Section showDot isColumn showImage :src2="journeyMap" sectionTitle="User Journey Map"
             contentOne="Tyler wants to register for a local Super Smash Brothers tournament. He would prefer a tournament with a prize pool and wonders if there are any available this month"
@@ -42,7 +42,7 @@ to use tournament website for all types of gamers" />
         <Section showImage isColumn :src2="userFlow" sectionTitle="User Flow"
             contentOne="The user flow focuses on the key feature of the website, and what we found was lacking in others, registering for a tournament " />
 
-        <SectionBreak title="Develop Phase" />
+        <SectionBreak title="Develop Phase" icon="wrench"/>
         <Section showImage :src2="esportsLowfi" sectionTitle="Low-Fidelity"
             contentOne="We sketched out some designs in Figma and played around with the layout of the cards, navigation, footer, etc" />
         <Section isColumn showImage :src2="esportsAB" sectionTitle="User Testing"
@@ -63,7 +63,7 @@ The Leaderboards section was added to give gamers more reasons to use our servic
             <div><img :src="esportsAllDevices" alt="megabattles all devices"></div>
         </div>
 
-        <SectionBreak title="Final Thoughts" />
+        <SectionBreak title="Final Thoughts" icon="thumbs-up"/>
         <Section isColumn showDot showImage sectionTitle="Future Iterations"
             contentOne="Add a larger selection of games, more filters, and ways to set up prize pools"
             contentTwo="Include a ranking system with the leaderboard"

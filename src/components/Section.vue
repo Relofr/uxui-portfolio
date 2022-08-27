@@ -196,6 +196,7 @@ picture {
     object-fit: cover;
     text-align: center;
     border-radius: 4px;
+    margin-top: 100px;
 }
 
 .even-columns {
