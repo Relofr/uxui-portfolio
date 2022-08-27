@@ -66,7 +66,7 @@ export default {
 <style lang="less">
 .about-me-container {
     display: flex;
-    min-height: calc(100vh - 175px);
+    min-height: calc(100vh - 135px);
     align-content: center;
 }
 
@@ -105,7 +105,7 @@ export default {
     }
 
     .about-me-container {
-        min-height: calc(100vh - 203px);
+        min-height: calc(100vh - 153px);
     }
 
     .down-arrow {
@@ -113,7 +113,7 @@ export default {
         display: flex;
         justify-content: center;
         font-size: 18px;
-        margin-bottom: 35px;
+        margin-bottom: 85px;
     }
 }
 </style>

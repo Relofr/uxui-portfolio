@@ -132,7 +132,7 @@ img {
 .secondary-text {
   color: var(--primary-color);
   /* text-transform: uppercase; */
-  font-size: var(--fs-16);
+  font-size: var(--fs-18);
 }
 
 .accent-text {

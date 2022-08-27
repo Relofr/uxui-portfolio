@@ -21,7 +21,7 @@ import OceanWave from './components/OceanWave.vue'
 .container {
   width: 90%;
   max-width: 1100px;
-  margin: 50px auto;
+  margin: 0px auto 50px auto;
   display: flex;
   flex-direction: column;
   min-height: 100vh;
