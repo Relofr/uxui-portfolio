@@ -60,6 +60,7 @@ export default {
     position: absolute;
     overflow: hidden;
     inset: 0;
+}
 
 @keyframes animate-fish {
     0% {
