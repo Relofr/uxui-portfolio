@@ -56,10 +56,10 @@ export default {
 <style lang="less" scoped>
 .fish-container {
     height: 100vh;
-    width: 100vw;
+    width: 98-vw;
     position: absolute;
+    overflow: hidden;
     inset: 0;
-}
 
 @keyframes animate-fish {
     0% {
