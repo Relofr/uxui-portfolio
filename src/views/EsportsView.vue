@@ -20,11 +20,12 @@ to use tournament website for all types of gamers" />
         <Section showDot isColumn showImage sectionTitle="Sorting our data"
             contentOne="We started out exploring competitors that offer similar services to find out what users liked/disliked, and what they wished was available. I conducted a survey, grouped & sorted the data, and prioritized tasks that would be the most impactful" contentTwo="I took all of our responses to our survey, and created sticky notes in Miro so we could get a better visual and start learning from our data"
             :src2="esportsData" />
+
+            <Section showDot sectionTitle="Key Insights from Surveys" contentOne="Users were frustrated when looking for local tournaments, registering, and hosting" contentTwo="Users were using multiple websites when searching for a tournament" contentThree="A lot of websites didn't feel safe to use"/>
+
             <Section isColumn showImage :src2="featureBrainstorm" sectionTitle="I Wish, I Like, What If" contetOne="" />
 
             <Section isColumn showImage :src2="featurePrio" sectionTitle="Feature Prioritization" contentOne="We put our data into a feature prioritization matrix, and started working out what was most important. This helped us see what was missing, and what would help users the most" />
-
-            <Section showDot sectionTitle="Key Insights from Surveys" contentOne="Users were frustrated when looking for local tournaments, registering, and hosting" contentTwo="Users were using multiple websites when searching for a tournament" contentThree="A lot of websites didn't feel safe to use"/>
 
 
         <Section showImage isColumn :src2="userInsight" sectionTitle="User Insight"
@@ -44,7 +45,7 @@ to use tournament website for all types of gamers" />
 
         <SectionBreak title="Develop Phase" icon="wrench"/>
         <Section showImage :src2="esportsLowfi" sectionTitle="Low-Fidelity"
-            contentOne="We sketched out some designs in Figma and played around with the layout of the cards, navigation, footer, etc" />
+            contentOne="We sketched out some designs in Figma and played around with the layout of the cards, navigation and footer. Our main goal here was to make sure we include the most important information on the face of the card, so users won't have to search deeper to find what they need. I wanted to make sure that the flow to search, register, and view tournaments was easily accessible for our users" />
         <Section isColumn showImage :src2="esportsAB" sectionTitle="User Testing"
             contentOne="Before we went into high-fidelity, we wanted to test our app with our users to make sure the flow and design made sense. Our tests found that navigating throughout the app was pretty straightforward, so we focused our user testing on refining the tournament cards, this included the design of the cards, placement of buttons, and what information was most important to keep included on the cards." />
         <Section isColumn showImage :src2="esportsAB2" sectionTitle="" contentOne="We also focued on refining our nav and drop-down menus. We wanted to further simplfy the process of finding games and tournaments.
