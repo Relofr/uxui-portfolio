@@ -2,7 +2,7 @@
     <div class="page-spacer">
         <Section heroTitle="" sectionTitle="MegaBattles - Making Gaming Easier" :src="heroEsports" />
         <Overview title="Project Overview" about="Gamers are frustrated by attempting to navigate & find tournaments"
-            description="Our goal was to focus on the user path for both donations and daily admissions. In addition, we wanted to emphasize across the site that yearly memberships come with great benefits and should be considered."
+            description="Our goal was to focus on creating a space that allowed gamers to find local/global tournaments, be able to sign up, and also view general information about games all in one place"
             role="UX Research, UI Design, Interaction Design, Prototyping" date="August 24th, 2022" team="Kyle Hatch, Stetson Strokes, Christian Weidle"
             tools="Figma, Miro, Adobe CC, Github, Netlify, VSC, Trello"
             problem="As young gamers look to start making money doing what they love they are faced with the difficult task of navigating tournaments. There are hidden fees, large skill gaps and limited prize pools that cause stress and confusion for young gamers."
