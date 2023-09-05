@@ -56,7 +56,7 @@ export default {
     },
     methods: {
         downloadResume() {
-            window.open("https://drive.google.com/file/d/1kqumqmpnz9jl7mHfIjz6mtTymqw3_TDn/view?usp=sharing")
+            window.open("https://drive.google.com/drive/folders/1_L-HW62dHv158qNmRoSWU9mdRWont_8y?usp=sharing")
         },
     },
     props: {
