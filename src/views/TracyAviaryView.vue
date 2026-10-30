@@ -4,9 +4,9 @@
 
         <Overview 
             title="Project Overview"
-            about="Tracy Aviary inspires curiosity and caring for birds and nature through education and conservation."
+            about="Tracy Aviary is a nonprofit that inspires curiosity and caring for birds and nature through education and conservation."
             description="Our goal was to focus on the user path for both donations and daily admissions. In addition, we wanted to emphasize across the site that yearly memberships come with great benefits and should be considered"
-            role="UX/UI Designer" 
+            role="UX/UI Designer (nonprofit client)" 
             date="July 13th, 2022" 
             team="Kyle Hatch, Amanda Fuller, John Kennedy"
             tools="Figma, Miro, Adobe CC, Google Drive, Invision"

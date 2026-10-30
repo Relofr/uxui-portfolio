@@ -3,11 +3,15 @@
         <Fish />
         <section class="intro">
             <div class="intro-text">
-                <p class="intro-role">Kyle Hatch · UX/UI Designer &amp; Front-End Engineer</p>
-                <h1 class="display-heading">I design products, and then I build them.</h1>
+                <p class="intro-role">Kyle Hatch · UX/UI Product Designer</p>
+                <h1 class="display-heading">I design complex B2B products, and I can build them too.</h1>
                 <p class="lead">
-                    I turn research into clear, usable interfaces, then ship them in Vue. Most recently, I designed
-                    and built a live Dota 2 lore site and match analytics tool on my own.
+                    4+ years owning end-to-end design for a cloud VoIP and video conferencing platform, including
+                    its admin portal and AI-powered call analytics and transcription.
+                </p>
+                <p>
+                    With 8 years in tech across front-end engineering and API support, I design within real
+                    engineering constraints and can take ideas from research to shipped code.
                 </p>
                 <div class="intro-actions">
                     <Button isPrimary text="View work" icon="arrow-down" @click="scrollToWork" />

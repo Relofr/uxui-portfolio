@@ -5,6 +5,24 @@
         <div class="grid2x2">
 
             <div class="box featured">
+                <router-link to="/alianza" class="text-card">
+                    <span class="label">Professional work · 2022 – 2026</span>
+                    <h3 class="text-card-title">Alianza: Cloud Communications Platform</h3>
+                    <p class="text-card-body">
+                        Four years owning end-to-end design for a cloud VoIP and video conferencing platform. I led the
+                        entire admin portal, designed AI-powered call analytics and transcription, and built the design system.
+                    </p>
+                    <ul class="text-card-tags">
+                        <li>Admin portal &amp; IA</li>
+                        <li>AI-powered experiences</li>
+                        <li>Design system</li>
+                        <li>B2B SaaS / UCaaS</li>
+                    </ul>
+                    <span class="text-card-link">Read case study <fa icon="arrow-right" /></span>
+                </router-link>
+            </div>
+
+            <div class="box featured">
                 <Card title="Dota Lore + Match Scout" text="Product design &amp; front-end · Solo · Live at dotalore.com" :src="heroDota" route="dota-analytics" button buttonText="Read case study" icon="chart-line" :alt="`match scout summary screen`"/>
             </div>
 
@@ -13,7 +31,7 @@
             </div>
 
             <div class="box">
-                <Card title="Tracy Aviary" text="UX research &amp; redesign · Team of 3 · In progress" :src="heroTA" route="tracy-aviary" button buttonText="Read case study" icon="crow" :alt="`tracy aviary`"/>
+                <Card title="Tracy Aviary" text="UX research &amp; redesign · Nonprofit · Team of 3 · In progress" :src="heroTA" route="tracy-aviary" button buttonText="Read case study" icon="crow" :alt="`tracy aviary`"/>
             </div>
 
             <!-- <div class="box disabled">
@@ -87,6 +105,62 @@ export default {
         height: auto;
         aspect-ratio: 2.2 / 1;
     }
+}
+
+.text-card {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-3);
+    width: 100%;
+    padding: var(--space-6);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius);
+    background-color: var(--color-surface);
+    transition: border-color 0.2s ease, transform 0.2s ease;
+
+    &:hover {
+        border-color: var(--color-accent);
+        transform: translateY(-2px);
+    }
+}
+
+.text-card-title {
+    font-size: var(--text-2xl);
+    margin: 0;
+}
+
+.text-card-body {
+    max-width: 760px;
+    margin: 0;
+}
+
+.text-card-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-2);
+
+    li {
+        padding: var(--space-1) var(--space-3);
+        border: 1px solid var(--color-border);
+        border-radius: 999px;
+        font-family: var(--font-heading);
+        font-size: var(--text-xs);
+        font-weight: var(--fw-semibold);
+        color: var(--color-text);
+    }
+}
+
+.text-card-link {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--space-2);
+    margin-top: var(--space-2);
+    font-family: var(--font-heading);
+    font-size: var(--text-sm);
+    font-weight: var(--fw-semibold);
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: var(--color-accent);
 }
 
 .playground-heading {

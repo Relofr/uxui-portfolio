@@ -8,6 +8,7 @@ import UsdaView from './views/UsdaView.vue';
 import DailyUiView from './views/DailyUiView.vue';
 import EsportsView from './views/EsportsView.vue';
 import DotaView from './views/DotaView.vue';
+import AlianzaView from './views/AlianzaView.vue';
 
 const routes = [
 	{
@@ -35,6 +36,11 @@ const routes = [
 		path: '/megabattles',
 		name: 'Esports',
 		component: EsportsView
+	},
+	{
+		path: '/alianza',
+		name: 'alianza',
+		component: AlianzaView
 	},
 	{
 		path: '/dota-analytics',

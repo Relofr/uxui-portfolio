@@ -3,6 +3,7 @@
         <Section heroTitle="" sectionTitle="MegaBattles: Making Gaming Easier" :src="heroEsports" />
         <Overview title="Project Overview" about="Gamers are frustrated by attempting to navigate & find tournaments"
             description="Our goal was to focus on creating a space that allowed gamers to find local/global tournaments, be able to sign up, and also view general information about games all in one place"
+            descriptionTwo="My role: I ran the competitive analysis and user survey, synthesized the results in Miro, and interviewed current and former esports players. I built the journey map and user flow, A/B tested tournament card designs and navigation, led the UI design (dark and light themes, mobile), and then coded and deployed the responsive site myself."
             role="UX Research, UI Design, Interaction Design, Prototyping" date="August 24th, 2022" team="Kyle Hatch, Stetson Strokes, Christian Weidle"
             tools="Figma, Miro, Adobe CC, Github, Netlify, VSC, Trello"
             problem="As young gamers look to start making money doing what they love they are faced with the difficult task of navigating tournaments. There are hidden fees, large skill gaps and limited prize pools that cause stress and confusion for young gamers."
