@@ -3,8 +3,8 @@
         <Fish />
         <section class="intro">
             <div class="intro-text">
-                <p class="intro-role">Kyle Hatch · UX/UI Product Designer</p>
-                <h1 class="display-heading">I design complex B2B products, and I can build them too.</h1>
+                <h1 class="display-heading intro-name">Kyle Hatch</h1>
+                <p class="intro-title">UX/UI Product Designer</p>
                 <p class="lead">
                     4+ years owning end-to-end design for a cloud VoIP and video conferencing platform, including
                     its admin portal and AI-powered call analytics and transcription.
@@ -74,13 +74,16 @@ export default {
     max-width: 680px;
 }
 
-.intro-role {
+.intro-name {
+    margin-bottom: var(--space-2);
+}
+
+.intro-title {
     font-family: var(--font-heading);
-    font-size: var(--text-sm);
+    font-size: var(--text-xl);
     font-weight: var(--fw-semibold);
-    letter-spacing: 0.04em;
     color: var(--color-heading);
-    margin-bottom: var(--space-4);
+    margin-bottom: var(--space-5);
 }
 
 .intro-actions {
