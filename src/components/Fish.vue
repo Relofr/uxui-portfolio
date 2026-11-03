@@ -1,5 +1,5 @@
 <template>
-    <div class="fish-container">
+    <div ref="container" class="fish-container">
         <div>
             <svg id="fish" class="fish" width="95" height="40" viewBox="0 0 95 40" fill="none"
                 xmlns="http://www.w3.org/2000/svg">
@@ -25,15 +25,87 @@
                 <path transform="scale (-1, 1)" transform-origin="center" id="fish-left"
                     d="M87.0194 19.4383C87.3192 18.7944 89.3683 16.0784 91.2234 13.263C91.2251 13.261 91.2266 13.2591 91.2276 13.2573C91.6462 12.6221 92.0543 11.9822 92.4313 11.3596C92.4418 11.3421 92.4524 11.3244 92.463 11.3069C92.5241 11.2053 96.8635 4.24852 90.6828 7.06584C90.6828 7.06634 90.6823 7.06708 90.6818 7.06757C89.5205 7.66311 88.0436 8.55113 86.1865 9.79569C82.1355 12.5113 73.8949 16.4864 73.8949 16.4864C73.8949 16.4864 72.4609 17.2611 71.5152 16.671C66.7361 13.6895 59.7728 8.39344 50.593 5.44454C50.44 5.39526 50.2461 5.27871 50.5097 5.03453L54.441 2.28522C54.441 2.28522 54.749 2.01911 54.3536 1.89049C52.408 1.2565 44.3047 -1.46078 37.2929 1.03746C35.8645 1.54627 34.6922 1.96416 33.7283 2.30764C33.3138 2.45548 32.8927 2.62919 32.053 2.73292C12.9315 3.38687 0 17.4232 0 22.9756C0 26.7018 2.00913 29.2023 9.35009 32.6782C9.49743 32.6548 10.6181 33.4593 13.0798 32.7196C13.7397 32.5213 18.4259 30.7563 18.6122 30.6767C18.799 30.5915 18.9202 30.5494 18.9976 30.5619C19.0971 30.5777 19.1703 30.799 19.1698 30.8438C19.1543 32.1711 16.6664 33.2462 15.2538 34.4257C15.0113 34.5388 14.9463 35.1018 15.3708 35.2841C15.3713 35.2841 20.3594 37.9586 28.2592 38.7902C28.8979 38.8574 37.2133 44.1855 45.5985 42.7562C50.0334 42 52.1439 41.7413 53.107 41.4757C53.9477 41.244 53.5464 40.9774 53.5464 40.9774L49.343 37.6284C49.0585 37.3127 49.2886 37.0703 49.5269 37.0028C58.8609 34.3468 66.2411 30.16 70.6363 26.5732C71.2282 26.09 72.7664 27.2387 73.8646 27.7936C77.5116 29.636 92.6496 35.8762 93.8971 34.5553C94.0045 34.4439 94.0122 34.2781 93.9027 34.0502C91.7726 29.5758 84.0737 25.7594 87.0194 19.4383ZM15.4825 19.0073C14.1359 19.0073 13.0443 17.8956 13.0443 16.5243C13.0443 15.1531 14.1359 14.0416 15.4825 14.0416C16.829 14.0416 17.9208 15.1531 17.9208 16.5243C17.9208 17.8956 16.829 19.0073 15.4825 19.0073ZM26.3937 33.1341C26.2437 33.2689 26.1069 33.4724 26.1863 33.1797C26.1863 33.1797 29.9872 27.4607 30.48 20.0685C30.8491 14.5285 27.1581 7.74369 27.1581 7.74369C27.1581 7.74369 27.1652 7.54558 27.2948 7.70204C28.6088 9.29132 41.5472 19.5139 26.3937 33.1341Z" />
             </svg>
+
+            <svg ref="shark" class="shark" :class="shark.swimming && `swim-${shark.direction}`"
+                :style="{ top: shark.top + 'px', fill: shark.color }" @animationend="onSharkSwimEnd"
+                width="543" height="196" viewBox="0 0 543 196" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M255.38 0.102019C256.205 -0.297414 257.043 0.548064 256.682 1.39011C253.2 9.50754 242.528 36.7313 246.737 56.5141C251.737 80.014 270.237 84.5141 270.237 84.5141C270.464 84.5353 364.432 93.2722 428.818 114.057C430.62 114.639 432.553 114.188 433.916 112.874C471.281 76.8277 558.854 22.8969 539.737 42.0141C520.237 61.5141 476.737 121.514 476.237 132.014C475.737 142.514 478.735 151.491 482.237 163.514C486.008 176.465 495.237 195.514 495.237 195.514C495.237 195.514 484.237 197.014 461.237 174.014C438.237 151.015 435.737 144.515 431.737 145.014C427.737 145.514 373.739 155.014 368.737 156.514C363.737 158.014 362.737 171.514 366.237 179.014C369.736 186.513 331.237 162.515 321.737 161.514C313.064 160.601 268.555 163.439 260.868 163.94C260.259 163.98 259.863 164.542 260.045 165.124C260.762 167.404 262.903 172.919 268.237 179.014C275.237 187.014 282.237 193.014 282.237 193.014C282.237 193.014 256.073 192.336 239.737 189.014C222.854 185.581 206.218 174.949 197.737 175.514C115.238 181.014 59.2375 163.014 46.7367 159.514C34.2371 156.014 57.2348 152.657 53.2367 151.514C49.7367 150.514 39.2731 152.529 22.7367 149.514C12.4321 147.636 5.45568 144.603 1.66151 142.584C-0.290678 141.545 -0.584254 139.172 1.10976 137.75C10.6561 129.741 48.3001 105.126 175.237 74.5141C180.736 73.1874 182.737 62.5135 207.737 36.0141C228.164 14.3614 248.591 3.39091 255.38 0.102019ZM71.3939 129.091C66.1034 129.379 58.3849 130.335 59.3129 132.514C60.6182 135.577 66.2745 138.203 68.015 136.453C69.0942 135.367 70.9402 132.635 72.2562 130.578C72.6842 129.909 72.1869 129.048 71.3939 129.091Z" />
+            </svg>
         </div>
     </div>
 </template>
 
 <script>
+// Same shades as the fish
+const SHARK_COLORS = ['#2e6a8c', '#17343b', '#10171b'];
+
 export default {
     data() {
         return {
-            yAxis: ""
+            yAxis: "",
+            shark: {
+                swimming: false,
+                direction: Math.random() < 0.5 ? 'left' : 'right',
+                colorIndex: 0,
+                color: SHARK_COLORS[0],
+                top: 0
+            },
+            sharkTimer: null
+        }
+    },
+    mounted() {
+        this.sharkTimer = setTimeout(this.startSharkSwim, 5000);
+    },
+    beforeUnmount() {
+        clearTimeout(this.sharkTimer);
+    },
+    methods: {
+        startSharkSwim() {
+            this.shark.top = this.pickSharkTop();
+            this.shark.swimming = true;
+        },
+        onSharkSwimEnd(event) {
+            if (event.target !== this.$refs.shark) return;
+            // Next pass: opposite direction, next shade, after a short pause offscreen
+            this.shark.swimming = false;
+            this.shark.direction = this.shark.direction === 'left' ? 'right' : 'left';
+            this.shark.colorIndex = (this.shark.colorIndex + 1) % SHARK_COLORS.length;
+            this.shark.color = SHARK_COLORS[this.shark.colorIndex];
+            this.sharkTimer = setTimeout(this.startSharkSwim, 10000 + Math.random() * 10000);
+        },
+        // Random top offset for the shark that stays clear of every fish's lane
+        pickSharkTop() {
+            const margin = 12;
+            const container = this.$refs.container.getBoundingClientRect();
+            const sharkHeight = this.$refs.shark.getBoundingClientRect().height;
+            const maxTop = Math.max(0, container.height - sharkHeight);
+
+            // Shark top values that would overlap a fish lane, as [start, end] ranges
+            const blocked = [...this.$refs.container.querySelectorAll('svg:not(.shark)')]
+                .map((fish) => fish.getBoundingClientRect())
+                .map((r) => [r.top - container.top - margin - sharkHeight, r.bottom - container.top + margin])
+                .sort((a, b) => a[0] - b[0]);
+
+            const free = [];
+            let cursor = 0;
+            for (const [start, end] of blocked) {
+                if (start > cursor) free.push([cursor, Math.min(start, maxTop)]);
+                cursor = Math.max(cursor, end);
+            }
+            if (cursor < maxTop) free.push([cursor, maxTop]);
+            const gaps = free.filter(([start, end]) => end > start);
+
+            if (!gaps.length) return Math.random() * maxTop;
+
+            // Pick a point uniformly across all the free space
+            let point = Math.random() * gaps.reduce((sum, [start, end]) => sum + end - start, 0);
+            for (const [start, end] of gaps) {
+                if (point <= end - start) return start + point;
+                point -= end - start;
+            }
+            return gaps[0][0];
         }
     },
     created() {
@@ -103,6 +175,50 @@ export default {
     }
 }
 
+/* Shark passes are scheduled from the script: direction, height and color change each pass */
+@keyframes shark-swim-left {
+    0% {
+        transform: translateX(100vw);
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+@keyframes shark-swim-right {
+    0% {
+        transform: translateX(-100%) scaleX(-1);
+    }
+
+    100% {
+        transform: translateX(100vw) scaleX(-1);
+    }
+}
+
+.shark {
+    width: 175px;
+    height: auto;
+    position: absolute;
+    top: 0;
+    visibility: hidden;
+    transform: translateX(100vw);
+
+    &.swim-left,
+    &.swim-right {
+        visibility: visible;
+        animation: 24s linear both;
+    }
+
+    &.swim-left {
+        animation-name: shark-swim-left;
+    }
+
+    &.swim-right {
+        animation-name: shark-swim-right;
+    }
+}
+
 .fish {
     fill: #2e6a8c;
     height: auto;
@@ -154,6 +270,14 @@ export default {
     }
     .fish-4 {
         animation: animate-fish-4 14s linear infinite;
+    }
+    .shark {
+        width: 130px;
+
+        &.swim-left,
+        &.swim-right {
+            animation-duration: 12s;
+        }
     }
 }
 </style>

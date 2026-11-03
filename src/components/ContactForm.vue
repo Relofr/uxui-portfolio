@@ -71,7 +71,7 @@ export default {
             };
             var serviceID = 'service_uxui_portfolio';
             var templateID = 'template_uxui_portfolio';
-            var publicKey = 'V6HB6k12BwfZeoHYw'
+            var publicKey = '785CBccFksh4NZ9ii'
 
             this.isSending = true
             this.sendError = ''

@@ -55,13 +55,16 @@
     top: 10%;
     left: 10%;
     animation: 4s linear infinite;
+    color: rgba(255, 255, 255, 0.5); /* dot color, faded out when the bubble pops */
+    outline: 2px dotted rgba(255, 255, 255, 0); /* pop ring */
+    font-size: 60px; /* scales the pop ring with the bubble */
 }
 
 div .dot {
     height: 10px;
     width: 10px;
     border-radius: 50px;
-    background: rgba(255, 255, 255, 0.5);
+    background: currentColor;
     position: absolute;
     top: 20%;
     right: 20%;
@@ -157,13 +160,47 @@ div .dot {
     animation: animate 9s linear infinite;
 }
 
+/* Pop: the bubble swells, its outline and dot vanish and a dotted ring bursts outward.
+   Everything runs in this one animation so the pop stays in sync with the bubble. */
 @keyframes animate {
     0% {
-        transform: scale(0) translateY(0) rotate(70deg);
+        transform: scale(0) translateY(0) rotate(0deg);
+        border-color: rgba(255, 255, 255, 0.8);
+        color: rgba(255, 255, 255, 0.5);
+        outline-color: rgba(255, 255, 255, 0);
+        outline-offset: 0;
+    }
+
+    90% {
+        transform: scale(1.3) translateY(-90px) rotate(9deg);
+        border-color: rgba(255, 255, 255, 0.8);
+        color: rgba(255, 255, 255, 0.5);
+        outline-color: rgba(255, 255, 255, 0);
+        outline-offset: 0;
+    }
+
+    94% {
+        transform: scale(1.45) translateY(-94px) rotate(9.4deg);
+        border-color: rgba(255, 255, 255, 0.8);
+        color: rgba(255, 255, 255, 0.5);
+        outline-color: rgba(255, 255, 255, 0);
+        outline-offset: 0;
+    }
+
+    95% {
+        transform: scale(1.5) translateY(-95px) rotate(9.5deg);
+        border-color: rgba(255, 255, 255, 0);
+        color: rgba(255, 255, 255, 0);
+        outline-color: rgba(255, 255, 255, 0.9);
+        outline-offset: 0.05em;
     }
 
     100% {
-        transform: scale(1.3) translateY(-100px) rotate(360deg);
+        transform: scale(1.5) translateY(-100px) rotate(10deg);
+        border-color: rgba(255, 255, 255, 0);
+        color: rgba(255, 255, 255, 0);
+        outline-color: rgba(255, 255, 255, 0);
+        outline-offset: 0.4em;
     }
 }
 
@@ -177,13 +214,14 @@ div .dot {
         top: 10%;
         left: 10%;
         animation: 4s linear infinite;
+        font-size: 20px;
     }
 
     div .dot {
         height: 4px;
         width: 4px;
         border-radius: 50px;
-        background: rgba(255, 255, 255, 0.5);
+        background: currentColor;
         position: absolute;
         top: 20%;
         right: 20%;

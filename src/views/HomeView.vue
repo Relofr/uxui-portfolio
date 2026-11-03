@@ -23,10 +23,9 @@
 
         <figure class="intro-quote">
             <blockquote>
-                <p>“He absorbed the systems and architecture like a sponge and has quickly become a very reliable
-                    front end developer, engineering complex interfaces with an astute attention to detail.”</p>
+                <p>“{{ quote.text }}”</p>
             </blockquote>
-            <figcaption>Kris Jenkins, Product &amp; Engineering Leadership</figcaption>
+            <figcaption>{{ quote.author }}</figcaption>
         </figure>
 
         <div ref="work" class="work">
@@ -41,9 +40,38 @@ import Button from '../components/Button.vue';
 import Fish from '../components/Fish.vue';
 import ProfilePicture from '../assets/images/about/ProfilePicture.jpg';
 
+const QUOTES = [
+    {
+        text: 'He absorbed the systems and architecture like a sponge and has quickly become a very reliable front end developer, engineering complex interfaces with an astute attention to detail.',
+        author: 'Kris Jenkins, Product & Engineering Leadership'
+    },
+    {
+        text: 'Kyle is dependable and we often rely on him for his meticulous CSS skills and his knowledge of Javascript Frameworks.',
+        author: 'Brett Flake, Technical Product Manager'
+    },
+    {
+        text: 'This guy is a great catch and proves to be a value add to any team lucky enough to grab him.',
+        author: 'Nic Laughter, Software Engineer'
+    }
+];
+
+// Show the next quote on each page load, remembering the last one shown
+function nextQuote() {
+    const key = 'homeQuoteIndex';
+    let index;
+    try {
+        const last = parseInt(localStorage.getItem(key), 10);
+        index = Number.isNaN(last) ? 0 : (last + 1) % QUOTES.length;
+        localStorage.setItem(key, index);
+    } catch {
+        index = Math.floor(Math.random() * QUOTES.length);
+    }
+    return QUOTES[index];
+}
+
 export default {
     setup: () => {
-        return { ProfilePicture };
+        return { ProfilePicture, quote: nextQuote() };
     },
     methods: {
         scrollToWork() {
@@ -62,6 +90,14 @@ export default {
 </script>
 
 <style lang="less">
+/* Lift page content above the decorative fish layer */
+.intro,
+.intro-quote,
+.work {
+    position: relative;
+    z-index: 1;
+}
+
 .intro {
     display: flex;
     align-items: center;
