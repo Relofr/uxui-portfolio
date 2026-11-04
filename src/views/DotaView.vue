@@ -48,11 +48,11 @@
 import Section from '../components/Section.vue';
 import SectionBreak from '../components/SectionBreak.vue';
 import Overview from '../components/Overview.vue';
-import heroDota from '../assets/images/dota/hero-dota.png';
-import loreHome from '../assets/images/dota/lore-home.png';
-import laneBreakdown from '../assets/images/dota/lane-breakdown.png';
-import heroesGrid from '../assets/images/dota/heroes-grid.png';
-import heroDetail from '../assets/images/dota/hero-detail.png';
+import heroDota from '../assets/images/dota/hero-dota.webp';
+import loreHome from '../assets/images/dota/lore-home.webp';
+import laneBreakdown from '../assets/images/dota/lane-breakdown.webp';
+import heroesGrid from '../assets/images/dota/heroes-grid.webp';
+import heroDetail from '../assets/images/dota/hero-detail.webp';
 
 export default {
     setup: () => {

@@ -42,7 +42,7 @@
             </div>
 
             <div v-if="showImage && src2" :class="{ 'section-media-compact': compact }">
-                <img class="section-image" :src="src2" :alt="alt || sectionTitle || 'case study image'">
+                <img class="section-image" data-zoomable tabindex="0" loading="lazy" decoding="async" :src="src2" :alt="alt || sectionTitle || 'case study image'">
             </div>
 
         </div>

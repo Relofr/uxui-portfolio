@@ -59,13 +59,13 @@
 
 <script>
 import Card from '../components/Card.vue';
-import heroDailyUI from '../assets/images/dailyui/hero-dailyui.png';
-import heroUSDA from '../assets/images/usda/hero-usda.png';
-import heroTA from '../assets/images/tracyaviary/hero-ta.png';
-import heroDota from '../assets/images/dota/hero-dota.png';
-import heroEsports from '../assets/images/esports/esports-hero.jpeg';
-import reclaimHero from '../assets/images/reclaim/hero-reclaim.png';
-import portfolioHero from '../assets/images/portfolio/hero-portfolio.png';
+import heroDailyUI from '../assets/images/dailyui/hero-dailyui.webp';
+import heroUSDA from '../assets/images/usda/hero-usda.webp';
+import heroTA from '../assets/images/tracyaviary/hero-ta.webp';
+import heroDota from '../assets/images/dota/hero-dota.webp';
+import heroEsports from '../assets/images/esports/esports-hero.webp';
+import reclaimHero from '../assets/images/reclaim/hero-reclaim.webp';
+import portfolioHero from '../assets/images/portfolio/hero-portfolio.webp';
 
 export default {
     setup: () => {

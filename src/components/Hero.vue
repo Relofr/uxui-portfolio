@@ -5,7 +5,7 @@
 </template>
 
 <script>
-import profilePicture from '../assets/images/about/ProfilePicture.jpg';
+import profilePicture from '../assets/images/about/ProfilePicture.webp';
 
 export default {
     setup: () => {

@@ -27,7 +27,7 @@
 <script>
 import Section from '../components/Section.vue';
 import SectionBreak from '../components/SectionBreak.vue';
-import heroUSDA from '../assets/images/usda/hero-usda.png';
+import heroUSDA from '../assets/images/usda/hero-usda.webp';
 export default {
     data() {
         return {}

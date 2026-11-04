@@ -38,7 +38,7 @@
 import CaseStudiesView from './CaseStudiesView.vue';
 import Button from '../components/Button.vue';
 import Fish from '../components/Fish.vue';
-import ProfilePicture from '../assets/images/about/ProfilePicture.jpg';
+import ProfilePicture from '../assets/images/about/ProfilePicture.webp';
 
 const QUOTES = [
     {

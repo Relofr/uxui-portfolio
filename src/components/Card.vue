@@ -4,7 +4,7 @@
         <ul role="list" class="list">
             <li role="listitem" class="list-item">
                 <div class="list-content">
-                    <img :src="src" :alt="alt">
+                    <img loading="lazy" decoding="async" :src="src" :alt="alt" :data-zoomable="isLink ? null : true" :tabindex="isLink ? null : 0">
                     <h3 v-if="title" class="card-title">{{ title }}</h3>
                     <p v-if="text" class="card-text">{{ text }}</p>
                     <Button id="card-button" v-show="button" :text="buttonText" @click="" type="submit" :icon="icon"

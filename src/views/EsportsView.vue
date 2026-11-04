@@ -64,8 +64,8 @@ The Leaderboards section was added to give gamers more reasons to use our servic
         <!-- <Section showImage isColumn :src2="esportsAllDevices" sectionTitle="" contentOne="" /> -->
 
         <div class="even-columns centered">
-            <div><img id="esports-gif" :src="esportsGif" alt="megabattles gif"></div>
-            <div><img :src="esportsAllDevices" alt="megabattles all devices"></div>
+            <div><img id="esports-gif" data-zoomable tabindex="0" loading="lazy" decoding="async" :src="esportsGif" alt="megabattles gif"></div>
+            <div><img data-zoomable tabindex="0" loading="lazy" decoding="async" :src="esportsAllDevices" alt="megabattles all devices"></div>
         </div>
 
         <SectionBreak title="Final Thoughts" icon="thumbs-up"/>
@@ -87,22 +87,22 @@ import Section from '../components/Section.vue';
 import SectionBreak from '../components/SectionBreak.vue';
 import Overview from '../components/Overview.vue';
 
-import userInsight from '../assets/images/esports/esports-userinsight.png'
-import userFlow from '../assets/images/esports/esports-userflow.png'
-import heroEsports from '../assets/images/esports/esports-hero.jpeg';
-import esportsData from '../assets/images/esports/esports-data.png';
-import esportsSurvey from '../assets/images/esports/esports-survey.png';
-import esportsPersona from '../assets/images/esports/esports-persona.png';
-import esportsHifi from '../assets/images/esports/esports-hifi.png';
-import esportsLowfi from '../assets/images/esports/esports-lowfi.png';
-import esportsGif from '../assets/images/esports/esports-gif.gif';
-import esportsMacbook from '../assets/images/esports/esports-macbook.png';
-import esportsAllDevices from '../assets/images/esports/esports-alldevices.png';
-import esportsAB from '../assets/images/esports/esports-ab.png';
-import esportsAB2 from '../assets/images/esports/esports-ab2.png';
-import featureBrainstorm from '../assets/images/esports/feature-brainstorm.jpg';
-import featurePrio from '../assets/images/esports/feature-prioritization.jpg';
-import journeyMap from '../assets/images/esports/journey-map.jpg';
+import userInsight from '../assets/images/esports/esports-userinsight.webp'
+import userFlow from '../assets/images/esports/esports-userflow.webp'
+import heroEsports from '../assets/images/esports/esports-hero.webp';
+import esportsData from '../assets/images/esports/esports-data.webp';
+import esportsSurvey from '../assets/images/esports/esports-survey.webp';
+import esportsPersona from '../assets/images/esports/esports-persona.webp';
+import esportsHifi from '../assets/images/esports/esports-hifi.webp';
+import esportsLowfi from '../assets/images/esports/esports-lowfi.webp';
+import esportsGif from '../assets/images/esports/esports-gif.webp';
+import esportsMacbook from '../assets/images/esports/esports-macbook.webp';
+import esportsAllDevices from '../assets/images/esports/esports-alldevices.webp';
+import esportsAB from '../assets/images/esports/esports-ab.webp';
+import esportsAB2 from '../assets/images/esports/esports-ab2.webp';
+import featureBrainstorm from '../assets/images/esports/feature-brainstorm.webp';
+import featurePrio from '../assets/images/esports/feature-prioritization.webp';
+import journeyMap from '../assets/images/esports/journey-map.webp';
 
 export default {
     data() {

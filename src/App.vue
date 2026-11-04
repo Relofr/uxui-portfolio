@@ -3,6 +3,7 @@ import Navbar from './components/Navbar.vue'
 import Footer from './components/Footer.vue'
 import OceanWave from './components/OceanWave.vue'
 import ScrollToTop from './components/ScrollToTop.vue'
+import ImageLightbox from './components/ImageLightbox.vue'
 import { pageEntered } from './pageTransition'
 </script>
 
@@ -18,6 +19,7 @@ import { pageEntered } from './pageTransition'
   </div>
   <Footer />
   <ScrollToTop />
+  <ImageLightbox />
 </template>
 
 <style>
