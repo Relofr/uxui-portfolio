@@ -3,7 +3,7 @@
         <p class="flex code-font">{{ open }}</p>
         <div class="page-spacer">
 
-            <Overview title="My story"
+            <Overview title="About me"
                 about="I’m a UX/UI product designer with 4+ years owning end-to-end design for a cloud VoIP and video conferencing platform, including leading the entire admin portal and designing AI-powered real-time call analytics and transcription."
                 description="My path into design ran through engineering. I built Vue.js components at Banyan, then spent three years in API support at LogMeIn, where I saw firsthand where users and developers struggle. That background means I design within real engineering constraints and can take ideas from research to shipped code."
                 descriptionTwo="Outside of work, I enjoy photography, bird watching, gaming, and spending time outdoors." />

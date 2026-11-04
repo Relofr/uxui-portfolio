@@ -9,6 +9,7 @@ import DailyUiView from './views/DailyUiView.vue';
 import EsportsView from './views/EsportsView.vue';
 import DotaView from './views/DotaView.vue';
 import AlianzaView from './views/AlianzaView.vue';
+import { waitForPageEnter } from './pageTransition';
 
 const routes = [
 	{
@@ -67,8 +68,13 @@ const routes = [
 const router = createRouter({
     history: createWebHistory(process.env.NODE_ENV === '/uxui-portfolio/'),
     routes,
-    scrollBehavior() {
-        document.getElementById('app').scrollIntoView({ behavior: 'smooth' });
+    // Clicking a link (project, nav item) starts the new page at the top.
+    // Browser back/forward restores where you were, e.g. your spot in the projects list.
+    // Both wait for the page fade so the scroll lands on the new content.
+    async scrollBehavior(to, from, savedPosition) {
+        if (to.path === from.path) return false;
+        await waitForPageEnter();
+        return savedPosition || { top: 0 };
     }
 })
 

@@ -14,9 +14,6 @@
                             <a href="https://www.linkedin.com/in/kyle-hatch/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
                                 <fa :icon="['fab', 'linkedin']"></fa>
                             </a>
-                            <a href="mailto:ky13h4tch@gmail.com" aria-label="Email">
-                                <fa icon="envelope"></fa>
-                            </a>
                         </div>
                         <nav>
                             <ul role="list">

@@ -2,6 +2,8 @@
 import Navbar from './components/Navbar.vue'
 import Footer from './components/Footer.vue'
 import OceanWave from './components/OceanWave.vue'
+import ScrollToTop from './components/ScrollToTop.vue'
+import { pageEntered } from './pageTransition'
 </script>
 
 <template>
@@ -9,12 +11,13 @@ import OceanWave from './components/OceanWave.vue'
   <!-- <OceanWave /> -->
   <div class="container">
     <router-view v-slot="{ Component }">
-      <transition name="fade" mode="out-in">
+      <transition name="fade" mode="out-in" @enter="pageEntered">
         <component :is="Component"></component>
       </transition>
     </router-view>
   </div>
   <Footer />
+  <ScrollToTop />
 </template>
 
 <style>

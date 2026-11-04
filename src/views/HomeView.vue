@@ -43,15 +43,19 @@ import ProfilePicture from '../assets/images/about/ProfilePicture.jpg';
 const QUOTES = [
     {
         text: 'He absorbed the systems and architecture like a sponge and has quickly become a very reliable front end developer, engineering complex interfaces with an astute attention to detail.',
-        author: 'Kris Jenkins, Product & Engineering Leadership'
+        author: 'Kris Jenkins, CEO & Co-Founder @ Mobly'
     },
     {
         text: 'Kyle is dependable and we often rely on him for his meticulous CSS skills and his knowledge of Javascript Frameworks.',
-        author: 'Brett Flake, Technical Product Manager'
+        author: 'Brett Flake, Security/Software Engineer'
     },
     {
         text: 'This guy is a great catch and proves to be a value add to any team lucky enough to grab him.',
         author: 'Nic Laughter, Software Engineer'
+    },
+    {
+        text: 'He excels in his work and goes out of his way to keep studying and improving his skills.',
+        author: 'Peter Martinez, Full-Stack Engineer'
     }
 ];
 

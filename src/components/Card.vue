@@ -50,6 +50,34 @@ export default {
     width: 100%;
 }
 
+/* Linked project cards share the Alianza text-card frame and hover */
+.card:not(.card-static) {
+    overflow: hidden; /* image sits flush against the border, clipped to the rounded corners */
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius);
+    background-color: var(--color-surface);
+    transition: border-color 0.2s ease, transform 0.2s ease;
+
+    &:hover {
+        border-color: var(--color-accent);
+        transform: translateY(-2px);
+    }
+
+    .list-content {
+        padding-bottom: var(--space-4);
+    }
+
+    .list-content img {
+        border-radius: 0;
+        box-shadow: none;
+    }
+
+    /* keep the title, text and button off the border */
+    .list-content > :not(img) {
+        margin-inline: var(--space-4);
+    }
+}
+
 .list {
     display: flex;
     flex-wrap: wrap;
@@ -80,11 +108,6 @@ export default {
     margin: 0;
 }
 
-.card-static .list-content img:hover {
-    transform: none;
-    box-shadow: var(--shadow-sm);
-}
-
 #card-button {
     margin-top: var(--space-2);
 }
@@ -96,12 +119,6 @@ export default {
     object-fit: cover;
     border-radius: var(--radius);
     box-shadow: var(--shadow-sm);
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
-
-    &:hover {
-        transform: scale(1.02);
-        box-shadow: var(--shadow-lg);
-    }
 }
 
 </style>

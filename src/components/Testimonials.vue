@@ -22,15 +22,19 @@ export default {
             paragraphs: [
                 {
                     text: `I have been so impressed with Kyle. Besides having a remarkable work ethic, hilarious sense of humor, and a great personality, he is also an intelligent and high quality developer. Upon starting at Banyan he immediately created a large library of reusable VUE.JS components that we have since used to give our WebApp a new look and feel. He assisted in porting our ASP.NET MVC Razor WebApp to use VUE.JS, VUEX, Redux, Flux and NPM. Kyle happily takes the initiative and volunteers for new assignments. Over one weekend he worked with another of our devs to create an app for Banyan on Amazon's Alexa platform. Kyle is dependable and we often rely on him for his meticulous CSS skills and his knowledge of Javascript Frameworks.`,
-                    signature: `- Brett Flake (Technical Product Manager)`
+                    signature: `- Brett Flake (Security/Software Engineer)`
                 },
                 {
                     text: `We got very lucky finding Kyle when we did. He quickly picked up our tech stack and began doing all the development tasks nobody had time to do. He absorbed the systems and architecture like a sponge and has quickly become a very reliable front end developer, engineering complex interfaces with an astute attention to detail. Kyle is very professional, has a great sense of humor, and I have greatly enjoyed having him on the team.`,
-                    signature: `- Kris Jenkins (Product & Engineering Leadership)`
+                    signature: `- Kris Jenkins (CEO & Co-Founder @ Mobly)`
                 },
                 {
                     text: `Kyle is a sharp dude with a knack for figuring things out. He came in fresh out of a boot camp and immediately began contributing in a meaningful way. This guy is a great catch and proves to be a value add to any team lucky enough to grab him. He’s a solid developer and great guy in general.`,
                     signature: `- Nic Laughter (Software Engineer)`
+                },
+                {
+                    text: `Kyle is a fast learner, very intelligent, and constantly reviews his code to make sure he is offering the most optimal results. He excels in his work and goes out of his way to keep studying and improving his skills. If you have a chance to work with him you will see how he brings such amazing results to the team.`,
+                    signature: `- Peter Martinez (Full-Stack Engineer)`
                 }
             ]
         }

@@ -128,7 +128,7 @@ export default {
 <style lang="less" scoped>
 .fish-container {
     height: 100vh;
-    width: 98vw;
+    container-type: inline-size; /* lets the swim keyframes use the visible width (cqw), not 100vw which includes the scrollbar */
     position: absolute;
     overflow: hidden;
     inset: 0;
@@ -141,7 +141,7 @@ export default {
     }
 
     100% {
-        transform: translateX(calc(100vw + 100%));
+        transform: translateX(calc(100cqw + 100%));
     }
 }
 
@@ -151,13 +151,13 @@ export default {
     }
 
     100% {
-        transform: translateX(calc(100vw + 100%));
+        transform: translateX(calc(100cqw + 100%));
     }
 }
 
 @keyframes animate-fish-2 {
     0% {
-        transform: translateX(calc(100vw - 100%));
+        transform: translateX(calc(100cqw - 100%));
     }
 
     100% {
@@ -167,7 +167,7 @@ export default {
 
 @keyframes animate-fish-3 {
     0% {
-        transform: translateX(calc(100vw - 100%));
+        transform: translateX(calc(100cqw - 100%));
     }
 
     100% {
@@ -178,7 +178,7 @@ export default {
 /* Shark passes are scheduled from the script: direction, height and color change each pass */
 @keyframes shark-swim-left {
     0% {
-        transform: translateX(100vw);
+        transform: translateX(100cqw);
     }
 
     100% {
@@ -192,7 +192,7 @@ export default {
     }
 
     100% {
-        transform: translateX(100vw) scaleX(-1);
+        transform: translateX(100cqw) scaleX(-1);
     }
 }
 
@@ -202,7 +202,7 @@ export default {
     position: absolute;
     top: 0;
     visibility: hidden;
-    transform: translateX(100vw);
+    transform: translateX(100cqw);
 
     &.swim-left,
     &.swim-right {
