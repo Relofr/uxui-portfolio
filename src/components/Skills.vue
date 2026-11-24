@@ -65,6 +65,25 @@ export default {
     font-family: var(--font-heading);
     font-size: var(--text-sm);
     font-weight: var(--fw-semibold);
+    cursor: default;
+    transition: transform 0.2s ease, background-color 0.2s ease, color 0.2s ease,
+        border-color 0.2s ease;
+}
+
+.expertise li:hover {
+    transform: translateY(-2px);
+    background-color: var(--color-accent);
+    color: var(--color-ink);
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .expertise li {
+        transition: none;
+    }
+
+    .expertise li:hover {
+        transform: none;
+    }
 }
 
 .skills-heading {

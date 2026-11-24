@@ -170,12 +170,6 @@ export default {
     gap: var(--space-4);
 }
 
-.education-item {
-    padding: var(--space-5);
-    border-radius: var(--radius);
-    background-color: var(--color-surface);
-}
-
 .education-item .timeline-company {
     margin-bottom: var(--space-2);
 }
@@ -198,10 +192,20 @@ export default {
     gap: var(--space-4);
 }
 
-.work-step {
+/* Shared hoverable card: "How I work" steps and education items */
+.work-step,
+.education-item {
     padding: var(--space-5);
+    border: 1px solid transparent; /* reserves space so the hover border doesn't nudge the layout */
     border-radius: var(--radius);
     background-color: var(--color-surface);
+    transition: transform 0.25s ease, border-color 0.25s ease;
+}
+
+.work-step:hover,
+.education-item:hover {
+    transform: translateY(-4px);
+    border-color: var(--color-accent);
 }
 
 .work-step p {
@@ -212,5 +216,25 @@ export default {
     font-size: var(--text-xl);
     color: var(--color-accent);
     margin-bottom: var(--space-3);
+    transform-origin: left center;
+    transition: transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+.work-step:hover .work-step-icon {
+    transform: scale(1.25);
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .work-step,
+    .education-item,
+    .work-step-icon {
+        transition: none;
+    }
+
+    .work-step:hover,
+    .education-item:hover,
+    .work-step:hover .work-step-icon {
+        transform: none;
+    }
 }
 </style>

@@ -1,0 +1,255 @@
+/* ==========================================================================
+   Professional theme (default)
+   Layered on top of style.css. Every rule is scoped to html[data-theme="pro"]
+   so the original ocean design ("fish" mode) is left untouched.
+   The html prefix also out-ranks component scoped styles.
+   ========================================================================== */
+
+html[data-theme="pro"] {
+  /* Color */
+  --color-heading: #f4f5f7;
+  --color-text: #c4c8d0;
+  --color-text-muted: #8a909b;
+  --color-ink: #0a0b0e;
+  --color-accent: #7ea6ff;
+  --color-accent-hover: #a8c2ff;
+  --color-surface-light: #15171c;
+  --color-surface: rgba(255, 255, 255, 0.028);
+  --color-border: rgba(255, 255, 255, 0.09);
+  --color-border-strong: rgba(255, 255, 255, 0.2);
+  --color-error: #ff8f8f;
+
+  /* Typography */
+  --font-heading: 'Inter', system-ui, -apple-system, 'Segoe UI', sans-serif;
+  --font-body: 'Inter', system-ui, -apple-system, 'Segoe UI', sans-serif;
+  --text-base: 1rem;
+  --text-lg: 1.125rem;
+
+  /* Shape */
+  --radius-sm: 10px;
+  --radius: 16px;
+  --shadow-sm: 0 1px 2px rgb(0 0 0 / 40%);
+  --shadow-lg: 0 24px 48px -16px rgb(0 0 0 / 60%), 0 0 0 1px rgb(255 255 255 / 4%);
+
+  background: var(--color-ink);
+  color-scheme: dark;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+html[data-theme="pro"] ::selection {
+  background: rgba(126, 166, 255, 0.35);
+  color: #fff;
+}
+
+/* Soft glow at the top of the page instead of the ocean art */
+html[data-theme="pro"] #app {
+  background-color: var(--color-ink);
+  background-image:
+    radial-gradient(ellipse 70% 45% at 50% -8%, rgba(126, 166, 255, 0.16), transparent 70%),
+    radial-gradient(ellipse 40% 30% at 85% 10%, rgba(160, 120, 255, 0.07), transparent 70%);
+  background-size: 100% 1200px;
+}
+
+/* --------------------------------------------------------------------------
+   Typography
+   -------------------------------------------------------------------------- */
+
+html[data-theme="pro"] h1,
+html[data-theme="pro"] h2,
+html[data-theme="pro"] h3,
+html[data-theme="pro"] .primary-heading,
+html[data-theme="pro"] .secondary-heading {
+  font-weight: var(--fw-semibold);
+  letter-spacing: -0.025em;
+}
+
+html[data-theme="pro"] .display-heading {
+  font-weight: var(--fw-bold);
+  letter-spacing: -0.045em;
+  background: linear-gradient(180deg, #ffffff 30%, #9ea4b0 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+html[data-theme="pro"] .label {
+  font-size: 0.75rem;
+  letter-spacing: 0.1em;
+}
+
+html[data-theme="pro"] .code-font {
+  font-size: var(--text-sm);
+  color: var(--color-text-muted);
+}
+
+/* --------------------------------------------------------------------------
+   Navigation
+   -------------------------------------------------------------------------- */
+
+html[data-theme="pro"] {
+  --nav-bg: rgba(10, 11, 14, 0.72);
+  --nav-panel-bg: rgba(14, 15, 19, 0.98);
+  --nav-border: rgba(255, 255, 255, 0.08);
+  --nav-hover-bg: transparent;
+  --nav-active-bg: rgba(255, 255, 255, 0.07);
+}
+
+/* Pill shape and selected background come from Navbar.vue; pro only mutes idle links */
+html[data-theme="pro"] .main-nav nav a {
+  color: var(--color-text-muted);
+}
+
+html[data-theme="pro"] .main-nav nav a svg {
+  opacity: 0.8;
+}
+
+html[data-theme="pro"] .main-nav nav a:hover,
+html[data-theme="pro"] .main-nav nav .router-link-exact-active {
+  color: var(--color-heading);
+}
+
+html[data-theme="pro"] .main-nav .logo {
+  box-shadow: 0 0 0 1px var(--color-border-strong);
+}
+
+/* --------------------------------------------------------------------------
+   Buttons and links
+   -------------------------------------------------------------------------- */
+
+html[data-theme="pro"] .button,
+html[data-theme="pro"] .alianza-cta-link {
+  border-radius: var(--radius-sm);
+  font-weight: var(--fw-semibold);
+  letter-spacing: 0;
+  text-transform: none;
+  transition: background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease, transform 0.2s ease;
+}
+
+html[data-theme="pro"] .button-primary,
+html[data-theme="pro"] .alianza-cta-link {
+  background-color: var(--color-heading);
+  color: var(--color-ink);
+}
+
+html[data-theme="pro"] .button-primary:hover:not(:disabled),
+html[data-theme="pro"] .alianza-cta-link:hover {
+  background-color: #ffffff;
+  transform: translateY(-1px);
+}
+
+html[data-theme="pro"] .button-secondary {
+  border-color: var(--color-border-strong);
+  background-color: var(--color-surface);
+  color: var(--color-heading);
+}
+
+html[data-theme="pro"] .button-secondary:hover:not(:disabled) {
+  border-color: rgba(255, 255, 255, 0.35);
+  background-color: rgba(255, 255, 255, 0.08);
+  color: var(--color-heading);
+}
+
+html[data-theme="pro"] .text-card-link {
+  letter-spacing: 0;
+  text-transform: none;
+}
+
+/* --------------------------------------------------------------------------
+   Cards and surfaces
+   -------------------------------------------------------------------------- */
+
+html[data-theme="pro"] .card:not(.card-static),
+html[data-theme="pro"] .text-card {
+  background-color: var(--color-surface);
+  transition: border-color 0.25s ease, transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+html[data-theme="pro"] .card:not(.card-static):hover,
+html[data-theme="pro"] .text-card:hover {
+  border-color: var(--color-border-strong);
+  box-shadow: var(--shadow-lg);
+  transform: translateY(-3px);
+}
+
+html[data-theme="pro"] .text-card {
+  background-image: linear-gradient(135deg, rgba(126, 166, 255, 0.08), transparent 55%);
+}
+
+html[data-theme="pro"] .text-card-tags li {
+  background-color: rgba(255, 255, 255, 0.04);
+  color: var(--color-text);
+}
+
+html[data-theme="pro"] .summary-item,
+html[data-theme="pro"] .education-item,
+html[data-theme="pro"] .work-step,
+html[data-theme="pro"] .alianza-note,
+html[data-theme="pro"] .alianza-cta {
+  border: 1px solid var(--color-border);
+}
+
+html[data-theme="pro"] .expertise li {
+  border: 1px solid var(--color-border);
+  background-color: var(--color-surface);
+  color: var(--color-text);
+  font-weight: 500;
+}
+
+html[data-theme="pro"] .expertise li:hover {
+  border-color: rgba(126, 166, 255, 0.5);
+  background-color: rgba(126, 166, 255, 0.12);
+  color: var(--color-heading);
+}
+
+html[data-theme="pro"] .work-step:hover,
+html[data-theme="pro"] .education-item:hover {
+  border-color: var(--color-border-strong);
+  background-image: linear-gradient(135deg, rgba(126, 166, 255, 0.1), transparent 60%);
+}
+
+/* --------------------------------------------------------------------------
+   Home intro
+   -------------------------------------------------------------------------- */
+
+html[data-theme="pro"] .intro-title {
+  font-weight: 500;
+  color: var(--color-text-muted);
+}
+
+html[data-theme="pro"] .intro-photo {
+  box-shadow: 0 0 0 1px var(--color-border-strong), 0 0 0 10px rgba(255, 255, 255, 0.03), var(--shadow-lg);
+}
+
+html[data-theme="pro"] .intro-quote,
+html[data-theme="pro"] .testimonial {
+  border-left-width: 2px;
+}
+
+html[data-theme="pro"] .intro-quote p {
+  color: var(--color-heading);
+}
+
+/* --------------------------------------------------------------------------
+   Forms
+   -------------------------------------------------------------------------- */
+
+html[data-theme="pro"] .contact-form input,
+html[data-theme="pro"] .contact-form textarea {
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-sm);
+  background-color: var(--color-surface-light);
+  color: var(--color-heading);
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+html[data-theme="pro"] .contact-form input::placeholder,
+html[data-theme="pro"] .contact-form textarea::placeholder {
+  color: var(--color-text-muted);
+}
+
+html[data-theme="pro"] .contact-form input:focus,
+html[data-theme="pro"] .contact-form textarea:focus {
+  border-color: var(--color-accent);
+  box-shadow: 0 0 0 3px rgba(126, 166, 255, 0.2);
+}

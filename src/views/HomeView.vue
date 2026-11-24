@@ -1,6 +1,6 @@
 <template>
     <div>
-        <Fish />
+        <Fish v-if="isFish" />
         <section class="intro">
             <div class="intro-text">
                 <h1 class="display-heading intro-name">Kyle Hatch</h1>
@@ -38,6 +38,7 @@
 import CaseStudiesView from './CaseStudiesView.vue';
 import Button from '../components/Button.vue';
 import Fish from '../components/Fish.vue';
+import { isFish } from '../theme';
 import ProfilePicture from '../assets/images/about/ProfilePicture.webp';
 
 const QUOTES = [
@@ -75,7 +76,7 @@ function nextQuote() {
 
 export default {
     setup: () => {
-        return { ProfilePicture, quote: nextQuote() };
+        return { ProfilePicture, quote: nextQuote(), isFish };
     },
     methods: {
         scrollToWork() {
@@ -162,7 +163,7 @@ export default {
 
 .work {
     padding-top: var(--space-7);
-    scroll-margin-top: var(--space-4);
+    scroll-margin-top: calc(var(--nav-height) + var(--space-4)); /* clear the sticky header */
 }
 
 @media (max-width: 800px) {

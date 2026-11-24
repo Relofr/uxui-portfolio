@@ -23,6 +23,7 @@
   --font-heading: 'Poppins', sans-serif;
   --font-body: 'Titillium Web', sans-serif;
   --font-code: 'Source Code Pro', monospace;
+  --font-nav: 'Inter', system-ui, -apple-system, 'Segoe UI', sans-serif; /* shared by both themes */
 
   --text-xs: 0.8125rem;                          /* 13px */
   --text-sm: 0.9375rem;                          /* 15px */
@@ -55,6 +56,15 @@
   --radius-sm: 4px;
   --radius: 8px;
 
+  /* Sticky navigation */
+  --nav-height: 72px;
+  --nav-height-mobile: 64px;
+  --nav-bg: rgba(46, 106, 140, 0.82);
+  --nav-panel-bg: #235a78;
+  --nav-border: rgba(255, 255, 255, 0.18);
+  --nav-hover-bg: rgba(255, 255, 255, 0.08);
+  --nav-active-bg: rgba(255, 255, 255, 0.16);
+
   --shadow-sm: 0 2px 2px 0 rgb(0 0 0 / 14%), 0 3px 1px -2px rgb(0 0 0 / 12%), 0 1px 5px 0 rgb(0 0 0 / 20%);
   --shadow-lg: 0 16px 24px 2px rgb(0 0 0 / 16%), 0 6px 30px 5px rgb(0 0 0 / 12%), 0 8px 10px -7px rgb(0 0 0 / 20%);
 }
@@ -81,6 +91,7 @@ html {
 
 /* Overscroll areas match the top and bottom of the ocean background */
 html {
+  scrollbar-gutter: stable; /* page width (and the nav) can't jump if one theme's page is shorter */
   background: linear-gradient(to bottom, #387ca6 50%, #011c26 50%);
 }
 

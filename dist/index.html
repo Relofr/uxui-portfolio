@@ -24,6 +24,15 @@
       })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
     </script>
 
+    <!-- Apply the saved theme before first paint ("pro" by default, "fish" is the ocean design) -->
+    <script>
+      try {
+        document.documentElement.dataset.theme = localStorage.getItem('theme') === 'fish' ? 'fish' : 'pro';
+      } catch (e) {
+        document.documentElement.dataset.theme = 'pro';
+      }
+    </script>
+
     <meta charset="UTF-8" />
     <meta name="description" content="Kyle Hatch is a UX/UI product designer with 4+ years designing B2B SaaS, including AI-powered call analytics, backed by 8 years in tech and front-end engineering.">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -32,9 +41,9 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Source+Code+Pro&family=Titillium+Web:wght@400;600;700&display=swap" rel="stylesheet">
-    <script type="module" crossorigin src="/assets/index.8d695322.js"></script>
-    <link rel="stylesheet" href="/assets/index.13bc3bcb.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@400;600;700&family=Source+Code+Pro&family=Titillium+Web:wght@400;600;700&display=swap" rel="stylesheet">
+    <script type="module" crossorigin src="/assets/index.e497141a.js"></script>
+    <link rel="stylesheet" href="/assets/index.eeaba796.css">
   </head>
   <body>
     <div id="app"></div>

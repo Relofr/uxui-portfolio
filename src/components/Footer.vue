@@ -1,9 +1,9 @@
 <template>
     <footer>
-        <div class="footer-container">
-            <Bubbles />
-            <img v-show="!isMobile" class="footer-image" src="../assets/ocean-floor-2.svg" alt="ocean floor footer image" aria-label="ocean floor footer image">
-            <img v-show="isMobile" class="footer-image" src="../assets/ocean-floor-mobile.svg" alt="ocean floor footer image" aria-label="ocean floor footer image">
+        <div class="footer-container" :class="{ 'footer-pro': !isFish }">
+            <Bubbles v-if="isFish" />
+            <img v-if="isFish" v-show="!isMobile" class="footer-image" src="../assets/ocean-floor-2.svg" alt="ocean floor footer image" aria-label="ocean floor footer image">
+            <img v-if="isFish" v-show="isMobile" class="footer-image" src="../assets/ocean-floor-mobile.svg" alt="ocean floor footer image" aria-label="ocean floor footer image">
             <div class="footer-title">
                 <div class="footer">
                     <div class="flex">
@@ -75,7 +75,11 @@
 
 <script>
 import Bubbles from '../components/Bubbles.vue';
+import { isFish } from '../theme';
 export default {
+    setup() {
+        return { isFish };
+    },
     data() {
         return {
             isMobile: false,
@@ -175,6 +179,37 @@ export default {
 
 .social-icons svg:hover {
     transform: scale(1.15);
+}
+
+/* Professional theme: a plain footer bar instead of the ocean floor art */
+.footer-pro {
+    border-top: 1px solid var(--color-border);
+}
+
+.footer-pro .footer-title {
+    position: static;
+    transform: none;
+    padding: var(--space-7) var(--gutter);
+}
+
+.footer-pro .social-icons svg {
+    width: 24px;
+    height: 24px;
+    color: var(--color-text-muted);
+    transition: color 0.2s ease, transform 0.2s ease;
+}
+
+.footer-pro .social-icons svg:hover {
+    color: var(--color-heading);
+}
+
+.footer-pro .footer a {
+    font-weight: 500;
+    color: var(--color-text-muted);
+}
+
+.footer-pro .footer nav a:hover {
+    color: var(--color-heading);
 }
 
 @media (max-width: 975px) {
